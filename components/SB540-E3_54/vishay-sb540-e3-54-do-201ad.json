@@ -1,0 +1,54 @@
+{
+  "component-o": {
+    "type-s": "diode",
+    "vendor-s": "Vishay",
+    "part-s": "SB540-E3/54",
+    "description-s": "5 A 40 V Schottky barrier rectifier, 480 mV VF max, DO-201AD axial",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.3892,
+        "100": 0.3819,
+        "1K": 0.303,
+        "10K": 0.2146,
+        "100K": 0.2146
+      },
+      "distributor-s": "Arrow Electronics",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "SB540-E3/54GICT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/vishay-general-semiconductor-diodes-division/SB540-E3-54/76530",
+        "datasheet-url-s": "https://www.vishay.com/docs/88721/sb520.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 28900,
+        "moq-i": 1,
+        "unit-price-s": "USD 1.37",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "axial-do-201ad" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "diode-schottky"
+    ],
+    "pins-ao": [
+      { "1": "cathode" },
+      { "2": "anode" }
+    ],
+    "passive-o": {
+      "voltage-max-i": 40000,
+      "current-max-i": 5000,
+      "lead-style-s": "axial"
+    },
+    "diode-o": {
+      "technology-s": "schottky",
+      "vf-mv-i": 480,
+      "ir-ua-i": 500
+    }
+  }
+}

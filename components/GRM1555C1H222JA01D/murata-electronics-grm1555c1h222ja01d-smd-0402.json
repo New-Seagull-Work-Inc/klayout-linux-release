@@ -1,0 +1,76 @@
+{
+  "component-o": {
+    "specs-o": {
+      "esr_mohm": 48.88,
+      "esl_ph": 306,
+      "srf_mhz": 174,
+      "dc_bias-ao": [
+        { "v_mv": 0, "c_pct": 100 },
+        { "v_mv": 1000, "c_pct": 100 },
+        { "v_mv": 1800, "c_pct": 100 },
+        { "v_mv": 3300, "c_pct": 100 },
+        { "v_mv": 5000, "c_pct": 100 },
+        { "v_mv": 10000, "c_pct": 100 },
+        { "v_mv": 12000, "c_pct": 100 },
+        { "v_mv": 16000, "c_pct": 100 },
+        { "v_mv": 20000, "c_pct": 100 },
+        { "v_mv": 25000, "c_pct": 100 },
+        { "v_mv": 35000, "c_pct": 100 },
+        { "v_mv": 50000, "c_pct": 100 }
+      ],
+      "esr_esl_dc_bias_source-s": "Murata SimSurfing (ds.murata.co.jp/simserve): measured series-thru S-parameters GRM1555C1H222JA01.s2p (25 degC, 0 V; data generated Jan 10, 2018) -> ESR at SRF, ESL at 10x SRF; DC-bias curve c_dcbias_capchange (25 degC, AC 1 Vrms), read 2026-10-21"
+    },
+    "type-s": "capacitor",
+    "vendor-s": "Murata Electronics",
+    "part-s": "GRM1555C1H222JA01D",
+    "description-s": "2200 pF ±5% 50 V C0G 0402 multilayer ceramic capacitor (MLCC), SMD",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.038,
+        "100": 0.022,
+        "1K": 0.016,
+        "10K": 0.008,
+        "100K": 0.008
+      },
+      "distributor-s": "Mouser",
+      "stock-o": {
+        "digikey-i": 279561,
+        "mouser-i": 304041,
+        "newark-i": 104890,
+        "checked-s": "2026-10-21",
+        "newark-checked-s": "2026-10-19",
+        "source-s": "DigiKey Product Information API v4 (max QuantityAvailable over packagings); Mouser and Newark public product/search pages via browser; null = not listed; newark-i copied from architect ltl.db component_specs.stock_newark_i (stock-ltl run of 2026-10-19); DigiKey/Mouser checked 2026-10-21"
+      },
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "490-GRM1555C1H222JA01DCT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/murata-electronics/GRM1555C1H222JA01D/10695488",
+        "datasheet-url-s": "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GRM1555C1H222JA01-01A-EN_PDF_CERAMICCAPACITORSMD",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 279561,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.10",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0402" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-ceramic"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 2200,
+      "value-unit-s": "pf",
+      "voltage-max-i": 50000,
+      "tolerance-pct-x10": 50,
+      "dielectric-s": "c0g"
+    }
+  }
+}

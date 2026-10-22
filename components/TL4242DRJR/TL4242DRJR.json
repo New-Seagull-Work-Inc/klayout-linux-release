@@ -1,0 +1,179 @@
+{
+  "component-o": {
+    "type-s": "ir_led_driver",
+    "vendor-s": "Texas Instruments",
+    "part-s": "TL4242DRJR",
+    "description-s": "Single-channel adjustable constant-current linear LED driver for an 850 nm IR illuminator: high-side output Q, 4.5-42 V supply, up to 500 mA, PWM/enable input, open-load status output, WSON-8 4x4 (DRJ). I(Q) = V(REF) / R(REF), V(REF) = 177 mV typ (168-185 mV).",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "distributor-s": "DigiKey",
+      "cost-o": {
+        "1": 1.78,
+        "10": 1.307,
+        "100": 1.0582,
+        "1K": 0.95472,
+        "3K": 0.94286
+      },
+      "moq-i": 1,
+      "lifecycle-s": "active",
+      "lifecycle-source-s": "DigiKey API: Active (2026-10-21); TI package addendum 10-Nov-2025: Active",
+      "lifecycle-checked-s": "2026-10-21",
+      "stock-digikey-i": 30284,
+      "stock-mouser-i": 4135,
+      "stock-newark-i": 87,
+      "lead-weeks-digikey-i": 12,
+      "stock-checked-s": "2026-10-21",
+      "hts-s": "8542390070",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "296-23615-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/texas-instruments/TL4242DRJR/1905916",
+        "datasheet-url-s": "https://www.ti.com/lit/gpn/tl4242",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 30884,
+        "moq-i": 1,
+        "unit-price-s": "USD 1.78",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "wson-8" },
+      { "ppins-i": 8 }
+    ],
+    "blocks-as": [
+      "ir_led_driver"
+    ],
+    "interfaces-as": [
+      "ds-ir_led-rx",
+      "ds-ir_led-tx",
+      "ds-power-rx"
+    ],
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -40,
+          "max-i": 125
+        }
+      },
+      {
+        "junction-o": {
+          "min-i": -40,
+          "max-i": 150
+        }
+      },
+      {
+        "storage-o": {
+          "min-i": -50,
+          "max-i": 150
+        }
+      }
+    ],
+    "pins-ao": [
+      { "1": "PWM" },
+      { "2": "ST" },
+      { "3": "GND" },
+      { "4": "REF" },
+      { "5": "D" },
+      { "6": "Q" },
+      { "7": "NC" },
+      { "8": "I" },
+      { "9": "EP" }
+    ],
+    "stdpins-ao": [
+      { "3": "dvss" },
+      { "9": "dvss" },
+      { "8": "ds-power-rx" },
+      { "8": "100nf-gnd" },
+      { "1": "ds-ir_led-rx" },
+      { "6": "ds-ir_led-a" },
+      { "4": "ds-ir_led-c" }
+    ],
+    "cfgpins-ao": [
+      { "4": "REF" },
+      { "4": "9.31r-gnd" },
+      { "4c": "R(REF) from REF to GND, the LED cathode returns to REF (p.10 Figure 6; layout p.12: route REF directly to R(REF)). I(Q) = V(REF)/R(REF), V(REF) = 177 mV typ, 168-185 mV (p.5 table 6.5, eq. 5 p.9, valid for R(REF) 0.39-10 ohm, p.4 table 6.3). 9.31 ohm gives 19.0 mA typ, 18.0-19.9 mA over V(REF) spread, under the 100F5T-IR-FS-850NM 20 mA rating; 8.87 ohm would give 20.0 mA typ but 20.9 mA max. Dissipation in R(REF) 3.4 mW (0603 fine). For a 100 mA IR emitter use 1.78 ohm; 0.39 ohm is the 454 mA ceiling." },
+      { "1": "PWM" },
+      { "1": "100k-gnd" },
+      { "1c": "PWM / enable input, driven by the hub GPIO (ds-ir_led-rx). High (>= 2.6 V, p.4) = on, low (<= 0.7 V) = sleep, 0.1 uA typ off current (p.4, Table 1 p.8). Needs a 3.3 V or 5 V GPIO: a 1.8 V GPIO does not reach V(PWM,H). Input sinks 220-500 uA at 5 V (p.4). The 100k pull-down is not in the datasheet: I(PWM,L) is only +/-1 uA (p.4), so a floating GPIO during hub boot could light the illuminator; the pull-down holds it off. Datasheet: if PWM is unused connect it to I (p.3)." },
+      { "2": "ST" },
+      { "2c": "Open-collector open-load status output (p.3, 7.3.2 p.7): goes low after the D delay when the R(REF) drop falls below 25 mV typ (15-40 mV thresholds, p.5). Datasheet asks for a pull-up >= 4.7 k (p.3); Figure 6 uses 10 k to the microcontroller rail (p.10). Not wired in the default camera head: left open (an open-collector output with no pull-up draws nothing). If the hub wants open-LED diagnosis, wire ST to a hub GPIO input with 10k to that GPIO's IO rail (ST max 16 V recommended, p.4) - do not pull it to RAW_5V if the GPIO is not 5 V tolerant." },
+      { "5": "D" },
+      { "5c": "Status delay capacitor to GND: t(STHL) = 10 ms per 47 nF (p.5, Figure 5 p.8, max 2.2 uF p.4). Left open: 'If no delay is needed, leave open' (p.3); status is unused here." },
+      { "7": "NC" },
+      { "7c": "No internal connection (p.3): leave open." },
+      { "9c": "Exposed thermal pad: solder to the PCB; 'may be connected to ground or left floating' (p.3); tied to GND with vias for heat spreading (p.12)." }
+    ],
+    "led-driver-o": {
+      "channels-i": 1,
+      "topology-s": "linear-high-side",
+      "iout-max-ma-i": 500,
+      "vin-min-mv-i": 4500,
+      "vin-max-mv-i": 42000,
+      "dimming-s": "pwm",
+      "iset-s": "R(REF) REF to GND (LED cathode on REF): I = 177 mV / R(REF), R(REF) 0.39-10 ohm"
+    },
+    "thermal-o": {
+      "rtheta-ja-c-per-w-f": 39,
+      "rtheta-jc-bot-c-per-w-f": 1.8,
+      "tj-max-c-i": 150
+    },
+    "specs-o": {
+      "iout-min-ma-i": 18,
+      "iout-max-ma-i": 454,
+      "iout-limit-ma-i": 600,
+      "iout-tolerance-pct-i": 5,
+      "vref-mv-typ-i": 177,
+      "vref-mv-min-i": 168,
+      "vref-mv-max-i": 185,
+      "dropout-mv-i": 350,
+      "dropout-max-mv-i": 700,
+      "dropout-at-ma-i": 300,
+      "iq-ma-typ-i": 12,
+      "iq-ma-max-i": 22,
+      "ioff-ua-max-i": 2,
+      "vpwm-high-min-mv-i": 2600,
+      "vpwm-low-max-mv-i": 700,
+      "pwm-delay-on-us-typ-i": 15,
+      "pwm-delay-on-us-max-i": 40,
+      "pwm-delay-off-us-typ-i": 15,
+      "pwm-delay-off-us-max-i": 40,
+      "pwm-freq-s": "NOT STATED: the datasheet gives no PWM frequency range; turn-on/off delay 15 us typ, 40 us max (p.5) bound the shortest usable PWM pulse",
+      "thermal-shutdown-s": "overtemperature protection (p.1), threshold not stated",
+      "protection-s": "short-circuit proof, reverse-polarity proof (supply -42 V abs), open-load detection (p.1, p.3)",
+      "source-s": "TL4242DRJR.pdf SLVS641B pages 3-5, 9-10",
+      "iout_accuracy_note-s": "I = V(REF)/R(REF), V(REF) 168-185 mV (p.5, 6.5): 9.31 ohm gives 18.0-19.9 mA for the 20 mA IR LED; R(REF) 0.39-10 ohm is the allowed range (p.4), but the output-current accuracy figure is specified only for 177-454 mA"
+    },
+    "supplies-ao": [
+      {
+        "rail-s": "I",
+        "role-s": "i",
+        "pins-as": [
+          "8"
+        ],
+        "vmin_mv": 4500,
+        "vmax_mv": 42000,
+        "i_max_ma": 22,
+        "i_step_ma": 22,
+        "step_source-o": {
+          "datasheet-s": "TL4242DRJR.pdf",
+          "page_n": 4,
+          "table-s": "6.5 Electrical Characteristics",
+          "derived-s": "upper bound: the operating max 22 mA (p4); the datasheet states no idle or low-power current for this rail"
+        },
+        "source-o": {
+          "datasheet-s": "TL4242DRJR.pdf",
+          "page_n": 4,
+          "table-s": "6.3 Recommended Operating Conditions"
+        },
+        "i_source-o": {
+          "datasheet-s": "TL4242DRJR.pdf",
+          "page_n": 4,
+          "table-s": "6.5 Electrical Characteristics"
+        }
+      }
+    ]
+  }
+}

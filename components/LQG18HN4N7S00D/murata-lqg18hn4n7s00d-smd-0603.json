@@ -1,0 +1,45 @@
+{
+  "component-o": {
+    "type-s": "inductor",
+    "vendor-s": "Murata",
+    "part-s": "LQG18HN4N7S00D",
+    "description-s": "4.7 nH ±0.3 nH 300 mA multilayer RF inductor, 0603, LQG18HN series (value-i holds 5: whole nH, as the design rounds 4.7 nH)",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {},
+      "distributor-s": "",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "490-1106-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/murata-electronics/LQG18HN4N7S00D/584315",
+        "datasheet-url-s": "https://pim.murata.com/asset/pim4/inductor/JELF243B-0002_PDF_INDUCTOR",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 19404,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.26",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0603" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "inductor"
+    ],
+    "specs-o": {
+      "irms_ma_i": 900,
+      "isat_ma_i": 900,
+      "current_note_s": "Murata LQG18HN datasheet: rated current Itemp 900 mA (temperature-rise based, rise not stated); air-core multilayer RF inductor, no saturation -- isat_ma_i = Itemp; the row's current-max-i 300 mA is lower (conservative)"
+    },
+    "passive-o": {
+      "value-i": 5,
+      "value-unit-s": "nh",
+      "current-max-i": 300,
+      "lead-style-s": "smd"
+    }
+  }
+}

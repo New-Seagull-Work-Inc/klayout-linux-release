@@ -1,0 +1,189 @@
+{
+  "component-o": {
+    "type-s": "regulator",
+    "vendor-s": "Texas Instruments",
+    "part-s": "LM1117MPX-3.3/NOPB",
+    "description-s": "800-mA Low-Dropout Linear Regulator, Fixed 3.3V Output",
+    "package-ao": [
+      { "ptype-s": "sot-223" },
+      { "ppins-i": 4 }
+    ],
+    "blocks-as": [
+      "regulator",
+      "regulator-ldo",
+      "reference-bandgap",
+      "thermal-shutdown",
+      "current-limit"
+    ],
+    "interfaces-as": [
+      "ds-power-rx",
+      "ds-power-tx"
+    ],
+    "voltages-ao": [
+      { "vin": 15000 },
+      { "vout": 3300 }
+    ],
+    "max_currents-ao": [
+      { "out": 800 }
+    ],
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": 0,
+          "max-i": 125
+        }
+      },
+      {
+        "storage-o": {
+          "min-i": -65,
+          "max-i": 150
+        }
+      },
+      {
+        "junction-o": {
+          "min-i": 0,
+          "max-i": 150
+        }
+      }
+    ],
+    "pins-ao": [
+      { "1": "adj/gnd" },
+      { "2": "vout" },
+      { "3": "vin" },
+      { "4": "vout" }
+    ],
+    "cfgpins-ao": [],
+    "stdpins-ao": [
+      { "1": "avss" },
+      { "3": "ds-power-rx" },
+      { "3": "10uf-avss" },
+      { "2": "ds-power-tx" },
+      { "2": "10uf-avss" }
+    ],
+    "specs-o": {
+      "topology_s": "ldo",
+      "adjustable_b": false,
+      "vin_min_mv": 4750,
+      "vin_max_mv": 15000,
+      "vout_fixed_mv": 3300,
+      "vout_accuracy_pct_x10": 10,
+      "iout_max_ma": 800,
+      "iq_typ_ua": 5000,
+      "dropout_mv_at_iout": 1200,
+      "psrr_db_at_1khz": 75,
+      "has_enable_b": false,
+      "has_pgood_b": false,
+      "has_thermal_shutdown_b": true,
+      "has_current_limit_b": true,
+      "pinout_note_s": "SNOS412N p3, DCY (SOT-223): 1 ADJ/GND, 2 VOUT, 3 VIN, tab (4) VOUT. VIN min is the line-regulation test floor (p5); 10 uF tantalum on output for stability",
+      "load_regulation_mv_per_a": 12.5,
+      "load_regulation_typ_mv_per_a": 1.25,
+      "load_regulation_source-o": {
+        "datasheet-s": "LM1117MPX-3.3_NOPB.pdf",
+        "page_n": 5,
+        "table-s": "6.5 Electrical Characteristics, Load Regulation LM1117-3.3: 1 mV typ (TJ 25 C) / 10 mV max (0-125 C), VIN 4.75 V, 0 <= IOUT <= 800 mA",
+        "derived": "10 mV / 0.8 A = 12.5 mV/A (max, the value klayout reads); 1 mV / 0.8 A = 1.25 mV/A typ"
+      },
+      "line_regulation_max_mv": 6,
+      "cout_min_nf": 10000,
+      "cout_esr_min_mohm": 300,
+      "cout_esr_max_mohm": 22000,
+      "cout_source-o": {
+        "datasheet-s": "LM1117MPX-3.3_NOPB.pdf",
+        "page_n": 15,
+        "table-s": "8.2.2.1.3 Output Capacitor: minimum 10 uF if tantalum; ESR 0.3-22 ohm; any increase only improves stability/transient (no max stated; p12 notes >= 1000 uF needs the VOUT-VIN protection diode)"
+      },
+      "ilimit_min_ma": 800,
+      "ilimit_typ_ma": 1200,
+      "ilimit_max_ma": 1500,
+      "ilimit_source-o": {
+        "datasheet-s": "LM1117MPX-3.3_NOPB.pdf",
+        "page_n": 6,
+        "table-s": "6.5 Electrical Characteristics: ILIMIT 800/1200/1500 mA, VIN-VOUT 5 V, TJ 25 C"
+      },
+      "not_stated-o": {
+        "loop_crossover_khz": "not stated (no loop bandwidth/crossover figure)",
+        "output_impedance_mohm": "no Zout curve; Figure 8 (p10) is the LM1117-5.0 load transient scope shot, no numbers"
+      }
+    },
+    "non-technical-o": {
+      "lifecycle-o": {
+        "samples": {
+          "month": 0,
+          "year": 0
+        },
+        "mp": {
+          "month": 0,
+          "year": 0
+        },
+        "eol": {
+          "month": 0,
+          "year": 0
+        }
+      },
+      "distributor-s": "Texas Instruments",
+      "cost-o": {
+        "10": 0.995,
+        "100": 0.766,
+        "1K": 0.403,
+        "10K": 0.403,
+        "100K": 0.403
+      },
+      "lifecycle-s": "active",
+      "lifecycle-source-s": "DigiKey: Active; manufacturer (Nexar): ACTIVE",
+      "lifecycle-checked-s": "2026-10-19",
+      "stock-digikey-i": 15049,
+      "stock-mouser-i": 57400,
+      "lead-weeks-digikey-i": 20,
+      "lead-weeks-mouser-i": 20,
+      "stock-checked-s": "2026-10-19",
+      "moq-i": 1,
+      "stock-i": 1666,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "LM1117MPX-3.3/NOPBCT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/texas-instruments/LM1117MPX-3-3-NOPB/366733",
+        "datasheet-url-s": "https://www.ti.com/lit/ds/symlink/lm1117.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1721700739746",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 14897,
+        "moq-i": 1,
+        "unit-price-s": "USD 1.21",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "supplies-ao": [
+      {
+        "rail-s": "VIN",
+        "role-s": "vin",
+        "pins-as": [
+          "3"
+        ],
+        "vmin_mv": 4750,
+        "vmax_mv": 15000,
+        "source-o": {
+          "datasheet-s": "LM1117MPX-3.3_NOPB.pdf",
+          "page_n": 4,
+          "table-s": "6.3 Recommended Operating Conditions (max); 6.5 Electrical Characteristics p5 line-regulation VIN (min)"
+        }
+      },
+      {
+        "rail-s": "VOUT",
+        "role-s": "vout",
+        "pins-as": [
+          "2"
+        ],
+        "vnom_mv": 3300,
+        "vmin_mv": 3235,
+        "vmax_mv": 3365,
+        "source-o": {
+          "datasheet-s": "LM1117MPX-3.3_NOPB.pdf",
+          "page_n": 5,
+          "table-s": "6.5 LM1117 Electrical Characteristics, VOUT LM1117-3.3: 3.267/3.3/3.333 V at TJ 25 C (IOUT 10 mA, VIN 5 V); 3.235-3.365 V over 0-125 C, 0 <= IOUT <= 800 mA, 4.75 V <= VIN <= 10 V (the range used here)"
+        }
+      }
+    ]
+  }
+}

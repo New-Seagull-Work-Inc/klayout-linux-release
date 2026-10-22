@@ -1,0 +1,79 @@
+{
+  "component-o": {
+    "specs-o": {
+      "esr_mohm": 25.46,
+      "esl_ph": 162,
+      "srf_mhz": 30.8269,
+      "dc_bias-ao": [
+        { "v_mv": 0, "c_pct": 100 },
+        { "v_mv": 1000, "c_pct": 100.7 },
+        { "v_mv": 1800, "c_pct": 100.4 },
+        { "v_mv": 3300, "c_pct": 97.6 },
+        { "v_mv": 5000, "c_pct": 92.4 },
+        { "v_mv": 10000, "c_pct": 73.7 },
+        { "v_mv": 12000, "c_pct": 66.5 },
+        { "v_mv": 16000, "c_pct": 53.9 },
+        { "v_mv": 20000, "c_pct": 44.3 },
+        { "v_mv": 25000, "c_pct": 34.6 },
+        { "v_mv": 35000, "c_pct": 22.9 },
+        { "v_mv": 50000, "c_pct": 14.3 }
+      ],
+      "esr_esl_dc_bias_source-s": "Samsung Electro-Mechanics product page chart data (product.samsungsem.com/mlcc/CL05B104KB54PN.do, datasheetData): |Z| and R 'Precise' model at 0 V, 25 degC -> ESR at SRF (|Z| min), ESL at 10x SRF; DC-bias delta-C curve at 1000 Hz (dsDcSign 1.0, AC level not otherwise stated), read 2026-10-21"
+    },
+    "type-s": "capacitor",
+    "vendor-s": "Samsung Electro-Mechanics",
+    "part-s": "CL05B104KB54PNC",
+    "description-s": "100 nF ±10% 50 V X7R 0402 multilayer ceramic capacitor (MLCC), SMD, 0.5 mm thick",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.03364,
+        "100": 0.0192,
+        "1K": 0.01222,
+        "10K": 0.00895,
+        "100K": 0.00895
+      },
+      "distributor-s": "TME",
+      "moq-i": 1,
+      "order-mult-i": 1,
+      "lead-time-weeks-i": 1,
+      "stock-o": {
+        "digikey-i": 748061,
+        "mouser-i": 469451,
+        "newark-i": 10142,
+        "checked-s": "2026-10-21",
+        "newark-checked-s": "2026-10-15",
+        "source-s": "DigiKey Product Information API v4 (max QuantityAvailable over packagings); Mouser and Newark public product/search pages via browser; null = not listed; newark-i copied from architect ltl.db component_specs.stock_newark_i (stock-ltl run of 2026-10-15); DigiKey/Mouser checked 2026-10-21"
+      },
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "1276-CL05B104KB54PNCCT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL05B104KB54PNC/11487801",
+        "datasheet-url-s": "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL05B104KB54PN",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 748561,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.10",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0402" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-ceramic"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 100000,
+      "value-unit-s": "nf",
+      "voltage-max-i": 50000,
+      "tolerance-pct-x10": 100,
+      "dielectric-s": "x7r"
+    }
+  }
+}

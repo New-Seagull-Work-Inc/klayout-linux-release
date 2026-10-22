@@ -1,0 +1,68 @@
+{
+  "component-o": {
+    "specs-o": {
+      "esr_mohm": 5.51,
+      "esl_ph": 315,
+      "srf_mhz": 3.5617,
+      "dc_bias-ao": [
+        { "v_mv": 0, "c_pct": 100 },
+        { "v_mv": 1000, "c_pct": 98.1 },
+        { "v_mv": 1800, "c_pct": 90.4 },
+        { "v_mv": 2500, "c_pct": 81.6 },
+        { "v_mv": 3300, "c_pct": 71.1 },
+        { "v_mv": 5000, "c_pct": 51.8 },
+        { "v_mv": 6300, "c_pct": 41.1 },
+        { "v_mv": 10000, "c_pct": 24.7 },
+        { "v_mv": 12000, "c_pct": 20.3 },
+        { "v_mv": 16000, "c_pct": 14.7 },
+        { "v_mv": 20000, "c_pct": 11.6 },
+        { "v_mv": 25000, "c_pct": 9.3 }
+      ],
+      "esr_esl_dc_bias_source-s": "Murata SimSurfing data (ds.murata.co.jp/simserve): measured S-parameters (series-thru, 25 C, 0 V) -> ESR at SRF, ESL at 10x SRF; DC-bias CSV (25 C, AC 1 Vrms), read 2026-10-21"
+    },
+    "type-s": "capacitor",
+    "vendor-s": "Murata",
+    "part-s": "GRM188R61E475KE11D",
+    "description-s": "4.7 uF ±10% 25 V X5R 0603 MLCC (Murata catalog: '4.7µF ±10% GRM188R61E475KE11#'); active replacement for the NRND CL10A475KA8NQNC, second source for C1608X5R1E475K080AC",
+    "non-technical-o": {
+      "cost-o": {
+        "10": 0.038,
+        "100": 0.038,
+        "1K": 0.029,
+        "10K": 0.024,
+        "100K": 0.023
+      },
+      "distributor-s": "CoreStaff",
+      "moq-i": 1,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "490-7203-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61E475KE11D/3900465",
+        "datasheet-url-s": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/Chip_Multilayer_CAT2021_MLCC.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 663462,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.26",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0603" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-ceramic"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 4700000,
+      "value-unit-s": "uf",
+      "voltage-max-i": 25000,
+      "tolerance-pct-x10": 100,
+      "dielectric-s": "x5r"
+    }
+  }
+}

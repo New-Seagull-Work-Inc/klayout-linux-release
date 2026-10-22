@@ -1,0 +1,42 @@
+{
+  "component-o": {
+    "type-s": "capacitor",
+    "vendor-s": "Vishay",
+    "part-s": "K333K15X7RF5TL2",
+    "description-s": "33 nF 50 V ±10% X7R radial leaded ceramic capacitor, K series",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {},
+      "distributor-s": "",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "BC1081CT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/K333K15X7RF5TL2/286535",
+        "datasheet-url-s": "https://www.vishay.com/docs/45171/kseries.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 37768,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.30",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "radial-2.54mm" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-ceramic"
+    ],
+    "passive-o": {
+      "value-i": 33000,
+      "value-unit-s": "nf",
+      "voltage-max-i": 50000,
+      "tolerance-pct-x10": 100,
+      "dielectric-s": "x7r",
+      "lead-style-s": "radial"
+    }
+  }
+}

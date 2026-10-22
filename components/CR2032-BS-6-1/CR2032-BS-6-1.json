@@ -1,0 +1,68 @@
+{
+  "component-o": {
+    "type-s": "connector",
+    "subtype-s": "io-battery-holder",
+    "vendor-s": "Q&J (QIJEY)",
+    "part-s": "CR2032-BS-6-1",
+    "description-s": "SMD CR2032 coin-cell holder (battery base), phosphor-bronze contacts, 2 SMD tabs",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "distributor-s": "LCSC",
+      "cost-o": {
+        "1": 0.139,
+        "50": 0.1308,
+        "1K": 0.1088,
+        "5K": 0.1047
+      },
+      "moq-i": 1,
+      "order-mult-i": 1,
+      "stock-i": 25914,
+      "stock-note-s": "LCSC C70377, 25914 in stock (pcbparts jlc_stock_check 2026-10-21); reel 60"
+    },
+    "package-ao": [
+      {
+        "ptype-s": "smd-cr2032-holder"
+      },
+      {
+        "ppins-i": 2
+      }
+    ],
+    "blocks-as": [
+      "battery-holder"
+    ],
+    "interfaces-as": [
+      "ds-batt-rxtx",
+      "ds-battneg-rxtx"
+    ],
+    "pins-ao": [
+      {
+        "1": "-"
+      },
+      {
+        "2": "+"
+      }
+    ],
+    "stdpins-ao": [
+      {
+        "2": "ds-batt-rxtx"
+      },
+      {
+        "1": "ds-battneg-rxtx"
+      }
+    ],
+    "connector-o": {
+      "pin_count_i": 2,
+      "mount_s": "smt",
+      "family_s": "cr2032-holder",
+      "contact_plating_s": "phosphor bronze (base material per LCSC listing)"
+    },
+    "footprint_check-s": "board footprint power:BAT-TH_CR2032-BS-6-1 is the LCSC/EasyEDA footprint of C70377 (3D model BAT-SMD_L28.5-W16.0-H5.5-LS31.3_CR2032-BS-6-1); pads 4.2 x 3.8 at x +/-14.39; pad 1 GND, pad 2 battery +. No maker drawing to check against.",
+    "not_stated-o": {
+      "datasheet": "no datasheet: LCSC reports no datasheet PDF for C70377 (procurement datasheet, 2026-10-21); lcsc.com/datasheet/C70377.pdf is a stub page; no Q&J site copy found",
+      "contact_resistance_mohm": "not stated (no datasheet)",
+      "height_mm": "not stated by a datasheet; the EasyEDA model name says H5.5 mm (L28.5 W16.0), not a maker figure",
+      "current_per_pin_ma_i": "not stated",
+      "pin_polarity": "which tab is + taken from the board netlist (pad 2 -> SW2/SW3 -> +BATT), not a maker drawing"
+    }
+  }
+}

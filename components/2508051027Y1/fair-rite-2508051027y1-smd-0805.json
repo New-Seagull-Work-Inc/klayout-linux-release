@@ -1,0 +1,50 @@
+{
+  "component-o": {
+    "type-s": "ferrite-bead",
+    "vendor-s": "Fair-Rite",
+    "part-s": "2508051027Y1",
+    "description-s": "1000 Ω ±25% @ 100 MHz multilayer chip ferrite bead, 0805 SMD, 1 A max current, 0.3 Ω max DC resistance; buyable replacement for MMZ2012Y102BT000",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.0517,
+        "100": 0.031,
+        "1K": 0.0276,
+        "10K": 0.0276,
+        "100K": 0.0276
+      },
+      "distributor-s": "Arrow Electronics",
+      "moq-i": 1,
+      "order-mult-i": 1,
+      "stock-i": 70550,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "1934-1009-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/fair-rite-products-corp/2508051027Y1/8594251",
+        "datasheet-url-s": "https://www.fair-rite.com/wp-content/themes/fair-rite/print_product.php?pid=19184",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 158032,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.11",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0805" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "ferrite-bead"
+    ],
+    "passive-o": {
+      "value-i": 300,
+      "value-unit-s": "r",
+      "current-max-i": 1000,
+      "tolerance-pct-x10": 250,
+      "lead-style-s": "smd"
+    }
+  }
+}

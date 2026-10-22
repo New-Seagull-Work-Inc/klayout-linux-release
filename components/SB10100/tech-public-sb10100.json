@@ -1,0 +1,28 @@
+{
+  "component-o": {
+    "type-s": "diode",
+    "vendor-s": "Tech Public",
+    "part-s": "SB10100",
+    "package-ao": [
+      { "ptype-s": "Schottky Diodes" },
+      { "ppins-i": 2 }
+    ],
+    "passive-o": {},
+    "non-technical-o": {
+      "cost-o": {
+        "10K": 0.0848,
+        "100K": 0.0827
+      },
+      "distributor-s": "UnikeyIC",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "product-url-s": "https://www.digikey.com/en/products/detail/goodwork/SB10100/29516061",
+        "datasheet-url-s": "https://www.goodworksemi.com/wp-content/uploads/2026/05/GK-TO-277_SB1045_THRU_SB10100-2025.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 30000,
+        "verified-on-s": "2026-10-21"
+      }
+    }
+  }
+}

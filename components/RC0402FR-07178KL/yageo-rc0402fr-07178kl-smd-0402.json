@@ -1,0 +1,50 @@
+{
+  "component-o": {
+    "type-s": "resistor",
+    "vendor-s": "Yageo",
+    "part-s": "RC0402FR-07178KL",
+    "description-s": "178 kΩ ±1% 0.0625 W thick film chip resistor, 0402 SMD, ±100 ppm/°C",
+    "non-technical-o": {
+      "cost-o": {
+        "10": 0.013,
+        "100": 0.00679,
+        "1K": 0.00441,
+        "10K": 0.00193,
+        "100K": 0.00168
+      },
+      "distributor-s": "TME",
+      "moq-i": 1,
+      "order-mult-i": 1,
+      "lead-time-weeks-i": 40,
+      "stock-i": 19930,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "YAG3010CT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-07178KL/5280870",
+        "datasheet-url-s": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 36978,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.10",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0402" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "resistor-thick-film"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 178000000,
+      "value-unit-s": "k",
+      "power-mw-i": 63,
+      "tolerance-pct-x10": 10
+    }
+  }
+}

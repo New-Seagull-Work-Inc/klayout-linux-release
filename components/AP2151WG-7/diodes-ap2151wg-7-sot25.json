@@ -1,0 +1,126 @@
+{
+  "component-o": {
+    "type-s": "efuse",
+    "vendor-s": "Diodes Incorporated",
+    "part-s": "AP2151WG-7",
+    "description-s": "2.7 V to 5.5 V 0.5 A single-channel current-limited power switch, 95 mOhm, 0.8 A typ limit, active-high enable, open-drain fault flag, reverse blocking, SOT25; microSD card power switch",
+    "package-ao": [
+      { "ptype-s": "SOT-23-5" },
+      { "ppins-i": 5 }
+    ],
+    "blocks-as": [
+      "efuse-load-switch"
+    ],
+    "interfaces-as": [
+      "ds-power-rx",
+      "ds-power-tx"
+    ],
+    "voltages-ao": [
+      { "vin_min": 2700 },
+      { "vin_max": 5500 }
+    ],
+    "max_currents-ao": [
+      { "out": 500 }
+    ],
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -40,
+          "max-i": 85
+        }
+      },
+      {
+        "junction-o": {
+          "min-i": -40,
+          "max-i": 150
+        }
+      },
+      {
+        "storage-o": {
+          "min-i": -65,
+          "max-i": 150
+        }
+      }
+    ],
+    "pins-ao": [
+      { "1": "out" },
+      { "2": "gnd" },
+      { "3": "flg" },
+      { "4": "en" },
+      { "5": "in" }
+    ],
+    "stdpins-ao": [
+      { "5": "ds-power-rx" },
+      { "5": "100nf-avss" },
+      { "1": "ds-power-tx" },
+      { "1": "100nf-avss" },
+      { "2": "avss" },
+      { "4": "ds-sd_pwr-rx" }
+    ],
+    "cfgpins-ao": [
+      { "3": "flg" },
+      { "3c": "FLG: open-drain over-current / over-temperature flag, active low, 7 ms deglitch (Pin Descriptions p2). Unused here: left open. Wire it to a host input with a 10k pull-up (Typical Applications Circuit p2) to report card faults." },
+      { "4": "en" },
+      { "4c": "EN active high (AP2151), do not float: driven by the host's card-power GPIO (ds-sd_pwr-rx). VIH 2 V min, VIL 0.8 V max (Recommended Operating Conditions p3), so a 1.8 V GPIO cannot drive it; same 2 V threshold as the SY6280AAC it replaces." }
+    ],
+    "efuse-o": {
+      "vin-min-mv-i": 2700,
+      "vin-max-mv-i": 5500,
+      "continuous-current-ma-i": 500,
+      "current-limit-adjustable-b": false,
+      "current-limit-min-ma-i": 600,
+      "current-limit-typ-ma-i": 800,
+      "current-limit-max-ma-i": 1000,
+      "short-circuit-current-ma-i": 600,
+      "on-resistance-mohm-i": 95,
+      "on-resistance-max-mohm-i": 115,
+      "overvoltage-clamp-b": false,
+      "reverse-current-block-b": true,
+      "hotswap-b": true,
+      "thermal-shutdown-b": true,
+      "fault-flag-b": true,
+      "quiescent-current-ua-i": 45,
+      "rise-time-us-i": 600,
+      "rth-ja-c-per-w-i": 157,
+      "source-o": {
+        "datasheet-s": "AP2151WG-7.pdf",
+        "page_n": 4,
+        "table-s": "Electrical Characteristics (TA 25 C, VIN 5 V): RDS(ON) 95 / 115 mOhm (SOT25, 0.5 A), ILIMIT 0.6 / 0.8 / 1.0 A (-40 to 85 C), ISHORT 0.6 A, IQ 45 uA, tR 0.6 ms, TSHDN 140 C, RthJA SOT25 157 C/W; Recommended Operating Conditions p3: VIN 2.7-5.5 V, IOUT 0-500 mA; IN / OUT bypass 0.01-0.1 uF ceramic (p10)"
+      }
+    },
+    "replaces_s": "SY6280AAC (Silergy, not at DigiKey / Mouser / Newark): same SOT-23-5 OUT/GND/-/EN/IN pin order and 2 V EN threshold; pin 3 is a fault flag instead of ISET (fixed 0.6-1.0 A limit, no Rset); 0.5 A continuous",
+    "supplies-ao": [
+      {
+        "rail-s": "IN",
+        "role-s": "in",
+        "pins-as": [
+          "5"
+        ],
+        "vmin_mv": 2700,
+        "vmax_mv": 5500,
+        "source-o": {
+          "datasheet-s": "AP2151WG-7.pdf",
+          "page_n": 3,
+          "table-s": "Recommended Operating Conditions"
+        }
+      }
+    ],
+    "non-technical-o": {
+      "source-o": {
+        "supplier-s": "Mouser",
+        "sku-s": "621-AP2151WG-7",
+        "package-s": "MouseReel",
+        "product-url-s": "https://www.mouser.com/ProductDetail/Diodes-Incorporated/AP2151WG-7?qs=ptj1V1atRApV9YrpcdpgyQ%3D%3D",
+        "datasheet-url-s": "https://www.diodes.com/assets/Datasheets/AP2141-51.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 4468,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.77",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21",
+        "source-note-s": "Mouser API read through the pcbparts lookup (procurement Mouser key invalid). DigiKey stocks 67070 but its lookup shows only the 3000-piece reel AP2151WGDITR-ND"
+      }
+    }
+  }
+}

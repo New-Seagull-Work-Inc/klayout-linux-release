@@ -1,0 +1,190 @@
+{
+  "component-o": {
+    "bringup-o": {
+      "interface-s": "SPI",
+      "address-s": "NOT STATED (SPI, chip-select addressed)",
+      "id-register-s": "9Fh Read Identification (manufacturer ID, memory type, capacity); 90h Manufacturer/Device ID",
+      "id-expect-s": "9Fh: C8h 60h 18h (GigaDevice); 90h: C8h 17h",
+      "check-s": "05h Read Status Register: WIP = 0 when idle; QE (S9) is 0 as delivered (Status Register 00h), so quad reads need QE written to 1 first (non-volatile)",
+      "source-s": "GD25LQ128E Rev1.1: ID table p20; 8.2 Initial Delivery State p46 (Status Register 00h, all bits 0); QE bit S9 non-volatile p14-15"
+    },
+    "type-s": "flash",
+    "vendor-s": "GigaDevice",
+    "part-s": "GD25LQ128ESIGR",
+    "description-s": "128 Mbit 1.8 V serial NOR flash, standard / dual / quad SPI and QPI, 120 MHz, 1.65 V to 2.0 V, -40 to 85 C, SOP8 208 mil, tape and reel. Delivered with QE = 0. The 100 nF VCC decoupling in stdpins-ao is common practice, not a datasheet value",
+    "package-ao": [
+      {
+        "ptype-s": "soic-8-208mil"
+      },
+      {
+        "ppins-i": 8
+      }
+    ],
+    "blocks-as": [
+      "flash",
+      "flash-nor"
+    ],
+    "interfaces-as": [
+      "ds-qspi-rxtx",
+      "ds-power-rx"
+    ],
+    "voltages-ao": [
+      {
+        "vcc": 1800
+      }
+    ],
+    "max_currents-ao": [
+      {
+        "vcc": 20
+      }
+    ],
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -40,
+          "max-i": 85
+        }
+      }
+    ],
+    "pins-ao": [
+      {
+        "1": "CS#"
+      },
+      {
+        "2": "SO (IO1)"
+      },
+      {
+        "3": "WP# (IO2)"
+      },
+      {
+        "4": "VSS"
+      },
+      {
+        "5": "SI (IO0)"
+      },
+      {
+        "6": "SCLK"
+      },
+      {
+        "7": "HOLD# (IO3)"
+      },
+      {
+        "8": "VCC"
+      }
+    ],
+    "stdpins-ao": [
+      {
+        "1": "ds-qspi-cs"
+      },
+      {
+        "2": "ds-qspi-io1"
+      },
+      {
+        "3": "ds-qspi-io2"
+      },
+      {
+        "4": "dvss"
+      },
+      {
+        "5": "ds-qspi-io0"
+      },
+      {
+        "6": "ds-qspi-clk"
+      },
+      {
+        "7": "ds-qspi-io3"
+      },
+      {
+        "8": "ds-power-rx"
+      },
+      {
+        "8": "100nf-gnd"
+      },
+      {
+        "8": "dvdd-1_8"
+      }
+    ],
+    "cfgpins-ao": [
+      {
+        "1": "CS#"
+      },
+      {
+        "1c": "CS# must not be selected before tVSL (2.5 ms after VCC min, Table 12 p46); a pull-up holds it deselected while the host pin floats. Value not given, 10k used as for the W25Q128JW it replaces."
+      },
+      {
+        "1": "10k-vcc"
+      },
+      {
+        "3": "WP# (IO2)"
+      },
+      {
+        "3c": "Write protect while QE = 0 (as delivered), IO2 once QE = 1. Wire to the host's IO2; until firmware sets QE, the host must hold it high (or a pull-up must). Pull-up 10k to VCC (value not given by the datasheet; common practice) so WP# reads high while QE = 0 and the host pin is not yet driven."
+      },
+      {
+        "3": "10k-vcc"
+      },
+      {
+        "7": "HOLD# (IO3)"
+      },
+      {
+        "7c": "Hold while QE = 0 (as delivered), IO3 once QE = 1. Wire to the host's IO3; until firmware sets QE, HOLD# low pauses the device, so the host must hold it high (or a pull-up must). Unlike W25Q128JWSIQ (QE = 1 from the factory), quad mode needs a one-time QE write. Pull-up 10k to VCC (value not given by the datasheet; common practice) so HOLD# reads high while QE = 0."
+      },
+      {
+        "7": "10k-vcc"
+      }
+    ],
+    "flash-o": {
+      "technology-s": "nor",
+      "interface-s": "spi-quad",
+      "density-mbit-i": 128,
+      "address-bytes-i": 3,
+      "clock-max-mhz-i": 120,
+      "vcc-min-mv-i": 1650,
+      "vcc-max-mv-i": 2000,
+      "icc-active-ma-i": 20,
+      "icc-standby-ua-i": 50,
+      "qe-default-i": 0
+    },
+    "replaces_s": "W25Q128JWSIQ (Winbond, 3 at DigiKey, 0 at Mouser): same SOP8 208 mil pinout and 1.8 V quad SPI; QE = 0 as delivered (Winbond IQ: QE = 1), 120 MHz vs 133 MHz, JEDEC ID C8 60 18 vs EF 60 18",
+    "supplies-ao": [
+      {
+        "rail-s": "VCC",
+        "role-s": "vcc",
+        "pins-as": [
+          "8"
+        ],
+        "i_max_ma": 20,
+        "i_typ_ma": 13,
+        "i_step_ma": 20,
+        "step_source-o": {
+          "datasheet-s": "GD25LQ128ESIGR.pdf",
+          "page_n": 48,
+          "table-s": "8.5 DC Characteristics",
+          "derived-s": "derived: operating max 20 mA (p48) less the smallest low-power current 0.001 mA (p48, ICC2 Deep Power-Down Current CS#=VCC, VIN=VCC or VSS)"
+        },
+        "source-o": {
+          "datasheet-s": "GD25LQ128ESIGR.pdf",
+          "page_n": 48,
+          "table-s": "8.5 DC Characteristics"
+        }
+      }
+    ],
+    "non-technical-o": {
+      "source-o": {
+        "supplier-s": "Mouser",
+        "sku-s": "363-GD25LQ128ESIGR",
+        "package-s": "Cut Tape",
+        "product-url-s": "https://www.mouser.com/ProductDetail/GigaDevice/GD25LQ128ESIGR?qs=GedFDFLaBXFJplGXMrCS1A%3D%3D",
+        "datasheet-url-s": "https://www.gigadevice.com.cn/Public/Uploads/uploadfile/files/20230926/DS-00533-GD25LQ128E-Rev1.1.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 2086,
+        "moq-i": 1,
+        "unit-price-s": "USD 3.02",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21",
+        "source-note-s": "Mouser API read through the pcbparts lookup (procurement Mouser key invalid). DigiKey stocks 3457 but its lookup shows only the 2000-piece reel 1970-GD25LQ128ESIGRTR-ND"
+      }
+    }
+  }
+}

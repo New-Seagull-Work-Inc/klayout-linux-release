@@ -1,0 +1,45 @@
+{
+  "component-o": {
+    "type-s": "resistor",
+    "vendor-s": "Yageo",
+    "part-s": "MFR-25FBF52-1M",
+    "description-s": "1 MOhm 1% 0.25 W axial metal film resistor, thru-hole, MFR-25 series",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "1K": 0.0139,
+        "10K": 0.0139,
+        "100K": 0.0139
+      },
+      "distributor-s": "TTI",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "1.00MXBK-ND",
+        "package-s": "Bulk",
+        "product-url-s": "https://www.digikey.com/en/products/detail/yageo/MFR-25FBF52-1M/13714",
+        "datasheet-url-s": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 27009,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.10",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "axial" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "resistor-metal-film"
+    ],
+    "passive-o": {
+      "value-i": 1000000000,
+      "value-unit-s": "ohm",
+      "power-mw-i": 250,
+      "tolerance-pct-x10": 10,
+      "lead-style-s": "axial"
+    }
+  }
+}

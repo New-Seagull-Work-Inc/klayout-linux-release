@@ -1,0 +1,51 @@
+{
+  "component-o": {
+    "type-s": "capacitor",
+    "vendor-s": "Panasonic",
+    "part-s": "EEU-FR1H331L",
+    "description-s": "330 µF 50 V ±20% low-ESR radial aluminum electrolytic capacitor, FR series, 10 x 25 mm, 5.0 mm lead spacing, 105 °C; buyable replacement for EEU-FR1H331",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.13,
+        "100": 0.13,
+        "1K": 0.13,
+        "10K": 0.13,
+        "100K": 0.13
+      },
+      "distributor-s": "RS (Formerly Allied Electronics)",
+      "moq-i": 1,
+      "order-mult-i": 1,
+      "stock-i": 681,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "P14460-ND",
+        "package-s": "Bulk",
+        "product-url-s": "https://www.digikey.com/en/products/detail/panasonic-industry/EEU-FR1H331L/2433594",
+        "datasheet-url-s": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1259.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 0,
+        "moq-i": 1,
+        "unit-price-s": "USD 1.46",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "radial-electrolytic" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-electrolytic"
+    ],
+    "passive-o": {
+      "value-i": 330000000,
+      "value-unit-s": "uf",
+      "voltage-max-i": 50000,
+      "tolerance-pct-x10": 200,
+      "dielectric-s": "aluminum-electrolytic",
+      "lead-style-s": "radial"
+    }
+  }
+}

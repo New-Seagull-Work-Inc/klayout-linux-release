@@ -1,0 +1,31 @@
+{
+  "component-o": {
+    "type-s": "capacitor",
+    "vendor-s": "Murata",
+    "part-s": "GRM1885C2A100JA01D",
+    "description-s": "0603 10 pF 100 V ±5% Tolerance C0G SMT Multilayer Ceramic Capacitor",
+    "package-ao": [
+      { "ptype-s": "Ceramic Capacitors" },
+      { "ppins-i": 2 }
+    ],
+    "passive-o": {
+      "lead-style-s": "smd"
+    },
+    "non-technical-o": {
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "490-6388-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/murata-electronics/GRM1885C2A100JA01D/2611301",
+        "datasheet-url-s": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/Chip_Multilayer_CAT2021_MLCC.pdf",
+        "lifecycle-s": "nrnd",
+        "status-s": "Not For New Designs",
+        "available-i": 91578,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.14",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    }
+  }
+}

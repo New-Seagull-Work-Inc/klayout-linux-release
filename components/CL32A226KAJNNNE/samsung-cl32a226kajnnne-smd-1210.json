@@ -1,0 +1,51 @@
+{
+  "component-o": {
+    "type-s": "capacitor",
+    "vendor-s": "Samsung Electro-Mechanics",
+    "part-s": "CL32A226KAJNNNE",
+    "description-s": "22 uF ±10% 25 V X5R 1210 MLCC; second source (1210 footprint) for TMK316BBJ226ML-T",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.5,
+        "100": 0.205,
+        "1K": 0.162,
+        "10K": 0.155,
+        "100K": 0.155
+      },
+      "distributor-s": "Newark",
+      "moq-i": 1,
+      "order-mult-i": 1,
+      "stock-i": 509,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "1276-1101-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL32A226KAJNNNE/3886759",
+        "datasheet-url-s": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/42/CL32A226KAJNNNE_Spec.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 0,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.61",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-1210" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-ceramic"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 22000000,
+      "value-unit-s": "uf",
+      "voltage-max-i": 25000,
+      "tolerance-pct-x10": 100,
+      "dielectric-s": "x5r"
+    }
+  }
+}

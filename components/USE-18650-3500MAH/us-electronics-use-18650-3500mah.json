@@ -1,0 +1,77 @@
+{
+  "component-o": {
+    "type-s": "battery",
+    "vendor-s": "US Electronics Inc.",
+    "part-s": "USE-18650-3500MAH",
+    "description-s": "US Electronics USE-18650-3500mAh 18650 Li-ion cell, 3.6 V nominal, 3500 mAh typ / 3250 mAh min, button top, unprotected",
+    "package-ao": [
+      { "ptype-s": "Batteries and Accessories" },
+      { "ppins-i": 2 }
+    ],
+    "battery-o": {
+      "chemistry-s": "lithium-ion",
+      "cell-format-s": "18650",
+      "rechargeable-b": true,
+      "capacity-mah-i": 3250,
+      "capacity-typ-mah-i": 3500,
+      "voltage-nominal-mv-i": 3600,
+      "voltage-charge-max-mv-i": 4200,
+      "voltage-cutoff-mv-i": 2750,
+      "energy-wh-x10-i": 117,
+      "discharge-max-c-x10-i": 10,
+      "charge-max-c-x10-i": 10,
+      "impedance-max-mohm-i": 130,
+      "length-max-mm-x10-i": 652,
+      "diameter-max-mm-x10-i": 186,
+      "weight-g-i": 49,
+      "charge-temp-c-ao": [
+        { "min-i": 0 },
+        { "max-i": 45 }
+      ],
+      "discharge-temp-c-ao": [
+        { "min-i": -20 },
+        { "max-i": 60 }
+      ],
+      "protection-b": false,
+      "source-o": {
+        "datasheet-s": "USE-18650-3500MAH.pdf",
+        "page_n": 5,
+        "table-s": "4. Product Specification, Table 1: rated 3500 mAh typ / 3250 mAh min at 0.2C, nominal 3.6 V, cut-off 2.75 V, charge 4.2 V +/- 0.03 V, AC impedance <= 130 mOhm, max continuous charge 1.0C and discharge 1.0C, charge 0-45 C, discharge -20-60 C, 49 g, 65.2 x 18.6 mm max; energy = 3250 mAh x 3.6 V"
+      }
+    },
+    "replaces_s": "NCR18650B (Panasonic, no franchise distributor; 3350 mAh, 2C discharge): 3250 mAh min but 1C (3.25 A) max continuous discharge",
+    "pins-ao": [
+      { "1": "+" },
+      { "2": "-" }
+    ],
+    "interfaces-as": [
+      "ds-batt-rxtx",
+      "ds-power-tx",
+      "ds-battneg-rxtx"
+    ],
+    "stdpins-ao": [
+      { "1": "ds-power-tx" },
+      { "1": "ds-batt-rxtx" },
+      { "2": "ds-battneg-rxtx" }
+    ],
+    "blocks-as": [
+      "battery-lithium-ion"
+    ],
+    "non-technical-o": {
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "3544-USE-18650-3500MAH-ND",
+        "product-url-s": "https://www.digikey.com/en/products/detail/us-electronics-inc/USE-18650-3500MAH/23023589",
+        "datasheet-url-s": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6166/USE-18650-3500mah.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 751,
+        "moq-i": 2,
+        "unit-price-s": "USD 5.98",
+        "price-qty-i": 2,
+        "verified-on-s": "2026-10-21",
+        "source-note-s": "DigiKey Product Information read through the pcbparts lookup (procurement DigiKey app over its daily limit)"
+      }
+    }
+  }
+}

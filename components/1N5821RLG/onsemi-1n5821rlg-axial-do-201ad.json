@@ -1,0 +1,50 @@
+{
+  "component-o": {
+    "type-s": "diode",
+    "vendor-s": "onsemi",
+    "part-s": "1N5821RLG",
+    "description-s": "3 A 30 V Schottky barrier rectifier, DO-201AD axial (case 267); buyable replacement for 1N5821",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.4123,
+        "100": 0.3377,
+        "1K": 0.2467,
+        "10K": 0.1969,
+        "100K": 0.1969
+      },
+      "distributor-s": "Verical",
+      "moq-i": 9,
+      "stock-i": 439,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "1N5821RLGOSCT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/onsemi/1N5821RLG/918062",
+        "datasheet-url-s": "https://www.onsemi.com/pub/Collateral/1N5820-D.PDF",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 13037,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.97",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "axial-do-201ad" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "diode-schottky"
+    ],
+    "passive-o": {
+      "voltage-max-i": 30000,
+      "current-max-i": 3000,
+      "lead-style-s": "axial"
+    },
+    "thermal-o": {
+      "rtheta-ja-c-per-w-f": 28
+    }
+  }
+}

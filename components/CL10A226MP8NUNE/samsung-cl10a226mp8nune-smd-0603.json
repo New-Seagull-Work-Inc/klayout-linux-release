@@ -1,0 +1,82 @@
+{
+  "component-o": {
+    "specs-o": {
+      "esr_mohm": 3.6,
+      "esl_ph": 346,
+      "srf_mhz": 1.4529,
+      "dc_bias-ao": [
+        { "v_mv": 0, "c_pct": 100 },
+        { "v_mv": 1000, "c_pct": 91.2 },
+        { "v_mv": 1800, "c_pct": 73.7 },
+        { "v_mv": 2500, "c_pct": 60.4 },
+        { "v_mv": 3300, "c_pct": 47.5 },
+        { "v_mv": 5000, "c_pct": 31.3 },
+        { "v_mv": 6300, "c_pct": 24 },
+        { "v_mv": 10000, "c_pct": 13 }
+      ],
+      "esr_esl_dc_bias_source-s": "Samsung Electro-Mechanics product page chart data (product.samsungsem.com/mlcc/CL10A226MP8NUN.do, datasheetData): |Z| and R 'Precise' model at 0 V, 25 degC -> ESR at SRF (|Z| min), ESL at 10x SRF; DC-bias delta-C curve at 120 Hz (dsDcSign 0.5, AC level not otherwise stated), read 2026-10-21"
+    },
+    "type-s": "capacitor",
+    "vendor-s": "Samsung Electro-Mechanics",
+    "part-s": "CL10A226MP8NUNE",
+    "description-s": "22 µF ±20% 10 V X5R 0603 multilayer ceramic capacitor (MLCC), SMD, 1.6 x 0.8 x 0.8 mm, -55~85°C; second source for GRM188R61A226ME15D (STM32N6 SMPS bulk)",
+    "non-technical-o": {
+      "cost-o": {
+        "10": 0.0284,
+        "100": 0.0284,
+        "1K": 0.0284,
+        "10K": 0.0284,
+        "100K": 0.0284
+      },
+      "distributor-s": "Arrow Electronics",
+      "moq-i": 7,
+      "order-mult-i": 1,
+      "stock-i": 7,
+      "stock-o": {
+        "digikey-i": 1919,
+        "mouser-i": 5587,
+        "newark-i": 23000,
+        "checked-s": "2026-10-21",
+        "newark-checked-s": "2026-10-17",
+        "source-s": "DigiKey Product Information API v4 (max QuantityAvailable over packagings); Mouser and Newark public product/search pages via browser; null = not listed; newark-i copied from architect ltl.db component_specs.stock_newark_i (stock-ltl run of 2026-10-17); DigiKey/Mouser checked 2026-10-21"
+      },
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "1276-1274-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10A226MP8NUNE/3886932",
+        "datasheet-url-s": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2901/CL10A226MP8NUNC_Spec.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 1634,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.19",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0603" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-ceramic"
+    ],
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -55,
+          "max-i": 85
+        }
+      }
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 22000000,
+      "value-unit-s": "uf",
+      "voltage-max-i": 10000,
+      "tolerance-pct-x10": 200,
+      "dielectric-s": "x5r"
+    }
+  }
+}

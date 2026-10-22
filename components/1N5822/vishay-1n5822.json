@@ -1,0 +1,39 @@
+{
+  "component-o": {
+    "type-s": "diode",
+    "vendor-s": "Vishay",
+    "part-s": "1N5822",
+    "description-s": "Rectifier Diode, Schottky, 1 Phase, 1 Element, 3A, 40V V(RRM), Silicon, DO-201AD",
+    "package-ao": [
+      { "ptype-s": "Schottky Diodes" },
+      { "ppins-i": 2 }
+    ],
+    "passive-o": {
+      "lead-style-s": "axial"
+    },
+    "non-technical-o": {
+      "cost-o": {
+        "10": 0.1481,
+        "100": 0.1467,
+        "1K": 0.1452,
+        "10K": 0.0551,
+        "100K": 0.0551
+      },
+      "distributor-s": "Arrow Electronics",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "497-11370-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/stmicroelectronics/1N5822/1037332",
+        "datasheet-url-s": "https://www.st.com/content/ccc/resource/technical/document/datasheet/d8/3f/72/85/bc/90/4e/f7/CD00001626.pdf/files/CD00001626.pdf/jcr:content/translations/en.CD00001626.pdf",
+        "lifecycle-s": "obsolete",
+        "status-s": "Obsolete",
+        "available-i": 675,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.61",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    }
+  }
+}

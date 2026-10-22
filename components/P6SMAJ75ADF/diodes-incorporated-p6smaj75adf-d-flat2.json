@@ -1,0 +1,67 @@
+{
+  "component-o": {
+    "type-s": "tvs",
+    "vendor-s": "Diodes Incorporated",
+    "part-s": "P6SMAJ75ADF",
+    "description-s": "75V unidirectional TVS, 600W (10/1000us), VC 121.0V @ 4.9A, D-FLAT, for power-input surge protection",
+    "package-ao": [
+      { "ptype-s": "D-FLAT" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "tvs-diode"
+    ],
+    "interfaces-as": [
+      "ds-power-rx"
+    ],
+    "tvs-o": {
+      "bidirectional-b": false,
+      "standoff-voltage-mv-i": 75000,
+      "breakdown-voltage-min-mv-i": 83300,
+      "breakdown-voltage-max-mv-i": 95800,
+      "clamping-voltage-mv-i": 121000,
+      "peak-pulse-current-a-i": 5,
+      "peak-pulse-power-w-i": 600,
+      "pulse-waveform-s": "10/1000us",
+      "reverse-leakage-ua-i": 1
+    },
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -55,
+          "max-i": 150
+        }
+      },
+      {
+        "storage-o": {
+          "min-i": -55,
+          "max-i": 150
+        }
+      }
+    ],
+    "non-technical-o": {
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "P6SMAJ7.5ADFDITR-ND",
+        "package-s": "Tape & Reel (TR)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/diodes-incorporated/P6SMAJ7-5ADF/7421871",
+        "datasheet-url-s": "https://www.diodes.com/assets/Datasheets/P6SMAJ5.0ADF-P6SMAJ85ADF.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 0,
+        "moq-i": 10000,
+        "unit-price-s": "USD 0.14",
+        "price-qty-i": 10000,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "pins-ao": [
+      { "1": "cathode" },
+      { "2": "anode" }
+    ],
+    "stdpins-ao": [
+      { "1": "ds-power-rx" },
+      { "2": "avss" }
+    ]
+  }
+}

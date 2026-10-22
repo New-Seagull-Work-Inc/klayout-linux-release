@@ -1,0 +1,125 @@
+{
+  "component-o": {
+    "type-s": "connector",
+    "subtype-s": "io-header-jack",
+    "vendor-s": "JST",
+    "part-s": "SM09B-GHS-TB",
+    "description-s": "JST GH side-entry SMT header, 1x9, 1.25 mm pitch, tin, 1.0 A per contact (AWG 26), 50 V, -25~85 C. LED sub-board link: pins 1-8 one LED drive (anode) each, pin 9 the common return (cathode, ground). Mates with GHR-09V-S / SSHL-002T-P0.2.",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {},
+      "distributor-s": ""
+    },
+    "package-ao": [
+      { "ptype-s": "header-1x9-1.25mm-right-angle-smd" },
+      { "ppins-i": 9 }
+    ],
+    "blocks-as": [
+      "header"
+    ],
+    "interfaces-as": [
+      "ds-led-rxtx",
+      "ds-ir_led-rxtx"
+    ],
+    "pins-ao": [
+      { "1": "LED1" },
+      { "2": "LED2" },
+      { "3": "LED3" },
+      { "4": "LED4" },
+      { "5": "LED5" },
+      { "6": "LED6" },
+      { "7": "LED7" },
+      { "8": "LED8" },
+      { "9": "GND" }
+    ],
+    "stdpins-ao": [
+      { "1": "ds-led-a" },
+      { "1": "ds-ir_led-a" },
+      { "2": "ds-led-a" },
+      { "2": "ds-ir_led-a" },
+      { "3": "ds-led-a" },
+      { "3": "ds-ir_led-a" },
+      { "4": "ds-led-a" },
+      { "4": "ds-ir_led-a" },
+      { "5": "ds-led-a" },
+      { "5": "ds-ir_led-a" },
+      { "6": "ds-led-a" },
+      { "6": "ds-ir_led-a" },
+      { "7": "ds-led-a" },
+      { "7": "ds-ir_led-a" },
+      { "8": "ds-led-a" },
+      { "8": "ds-ir_led-a" },
+      { "9": "dvss" },
+      { "9": "ds-led-c" },
+      { "9": "ds-ir_led-c" }
+    ],
+    "cfgpins-ao": [],
+    "max_currents-ao": [
+      { "1": 1000 },
+      { "2": 1000 },
+      { "3": 1000 },
+      { "4": 1000 },
+      { "5": 1000 },
+      { "6": 1000 },
+      { "7": 1000 },
+      { "8": 1000 },
+      { "9": 1000 }
+    ],
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -25,
+          "max-i": 85
+        }
+      }
+    ],
+    "connector-o": {
+      "contact_resistance_mohm": 30,
+      "contact_resistance_after_env_mohm": 50,
+      "contact_resistance_source-s": "JST GH catalog p1: Contact resistance: Initial value 30 mOhm max; after environmental tests 50 mOhm max",
+      "pin_count_i": 9,
+      "rows_i": 1,
+      "pitch_mm_f": 1.25,
+      "gender_s": "male",
+      "orientation_s": "right-angle",
+      "mount_s": "smt",
+      "current_per_pin_ma_i": 1000,
+      "current_awg_s": "26",
+      "voltage_max_v_i": 50,
+      "voltage_max_v_f": 50,
+      "contact_plating_s": "tin",
+      "locking_b": true,
+      "polarized_b": true,
+      "family_s": "gh",
+      "mates_with_part_s": "GHR-09V-S",
+      "courtyard_area_mm2_f": 100.5,
+      "board_area_mm2_f": 100.5,
+      "board_area_note_s": "courtyard plus the on-board part of the mate keepout (right-angle at the board edge: the mate overhangs the edge)",
+      "mate-o": {
+        "part_s": "GHR-09V-S",
+        "model_s": "footprints/SM09B-GHS-TB.3dshapes/SM09B-GHS-TB-mate.step",
+        "offset_mm_af": [
+          0,
+          0,
+          0
+        ],
+        "rotate_deg_af": [
+          0,
+          0,
+          0
+        ],
+        "keepout_mm_af": [
+          -7.85,
+          0.4,
+          7.85,
+          21.1
+        ],
+        "height_mm_f": 4.25,
+        "z_min_mm_f": 0,
+        "frame_s": "the board connector's footprint frame; the model is built there, so offset and rotation are zero",
+        "source_s": "JST GH catalog: GHR-09V-S housing B 12.50 x 4.15 x 5.7 mm (p2 table); side-entry header 4.25 high; mated housing overhangs the board edge, so the board gives only the courtyard; insertion depth estimated as for SM14B-GHS-TB"
+      },
+      "source_s": "JST GH catalog: GHR-09V-S housing B 12.50 x 4.15 x 5.7 mm (p2 table); side-entry header 4.25 high; mated housing overhangs the board edge, so the board gives only the courtyard; insertion depth estimated as for SM14B-GHS-TB"
+    }
+  }
+}

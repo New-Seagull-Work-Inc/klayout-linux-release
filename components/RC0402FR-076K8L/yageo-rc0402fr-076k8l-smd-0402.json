@@ -1,0 +1,50 @@
+{
+  "component-o": {
+    "type-s": "resistor",
+    "vendor-s": "Yageo",
+    "part-s": "RC0402FR-076K8L",
+    "description-s": "6.8 kOhm ±1% 0.063 W thick film chip resistor, 0402",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.0004,
+        "100": 0.0004,
+        "1K": 0.0004,
+        "10K": 0.0004,
+        "100K": 0.0004
+      },
+      "distributor-s": "Arrow Electronics",
+      "moq-i": 1,
+      "order-mult-i": 1,
+      "stock-i": 6900,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "311-6.80KLRCT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-076K8L/726642",
+        "datasheet-url-s": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 196992,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.10",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0402" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "resistor-thick-film"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 6800000,
+      "value-unit-s": "k",
+      "power-mw-i": 63,
+      "tolerance-pct-x10": 10
+    }
+  }
+}

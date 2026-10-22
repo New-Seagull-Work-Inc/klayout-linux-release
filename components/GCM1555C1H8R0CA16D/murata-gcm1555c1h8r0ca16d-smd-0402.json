@@ -1,0 +1,67 @@
+{
+  "component-o": {
+    "specs-o": {
+      "esr_mohm": 437.33,
+      "esl_ph": 321,
+      "srf_mhz": 3011,
+      "dc_bias-ao": [
+        { "v_mv": 0, "c_pct": 100 },
+        { "v_mv": 50000, "c_pct": 100 }
+      ],
+      "esr_esl_dc_bias_source-s": "Murata SimSurfing data (ds.murata.co.jp/simserve): measured S-parameters (series-thru, 25 C, 0 V) -> ESR at SRF, ESL at 10x SRF; DC-bias CSV (25 C, AC 1 Vrms), read 2026-10-21"
+    },
+    "type-s": "capacitor",
+    "vendor-s": "Murata",
+    "part-s": "GCM1555C1H8R0CA16D",
+    "description-s": "8.0 pF ±0.25 pF 50 V C0G (Class 1) 0402 multilayer ceramic capacitor (MLCC), SMD, 1.0 x 0.5 x 0.5 mm, -55~125°C; crystal load capacitor (2 x (8 pF CL - 4 pF stray)) for the STM32N6 HSE with ECS-250-8-33-JGN-TR",
+    "non-technical-o": {
+      "cost-o": {
+        "10": 0.023,
+        "100": 0.019,
+        "1K": 0.012,
+        "10K": 0.012,
+        "100K": 0.012
+      },
+      "distributor-s": "Newark",
+      "moq-i": 10,
+      "order-mult-i": 10,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "490-GCM1555C1H8R0CA16DCT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/murata-electronics/GCM1555C1H8R0CA16D/10705349",
+        "datasheet-url-s": "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCM1555C1H8R0CA16-01A-EN_PDF_CERAMICCAPACITORSMD",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 6743,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.10",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0402" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-ceramic"
+    ],
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -55,
+          "max-i": 125
+        }
+      }
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 8,
+      "value-unit-s": "pf",
+      "voltage-max-i": 50000,
+      "tolerance-pct-x10": 31,
+      "dielectric-s": "c0g"
+    }
+  }
+}

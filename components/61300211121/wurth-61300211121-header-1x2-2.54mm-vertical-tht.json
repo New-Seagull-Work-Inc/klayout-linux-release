@@ -1,0 +1,73 @@
+{
+  "component-o": {
+    "type-s": "connector",
+    "subtype-s": "io-header-jack",
+    "vendor-s": "Wurth Elektronik",
+    "part-s": "61300211121",
+    "description-s": "WR-PHD Straight Male, PCB Header, Through Hole, 1 Rows, 2 Contacts, 2.54mm Pitch",
+    "package-ao": [
+      { "ptype-s": "header" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "header"
+    ],
+    "interfaces-as": [
+      "ds-power-rxtx"
+    ],
+    "pins-ao": [
+      { "1": "v" },
+      { "2": "gnd" }
+    ],
+    "stdpins-ao": [
+      { "1": "ds-power-rxtx" },
+      { "2": "avss" }
+    ],
+    "procurement-o": {},
+    "non-technical-o": {
+      "lifecycle-s": "active",
+      "lifecycle-source-s": "DigiKey: not checked; manufacturer (Nexar): ACTIVE",
+      "lifecycle-checked-s": "2026-10-15",
+      "stock-digikey-i": 416682,
+      "stock-mouser-i": 233294,
+      "stock-newark-i": 106289,
+      "lead-weeks-digikey-i": 18,
+      "lead-weeks-mouser-i": 16,
+      "stock-checked-s": "2026-10-15",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "732-5315-ND",
+        "package-s": "Bag",
+        "product-url-s": "https://www.digikey.com/en/products/detail/würth-elektronik/61300211121/4846823",
+        "datasheet-url-s": "https://www.we-online.com/components/products/datasheet/61300211121.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 413173,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.13",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "max_currents-ao": [
+      { "1": 3000 },
+      { "2": 3000 }
+    ],
+    "max_currents_source-s": "Wurth WR-PHD datasheet: 'Rated Current IR 3 A' (procurement, 2026-10-17)",
+    "connector-o": {
+      "orientation_s": "vertical",
+      "pin_count_i": 2,
+      "family_s": "pin-header-2.54",
+      "courtyard_area_mm2_f": 12.7,
+      "board_area_mm2_f": 12.7,
+      "board_area_note_s": "courtyard",
+      "fields_source_s": "3 A, 250 V (Wurth datasheet on file)",
+      "pitch_mm_f": 2.54,
+      "current_per_pin_ma_i": 3000,
+      "voltage_max_v_f": 250,
+      "height_mm_f": 8.54,
+      "contact_resistance_mohm": 20,
+      "contact_height_source-s": "Wurth 61300211121 datasheet (agent B summary): height above board 8.54 mm, contact resistance 20 mOhm max initial"
+    }
+  }
+}

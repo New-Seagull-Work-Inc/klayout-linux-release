@@ -1,0 +1,49 @@
+{
+  "component-o": {
+    "type-s": "capacitor",
+    "vendor-s": "Yageo",
+    "part-s": "CC0603KRX5R6BB106",
+    "description-s": "10 µF ±10% 10 V X5R 0603 multilayer ceramic capacitor (MLCC), SMD, 0.9 mm max thickness; drop-in for CL10A106KP8NNNC (no stock at DigiKey/Newark/Mouser, 2026-10-14)",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.049,
+        "100": 0.049,
+        "1K": 0.036,
+        "10K": 0.031,
+        "100K": 0.03
+      },
+      "distributor-s": "CoreStaff",
+      "moq-i": 1,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "311-1782-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/yageo/CC0603KRX5R6BB106/5195191",
+        "datasheet-url-s": "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X5R_4V-TO-50V",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 0,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.36",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0603" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-ceramic"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 10000000,
+      "value-unit-s": "uf",
+      "voltage-max-i": 10000,
+      "tolerance-pct-x10": 100,
+      "dielectric-s": "x5r"
+    }
+  }
+}

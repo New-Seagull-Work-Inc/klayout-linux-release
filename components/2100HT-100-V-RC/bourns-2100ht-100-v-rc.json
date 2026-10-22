@@ -1,0 +1,40 @@
+{
+  "component-o": {
+    "type-s": "inductor",
+    "vendor-s": "Bourns",
+    "part-s": "2100HT-100-V-RC",
+    "description-s": "10 uH high-current toroidal power inductor, thru-hole radial; Inductor High Current Toroid 10uH/7.6uH 15% 1KHz 9.9A 0.012Ohm DCR RDL",
+    "package-ao": [
+      { "ptype-s": "Fixed Inductors" },
+      { "ppins-i": 2 }
+    ],
+    "specs-o": {
+      "irms_ma_i": 9900,
+      "irms_rise_c_i": 50,
+      "isat_ma_i": 9900,
+      "isat_drop_pct_i": 24,
+      "current_note_s": "Bourns 2100HT: rated Idc causes a 50 °C rise (not 40); no separate Isat -- isat_ma_i is Idc, where L is down by isat_drop_pct_i (L @ I rated column) (10 -> 7.6 uH)"
+    },
+    "passive-o": {
+      "value-i": 10000,
+      "value-unit-s": "nh",
+      "lead-style-s": "radial"
+    },
+    "non-technical-o": {
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "2100HT-100-V-RC-ND",
+        "package-s": "Bulk",
+        "product-url-s": "https://www.digikey.com/en/products/detail/bourns-inc/2100HT-100-V-RC/2534592",
+        "datasheet-url-s": "https://www.bourns.com/docs/Product-Datasheets/2100ht_series.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 260,
+        "moq-i": 1,
+        "unit-price-s": "USD 4.96",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    }
+  }
+}

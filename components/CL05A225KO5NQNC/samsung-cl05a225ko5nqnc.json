@@ -1,0 +1,66 @@
+{
+  "component-o": {
+    "specs-o": {
+      "esr_mohm": 7.7,
+      "esl_ph": 195,
+      "srf_mhz": 6.4948,
+      "dc_bias-ao": [
+        { "v_mv": 0, "c_pct": 100 },
+        { "v_mv": 1000, "c_pct": 91.1 },
+        { "v_mv": 1800, "c_pct": 74 },
+        { "v_mv": 2500, "c_pct": 60.4 },
+        { "v_mv": 3300, "c_pct": 46.8 },
+        { "v_mv": 5000, "c_pct": 30.2 },
+        { "v_mv": 6300, "c_pct": 23 },
+        { "v_mv": 10000, "c_pct": 12.9 },
+        { "v_mv": 12000, "c_pct": 10.8 },
+        { "v_mv": 16000, "c_pct": 7.3 }
+      ],
+      "esr_esl_dc_bias_source-s": "Samsung Electro-Mechanics product page chart data (product.samsungsem.com/mlcc/CL05A225KO5NQN.do, datasheetData): |Z| and R 'Precise' model at 0 V, 25 degC -> ESR at SRF (|Z| min), ESL at 10x SRF; DC-bias delta-C curve at 1000 Hz (dsDcSign 1.0, AC level not otherwise stated), read 2026-10-21"
+    },
+    "type-s": "capacitor",
+    "vendor-s": "Samsung Electro-Mechanics",
+    "part-s": "CL05A225KO5NQNC",
+    "description-s": "2.2 µF ±10% 16 V X5R 0402 multilayer ceramic capacitor (MLCC), SMD, 0.5 mm thick",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "distributor-s": "DigiKey",
+      "stock-o": {
+        "digikey-i": 128781,
+        "mouser-i": 5026,
+        "newark-i": 0,
+        "checked-s": "2026-10-21",
+        "source-s": "DigiKey Product Information API v4 (max QuantityAvailable over packagings); Mouser and Newark public product/search pages via browser; null = not listed"
+      },
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "1276-1461-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL05A225KO5NQNC/3887119",
+        "datasheet-url-s": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2799/CL05A225KO5NQNC_Spec.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 128781,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.26",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0402" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-ceramic"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 2200000,
+      "value-unit-s": "uf",
+      "voltage-max-i": 16000,
+      "tolerance-pct-x10": 100,
+      "dielectric-s": "x5r"
+    }
+  }
+}

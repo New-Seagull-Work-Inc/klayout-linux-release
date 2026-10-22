@@ -1,0 +1,50 @@
+{
+  "component-o": {
+    "type-s": "resistor",
+    "vendor-s": "Yageo",
+    "part-s": "RC0402FR-0717K8L",
+    "description-s": "17.8 kΩ ±1% 0.0625 W thick film chip resistor, 0402 SMD, ±100 ppm/°C",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.0259,
+        "100": 0.005,
+        "1K": 0.0022,
+        "10K": 0.0015,
+        "100K": 0.0007
+      },
+      "distributor-s": "Arrow Electronics",
+      "moq-i": 1,
+      "order-mult-i": 1,
+      "stock-i": 290628,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "YAG3012CT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0717K8L/5280872",
+        "datasheet-url-s": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 410875,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.11",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0402" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "resistor-thick-film"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 17800000,
+      "value-unit-s": "k",
+      "power-mw-i": 63,
+      "tolerance-pct-x10": 10
+    }
+  }
+}

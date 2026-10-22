@@ -1,0 +1,119 @@
+{
+  "component-o": {
+    "type-s": "connector",
+    "subtype-s": "io-header-jack",
+    "vendor-s": "JST",
+    "part-s": "BM02B-GHS-TBT",
+    "description-s": "JST GH top-entry (vertical) SMT header, 1x2, 1.25 mm pitch, tin, 1.0 A per contact (AWG 26), 50 V, -25~85 C. LED sub-board link: pin 1 LED drive (anode), pin 2 return (cathode, ground). Mates with GHR-02V-S / SSHL-002T-P0.2.",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {},
+      "distributor-s": ""
+    },
+    "package-ao": [
+      {
+        "ptype-s": "header-1x2-1.25mm-vertical-smd"
+      },
+      {
+        "ppins-i": 2
+      }
+    ],
+    "blocks-as": [
+      "header"
+    ],
+    "interfaces-as": [
+      "ds-led-rxtx",
+      "ds-ir_led-rxtx"
+    ],
+    "pins-ao": [
+      {
+        "1": "LED"
+      },
+      {
+        "2": "GND"
+      }
+    ],
+    "stdpins-ao": [
+      {
+        "1": "ds-led-a"
+      },
+      {
+        "1": "ds-ir_led-a"
+      },
+      {
+        "2": "dvss"
+      },
+      {
+        "2": "ds-led-c"
+      },
+      {
+        "2": "ds-ir_led-c"
+      }
+    ],
+    "cfgpins-ao": [],
+    "max_currents-ao": [
+      {
+        "1": 1000
+      },
+      {
+        "2": 1000
+      }
+    ],
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -25,
+          "max-i": 85
+        }
+      }
+    ],
+    "connector-o": {
+      "contact_resistance_mohm": 30,
+      "contact_resistance_after_env_mohm": 50,
+      "contact_resistance_source-s": "JST GH catalog p1: Contact resistance: Initial value 30 mOhm max; after environmental tests 50 mOhm max",
+      "pin_count_i": 2,
+      "rows_i": 1,
+      "pitch_mm_f": 1.25,
+      "gender_s": "male",
+      "orientation_s": "vertical",
+      "mount_s": "smt",
+      "current_per_pin_ma_i": 1000,
+      "current_awg_s": "26",
+      "voltage_max_v_i": 50,
+      "voltage_max_v_f": 50,
+      "contact_plating_s": "tin",
+      "locking_b": true,
+      "polarized_b": true,
+      "family_s": "gh",
+      "mates_with_part_s": "GHR-02V-S",
+      "courtyard_area_mm2_f": 45.9,
+      "board_area_mm2_f": 59.9,
+      "board_area_note_s": "bounding rect of courtyard and mate keepout",
+      "mate-o": {
+        "part_s": "GHR-02V-S",
+        "model_s": "footprints/BM02B-GHS-TBT.3dshapes/BM02B-GHS-TBT-mate.step",
+        "offset_mm_af": [
+          0,
+          0,
+          0
+        ],
+        "rotate_deg_af": [
+          0,
+          0,
+          0
+        ],
+        "keepout_mm_af": [
+          -3.48,
+          -5.3,
+          3.48,
+          3.3
+        ],
+        "height_mm_f": 21.3,
+        "z_min_mm_f": 0,
+        "frame_s": "the board connector's footprint frame; the model is built there, so offset and rotation are zero",
+        "source_s": "JST GH catalog: top-entry header, housing GHR-02V-S 3.75 x 4.15 x 5.7 (p2 table); keepout adds 2 mm on the latch side for the release finger; mated height estimated as for BM14B-GHS-TBT"
+      },
+      "source_s": "JST GH catalog: top-entry header, housing GHR-02V-S 3.75 x 4.15 x 5.7 (p2 table); keepout adds 2 mm on the latch side for the release finger; mated height estimated as for BM14B-GHS-TBT"
+    }
+  }
+}

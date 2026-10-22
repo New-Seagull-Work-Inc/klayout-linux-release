@@ -1,0 +1,51 @@
+{
+  "component-o": {
+    "type-s": "capacitor",
+    "vendor-s": "Nichicon",
+    "part-s": "UHE1V102MHD",
+    "description-s": "1000 uF ±20% 35 V aluminum electrolytic, low impedance UHE series, 12.5 x 25 mm, 5.0 mm lead spacing, 2230 mA ripple (UHE datasheet); second source for EEU-FR1V102",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.4427,
+        "100": 0.4427,
+        "1K": 0.4427,
+        "10K": 0.4427,
+        "100K": 0.4427
+      },
+      "distributor-s": "Arrow Electronics",
+      "moq-i": 1,
+      "order-mult-i": 1,
+      "stock-i": 1,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "493-1588-ND",
+        "package-s": "Bulk",
+        "product-url-s": "https://www.digikey.com/en/products/detail/nichicon/UHE1V102MHD/589329",
+        "datasheet-url-s": "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uhe.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 8232,
+        "moq-i": 1,
+        "unit-price-s": "USD 1.61",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "radial-electrolytic" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-aluminum-electrolytic"
+    ],
+    "passive-o": {
+      "lead-style-s": "radial",
+      "value-i": 1000000000,
+      "value-unit-s": "uf",
+      "voltage-max-i": 35000,
+      "tolerance-pct-x10": 200,
+      "dielectric-s": "aluminum-electrolytic"
+    }
+  }
+}

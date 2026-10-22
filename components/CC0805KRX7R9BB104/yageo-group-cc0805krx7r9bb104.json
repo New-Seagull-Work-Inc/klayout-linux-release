@@ -1,0 +1,46 @@
+{
+  "component-o": {
+    "not_stated-o": {
+      "dc_bias-ao": "not stated for this part: Yageo's family datasheet has no DC-bias curve (searched 'bias')",
+      "esr_mohm": "not stated for this part: the Yageo X7R family sheet's impedance/ESR figures (p16-17) are typical curves for other sizes/values (0201 10 nF, 0402 100 nF/16 V, 0603 1 uF/16 V), not 0805 100 nF; Yageo S-parameters not publicly downloadable",
+      "esl_ph": "not stated (same as esr_mohm)"
+    },
+    "rating_source-o": {
+      "datasheet-s": "UPY-GPHC_X7R_6_3V-TO-250V.pdf",
+      "page_n": 6,
+      "table-s": "Table 4 Sizes from 0805 (100 nF row); ordering code p2"
+    },
+    "type-s": "capacitor",
+    "vendor-s": "Yageo Group",
+    "part-s": "CC0805KRX7R9BB104",
+    "description-s": "50V 100nF X7R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+    "package-ao": [
+      { "ptype-s": "Ceramic Capacitors" },
+      { "ppins-i": 2 }
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 100000,
+      "value-unit-s": "nf",
+      "voltage-max-i": 50000,
+      "tolerance-pct-x10": 100,
+      "dielectric-s": "x7r"
+    },
+    "non-technical-o": {
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "311-1140-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/yageo/CC0805KRX7R9BB104/302874",
+        "datasheet-url-s": "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 3205928,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.18",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    }
+  }
+}

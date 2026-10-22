@@ -1,0 +1,240 @@
+{
+  "component-o": {
+    "type-s": "efuse",
+    "vendor-s": "Texas Instruments",
+    "part-s": "TPS259840RZJR",
+    "description-s": "4.5V–16V, 0.8mΩ, 70A Stackable eFuse with integrated power switch for circuit protection and power management. Features ultra-low RON (0.8mΩ typical), adjustable overcurrent protection (10A to 55A with ±5% accuracy), circuit-breaker response with transient blanking timer up to 2 × IOCP, fast-trip short-circuit protection (<200ns), precise analog current monitor (±1.4% accuracy, >500kHz bandwidth), adjustable slew rate control, overvoltage protection (16.7V fixed), overtemperature protection, FET health monitoring, active current sharing for parallel stacking, latch-off fault response variant, and operates from –40°C to +125°C junction temperature in a 5mm × 5mm QFN-32 package.",
+    "package-ao": [
+      { "ptype-s": "QFN-32" },
+      { "ppins-i": 32 }
+    ],
+    "blocks-as": [
+      "power-switch",
+      "overcurrent-protection",
+      "short-circuit-protection",
+      "overvoltage-protection",
+      "undervoltage-protection",
+      "overtemperature-protection",
+      "slew-rate-control",
+      "current-monitor",
+      "temperature-monitor",
+      "fet-health-monitor",
+      "active-current-sharing",
+      "charge-pump",
+      "gate-driver"
+    ],
+    "interfaces-as": [
+      "ds-power-rx",
+      "ds-power-tx"
+    ],
+    "voltages-ao": [
+      { "vin": 12000 },
+      { "vdd": 12000 },
+      { "vout": 12000 }
+    ],
+    "max_currents-ao": [
+      { "vin": 55000 },
+      { "vdd": 1 },
+      { "vout": 55000 }
+    ],
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -40,
+          "max-i": 125
+        }
+      },
+      {
+        "storage-o": {
+          "min-i": -65,
+          "max-i": 150
+        }
+      }
+    ],
+    "pins-ao": [
+      { "1": "VOUT" },
+      { "2": "VOUT" },
+      { "3": "SWEN" },
+      { "4": "EN/UVLO" },
+      { "5": "FLT" },
+      { "6": "PG" },
+      { "7": "VDD" },
+      { "8": "MODE" },
+      { "9": "VIN" },
+      { "10": "VIN" },
+      { "11": "VIN" },
+      { "12": "VIN" },
+      { "13": "VIN" },
+      { "14": "VIN" },
+      { "15": "VIN" },
+      { "16": "VIN" },
+      { "17": "DNC" },
+      { "18": "TEMP" },
+      { "19": "DVDT" },
+      { "20": "GND" },
+      { "21": "ITIMER" },
+      { "22": "IMON" },
+      { "23": "ILIM" },
+      { "24": "IREF" },
+      { "25": "VOUT" },
+      { "26": "VOUT" },
+      { "27": "VOUT" },
+      { "28": "VOUT" },
+      { "29": "VOUT" },
+      { "30": "VOUT" },
+      { "31": "VOUT" },
+      { "32": "VOUT" },
+      { "33": "EP" }
+    ],
+    "cfgpins-ao": [
+      { "4": "EN/UVLO" },
+      { "4c": "Active high enable input with adjustable undervoltage lockout. Use resistor divider to set UVLO threshold." },
+      { "8": "MODE" },
+      { "8c": "MODE selection. Float for standalone/primary mode. Connect to GND for secondary mode in parallel chain." }
+    ],
+    "stdpins-ao": [
+      { "9": "ds-power-rx" },
+      { "10": "ds-power-rx" },
+      { "11": "ds-power-rx" },
+      { "12": "ds-power-rx" },
+      { "13": "ds-power-rx" },
+      { "14": "ds-power-rx" },
+      { "15": "ds-power-rx" },
+      { "16": "ds-power-rx" },
+      { "1": "ds-power-tx" },
+      { "2": "ds-power-tx" },
+      { "25": "ds-power-tx" },
+      { "26": "ds-power-tx" },
+      { "27": "ds-power-tx" },
+      { "28": "ds-power-tx" },
+      { "29": "ds-power-tx" },
+      { "30": "ds-power-tx" },
+      { "31": "ds-power-tx" },
+      { "32": "ds-power-tx" },
+      { "20": "dvss" },
+      { "1": "vout" },
+      { "1": "2.2uf-avss" },
+      { "2": "vout" },
+      { "3": "swen" },
+      { "3": "100k-vlstby" },
+      { "4": "en-uvlo" },
+      { "4": "1nf-avss" },
+      { "5": "flt" },
+      { "5": "10k-vlstby" },
+      { "6": "pg" },
+      { "6": "10k-vlstby" },
+      { "7": "vdd" },
+      { "7": "10r-vin" },
+      { "7": "2.2uf-avss" },
+      { "9": "vin" },
+      { "9": "0.1uf-avss" },
+      { "10": "vin" },
+      { "11": "vin" },
+      { "12": "vin" },
+      { "13": "vin" },
+      { "14": "vin" },
+      { "15": "vin" },
+      { "16": "vin" },
+      { "18": "temp" },
+      { "18": "22pf-avss" },
+      { "19": "dvdt" },
+      { "19": "33nf-avss" },
+      { "20": "avss" },
+      { "21": "itimer" },
+      { "21": "22nf-avss" },
+      { "22": "imon" },
+      { "22": "182r-avss" },
+      { "22": "22pf-avss" },
+      { "23": "ilim" },
+      { "23": "332r-avss" },
+      { "24": "iref" },
+      { "24": "40.2k-avss" },
+      { "24": "1nf-avss" },
+      { "25": "vout" },
+      { "26": "vout" },
+      { "27": "vout" },
+      { "28": "vout" },
+      { "29": "vout" },
+      { "30": "vout" },
+      { "31": "vout" },
+      { "32": "vout" },
+      { "33": "vin" }
+    ],
+    "specs-o": {},
+    "non-technical-o": {
+      "lifecycle-o": {
+        "samples": {
+          "month": 0,
+          "year": 0
+        },
+        "mp": {
+          "month": 0,
+          "year": 0
+        },
+        "eol": {
+          "month": 0,
+          "year": 0
+        }
+      },
+      "distributor-s": "",
+      "cost-o": {
+        "10": 0,
+        "100": 0,
+        "1K": 0,
+        "10K": 0,
+        "100K": 0
+      },
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "296-TPS259840RZJRTR-ND",
+        "package-s": "Tape & Reel (TR)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/texas-instruments/TPS259840RZJR/22147237",
+        "datasheet-url-s": "https://www.ti.com/lit/ds/symlink/tps25984.pdf?ts=1746163828175&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTPS25984",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 0,
+        "moq-i": 3000,
+        "unit-price-s": "USD 5.15",
+        "price-qty-i": 3000,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "supplies-ao": [
+      {
+        "rail-s": "VDD",
+        "role-s": "vdd",
+        "pins-as": [
+          "7"
+        ],
+        "vmin_mv": 4500,
+        "vmax_mv": 16000,
+        "source-o": {
+          "datasheet-s": "TPS259840RZJR.pdf",
+          "page_n": 7,
+          "table-s": "6.3 Recommended Operating Conditions"
+        }
+      },
+      {
+        "rail-s": "VIN",
+        "role-s": "vin",
+        "pins-as": [
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16"
+        ],
+        "vmin_mv": 4500,
+        "vmax_mv": 16000,
+        "source-o": {
+          "datasheet-s": "TPS259840RZJR.pdf",
+          "page_n": 7,
+          "table-s": "6.3 Recommended Operating Conditions"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "component-o": {
+    "type-s": "led",
+    "vendor-s": "Lite-On",
+    "part-s": "LTST-C171KGKT",
+    "description-s": "Green (571 nm dominant) AlInGaP chip LED, 0805 (2.0 x 1.25 x 0.8 mm), water clear, Vf 2.0 typ / 2.4 max at 20 mA, 30 mA DC max",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {},
+      "distributor-s": "DigiKey",
+      "moq-i": 1,
+      "stock-i": 409289,
+      "stock-checked-s": "2026-10-21",
+      "lcsc-s": "C98224",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "160-1426-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/liteon/LTST-C171KGKT/386799",
+        "datasheet-url-s": "https://optoelectronics.liteon.com/upload/download/DS22-2000-118/LTST-C171KGKT.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 409235,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.16",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0805" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "led",
+      "visible",
+      "indicator"
+    ],
+    "interfaces-as": [
+      "ds-led-rx"
+    ],
+    "pins-ao": [
+      { "1": "K" },
+      { "2": "A" }
+    ],
+    "stdpins-ao": [
+      { "1": "ds-led-c" },
+      { "2": "ds-led-a" }
+    ],
+    "led-o": {
+      "color-s": "green",
+      "vf-mv-i": 2000,
+      "vf-max-mv-i": 2400,
+      "if-test-ma-i": 20,
+      "if-max-ma-i": 30,
+      "if-peak-ma-i": 80,
+      "vr-max-mv-i": 5000,
+      "power-max-mw-i": 75,
+      "wavelength-nm-i": 571,
+      "lead-style-s": "smd",
+      "cj_pf": 40,
+      "source-o": {
+        "datasheet-s": "LTST-C171KGKT.pdf",
+        "page_n": 3,
+        "table-s": "Absolute Maximum Ratings at Ta 25 C: Pd 75 mW, peak IF 80 mA (1/10 duty, 0.1 ms), DC IF 30 mA, derating 0.4 mA/C above 50 C, VR 5 V, -55..+85 C"
+      },
+      "ec_source-o": {
+        "datasheet-s": "LTST-C171KGKT.pdf",
+        "page_n": 5,
+        "table-s": "Electro-Optical Characteristics at Ta 25 C: VF 2.0 typ / 2.4 max at IF 20 mA; IV 18 min / 35 typ mcd; lambda-d 571 nm; IR 10 uA max at VR 5 V; C 40 pF typ at VF 0, f 1 MHz"
+      },
+      "led_note-s": "pads per KiCad LED_0805_2012Metric: 1 = K, 2 = A"
+    },
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -55,
+          "max-i": 85
+        }
+      },
+      {
+        "storage-o": {
+          "min-i": -55,
+          "max-i": 85
+        }
+      }
+    ]
+  }
+}

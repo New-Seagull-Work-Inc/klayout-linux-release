@@ -1,0 +1,81 @@
+{
+  "component-o": {
+    "type-s": "connector",
+    "subtype-s": "io-debug-jack",
+    "vendor-s": "Tag-Connect",
+    "part-s": "TC2030-IDC-NL",
+    "description-s": "Tag-Connect TC2030-IDC-NL plug-of-nails debug footprint, 2x3 pads at 1.27 mm, no-legs version: pads and three locating holes on the board, NO component -- the TC2030-IDC-NL cable (bought once for the bench) presses on it. ARM Cortex SWD mapping: 1 VCC (target reference), 2 SWDIO, 3 nRESET, 4 SWCLK, 5 GND, 6 SWO.",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {},
+      "distributor-s": ""
+    },
+    "package-ao": [
+      {
+        "ptype-s": "footprint-tc2030-nl"
+      },
+      {
+        "ppins-i": 6
+      }
+    ],
+    "blocks-as": [
+      "debug",
+      "swd",
+      "footprint-only"
+    ],
+    "interfaces-as": [
+      "ds-swd-rxtx"
+    ],
+    "pins-ao": [
+      {
+        "1": "VCC"
+      },
+      {
+        "2": "SWDIO"
+      },
+      {
+        "3": "NRESET"
+      },
+      {
+        "4": "SWCLK"
+      },
+      {
+        "5": "GND"
+      },
+      {
+        "6": "SWO"
+      }
+    ],
+    "stdpins-ao": [
+      {
+        "1": "ds-swd-vref"
+      },
+      {
+        "2": "ds-swd-dio"
+      },
+      {
+        "3": "ds-reset-tx"
+      },
+      {
+        "4": "ds-swd-clk"
+      },
+      {
+        "5": "dvss"
+      },
+      {
+        "6": "ds-swd-swo"
+      }
+    ],
+    "connector-o": {
+      "pin_count_i": 6,
+      "rows_i": 2,
+      "pitch_mm_f": 1.27,
+      "mount_s": "footprint-only",
+      "bom_exclude_b": true,
+      "footprint_only_b": true,
+      "gender_s": "pads",
+      "orientation_s": "vertical",
+      "source_s": "KiCad Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical; Tag-Connect TC2030 ARM Cortex (SWD) pin mapping"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "component-o": {
+    "specs-o": {
+      "esr_mohm": 29.67,
+      "esl_ph": 236,
+      "srf_mhz": 40.8801,
+      "dc_bias-ao": [
+        { "v_mv": 0, "c_pct": 100 },
+        { "v_mv": 1000, "c_pct": 100.7 },
+        { "v_mv": 1800, "c_pct": 100.3 },
+        { "v_mv": 3300, "c_pct": 98.9 },
+        { "v_mv": 5000, "c_pct": 97.2 },
+        { "v_mv": 10000, "c_pct": 89.3 },
+        { "v_mv": 12000, "c_pct": 84.4 },
+        { "v_mv": 16000, "c_pct": 72.7 },
+        { "v_mv": 20000, "c_pct": 60.8 },
+        { "v_mv": 25000, "c_pct": 48.2 },
+        { "v_mv": 35000, "c_pct": 32.3 },
+        { "v_mv": 50000, "c_pct": 21.3 }
+      ],
+      "esr_esl_dc_bias_source-s": "Murata SimSurfing (ds.murata.co.jp/simserve): measured series-thru S-parameters GRM155R71H473KE14.s2p (25 degC, 0 V; data generated Nov 6, 2018) -> ESR at SRF, ESL at 10x SRF; DC-bias curve c_dcbias_capchange (25 degC, AC 1 Vrms), read 2026-10-21"
+    },
+    "type-s": "capacitor",
+    "vendor-s": "Murata Electronics",
+    "part-s": "GRM155R71H473KE14D",
+    "description-s": "47 nF ±10% 50 V X7R 0402 (1005M) MLCC, SMD, 0.5 mm thick",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "distributor-s": "DigiKey",
+      "stock-o": {
+        "digikey-i": 633729,
+        "mouser-i": 202576,
+        "newark-i": 42312,
+        "checked-s": "2026-10-21",
+        "source-s": "DigiKey Product Information API v4 (max QuantityAvailable over packagings); Mouser and Newark public product/search pages via browser; null = not listed"
+      },
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "490-10702-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71H473KE14D/4905190",
+        "datasheet-url-s": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/490_Chip_Multilayer_CAT2021_MLCC.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 633474,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.10",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0402" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-ceramic"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 47000,
+      "value-unit-s": "nf",
+      "voltage-max-i": 50000,
+      "tolerance-pct-x10": 100,
+      "dielectric-s": "x7r"
+    }
+  }
+}

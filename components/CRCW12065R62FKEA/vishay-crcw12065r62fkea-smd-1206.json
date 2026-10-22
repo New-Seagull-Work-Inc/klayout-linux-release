@@ -1,0 +1,51 @@
+{
+  "component-o": {
+    "type-s": "resistor",
+    "vendor-s": "Vishay",
+    "description-s": "5.62 Ω ±1% 0.25 W thick film chip resistor, 1206 SMD, CRCW, ±100 ppm/K",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.0085,
+        "100": 0.0084,
+        "1K": 0.0084,
+        "10K": 0.0074,
+        "100K": 0.0074
+      },
+      "distributor-s": "Arrow Electronics",
+      "moq-i": 1,
+      "order-mult-i": 1,
+      "stock-i": 15028,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "541-5.62FFCT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/vishay-dale/CRCW12065R62FKEA/1961851",
+        "datasheet-url-s": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 16131,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.13",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-1206" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "resistor"
+    ],
+    "passive-o": {
+      "value-i": 5620,
+      "value-unit-s": "r",
+      "power-mw-i": 250,
+      "voltage-max-i": 200000,
+      "tolerance-pct-x10": 10,
+      "lead-style-s": "smd"
+    },
+    "part-s": "CRCW12065R62FKEA"
+  }
+}

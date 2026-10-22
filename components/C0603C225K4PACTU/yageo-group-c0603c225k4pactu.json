@@ -1,0 +1,47 @@
+{
+  "component-o": {
+    "specs-o": {
+      "esr_mohm": 2.99,
+      "esl_ph": 396,
+      "srf_mhz": 5.714,
+      "dc_bias-ao": [
+        { "v_mv": 0, "c_pct": 100 },
+        { "v_mv": 1000, "c_pct": 98.4 },
+        { "v_mv": 1800, "c_pct": 94.7 },
+        { "v_mv": 2500, "c_pct": 89.8 },
+        { "v_mv": 3300, "c_pct": 82.2 },
+        { "v_mv": 5000, "c_pct": 56 },
+        { "v_mv": 6300, "c_pct": 44.4 },
+        { "v_mv": 10000, "c_pct": 28 },
+        { "v_mv": 12000, "c_pct": 23.3 },
+        { "v_mv": 16000, "c_pct": 17.5 }
+      ],
+      "esr_esl_dc_bias_source-s": "KEMET K-SIM (ksim3.kemet.com/capacitor-simulation?pn=C0603C225K4PACTU) S2P model exports at 25 degC, shunt, 50 ohm, 10 kHz - 10 GHz: ESR at SRF (|Z| minimum) and ESL = (X+1/wC0)/w at 10x SRF from the 0 V model (C0603C225K4PACTU_ksim_0V_25C.s2p, kept beside this record); DC-bias curve = capacitance at 10 kHz from the model at each bias (0, 1, 1.8, 2.5, 3.3, 5, 6.3, 10, 12, 16 V), relative to 0 V (2.134 uF); KEMET model, not a measurement; read 2026-10-21"
+    },
+    "type-s": "capacitor",
+    "vendor-s": "Yageo Group",
+    "part-s": "C0603C225K4PACTU",
+    "description-s": "16V 2.2uF X5R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+    "package-ao": [
+      { "ptype-s": "Ceramic Capacitors" },
+      { "ppins-i": 2 }
+    ],
+    "passive-o": {},
+    "non-technical-o": {
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "399-C0603C225K4PACTUCT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/kemet/C0603C225K4PACTU/2200308",
+        "datasheet-url-s": "https://yageogroup.com/content/datasheet/asset/file/KEM_C1006_X5R_SMD",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 579763,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.19",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    }
+  }
+}

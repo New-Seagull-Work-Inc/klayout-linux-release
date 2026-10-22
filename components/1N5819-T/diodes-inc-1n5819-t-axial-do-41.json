@@ -1,0 +1,48 @@
+{
+  "component-o": {
+    "type-s": "diode",
+    "vendor-s": "Diodes Incorporated",
+    "part-s": "1N5819-T",
+    "description-s": "1 A 40 V Schottky barrier rectifier, DO-41 axial; buyable replacement for 1N5819",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.2866,
+        "100": 0.1895,
+        "1K": 0.0795,
+        "10K": 0.0795,
+        "100K": 0.0795
+      },
+      "distributor-s": "Arrow Electronics",
+      "moq-i": 1,
+      "order-mult-i": 1,
+      "stock-i": 1091,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "1N5819DICT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/diodes-incorporated/1N5819-T/22056",
+        "datasheet-url-s": "https://www.diodes.com/assets/Datasheets/1N5817-1N5819.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 24409,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.59",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "axial-do-41" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "diode-schottky"
+    ],
+    "passive-o": {
+      "voltage-max-i": 40000,
+      "current-max-i": 1000,
+      "lead-style-s": "axial"
+    }
+  }
+}

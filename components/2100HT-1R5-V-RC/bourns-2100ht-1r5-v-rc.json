@@ -1,0 +1,40 @@
+{
+  "component-o": {
+    "type-s": "inductor",
+    "vendor-s": "Bourns",
+    "part-s": "2100HT-1R5-V-RC",
+    "description-s": "1.5 uH high-current toroidal power inductor, thru-hole radial; Inductor, Toroidal /Tray Packaging; |Bourns Jw Miller 2100HT-1R5V-RC",
+    "package-ao": [
+      { "ptype-s": "Fixed Inductors" },
+      { "ppins-i": 2 }
+    ],
+    "specs-o": {
+      "irms_ma_i": 19800,
+      "irms_rise_c_i": 50,
+      "isat_ma_i": 19800,
+      "isat_drop_pct_i": 20,
+      "current_note_s": "Bourns 2100HT: rated Idc causes a 50 °C rise (not 40); no separate Isat -- isat_ma_i is Idc, where L is down by isat_drop_pct_i (L @ I rated column) (1.5 -> 1.2 uH)"
+    },
+    "passive-o": {
+      "value-i": 1500,
+      "value-unit-s": "nh",
+      "lead-style-s": "radial"
+    },
+    "non-technical-o": {
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "2100HT-1R5-V-RC-ND",
+        "package-s": "Tray",
+        "product-url-s": "https://www.digikey.com/en/products/detail/bourns-inc/2100HT-1R5-V-RC/2534626",
+        "datasheet-url-s": "https://www.bourns.com/docs/Product-Datasheets/2100ht_series.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 0,
+        "moq-i": 924,
+        "unit-price-s": "USD 3.31",
+        "price-qty-i": 924,
+        "verified-on-s": "2026-10-21"
+      }
+    }
+  }
+}

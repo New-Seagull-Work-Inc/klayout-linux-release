@@ -1,0 +1,50 @@
+{
+  "component-o": {
+    "type-s": "resistor",
+    "vendor-s": "Yageo",
+    "part-s": "RC0805FR-071KL",
+    "description-s": "1 kOhm +/-1% 1/8 W thick film chip resistor, 0805, +/-100 ppm/C",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "distributor-s": "DigiKey",
+      "stock-i": 662419,
+      "stock-checked-s": "2026-10-21",
+      "lifecycle-s": "Active",
+      "distributor-sku-s": "311-1.00KCRTR-ND",
+      "moq-i": 5000,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "311-1.00KCRCT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/yageo/RC0805FR-071KL/727444",
+        "datasheet-url-s": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 662291,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.10",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0805" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "resistor-thick-film"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 1000000,
+      "value-unit-s": "k",
+      "power-mw-i": 125,
+      "tolerance-pct-x10": 10
+    },
+    "rating_source-o": {
+      "datasheet-s": "PYU-RC_GROUP_51_ROHS_L.pdf",
+      "page_n": 5,
+      "table-s": "ELECTRICAL CHARACTERISTICS (RC0805 1/8 W, 150 V max working, 1% 10R<R<=10M +/-100 ppm/C)"
+    }
+  }
+}

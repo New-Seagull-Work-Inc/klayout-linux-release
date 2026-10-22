@@ -1,0 +1,50 @@
+{
+  "component-o": {
+    "type-s": "diode",
+    "vendor-s": "onsemi",
+    "part-s": "1N5822RLG",
+    "description-s": "3 A 40 V Schottky barrier rectifier, DO-201AD axial (case 267); buyable replacement for 1N5822 and MBR340",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.4324,
+        "100": 0.298,
+        "1K": 0.1865,
+        "10K": 0.1846,
+        "100K": 0.1846
+      },
+      "distributor-s": "Verical",
+      "moq-i": 7,
+      "stock-i": 9883,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "1N5822RLGOSCT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/onsemi/1N5822RLG/807334",
+        "datasheet-url-s": "https://www.onsemi.com/pub/Collateral/1N5820-D.PDF",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 10105,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.99",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "axial-do-201ad" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "diode-schottky"
+    ],
+    "passive-o": {
+      "voltage-max-i": 40000,
+      "current-max-i": 3000,
+      "lead-style-s": "axial"
+    },
+    "thermal-o": {
+      "rtheta-ja-c-per-w-f": 28
+    }
+  }
+}

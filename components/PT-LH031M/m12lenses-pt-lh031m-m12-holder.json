@@ -1,0 +1,49 @@
+{
+  "component-o": {
+    "type-s": "lens-holder",
+    "vendor-s": "M12Lenses.com",
+    "part-s": "PT-LH031M",
+    "description-s": "CNC-machined aluminium (6061-T6) M12x0.5 lens holder, 20 mm mounting hole spacing (2 x M2x0.4 threaded), 13 mm tall",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {},
+      "distributor-s": "",
+      "source-o": {
+        "supplier-s": "M12Lenses.com",
+        "sku-s": "PT-LH031M",
+        "product-url-s": "https://www.m12lenses.com/PT-LH031M-M12-Lens-Holder-20mm-hole-spacing-p/pt-lh031m.htm",
+        "datasheet-url-s": "https://www.m12lenses.com/v/vspfiles/downloadables/CAD/PT-LH031M.pdf",
+        "lifecycle-s": "active",
+        "available-i": 234,
+        "moq-i": 1,
+        "unit-price-s": "USD 9.50",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21",
+        "source-note-s": "maker-direct (M12Lenses.com product page: 234 in stock, usually ships in 24 hours); not sold by DigiKey, Mouser or Newark; lifecycle not stated by the maker, listed as a current product",
+        "distributor-exception-s": "it is ok to have an exception for the lens holder",
+        "distributor-exception-approved-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "m12-holder-20mm" },
+      { "ppins-i": 0 }
+    ],
+    "blocks-as": [
+      "lens-holder"
+    ],
+    "interfaces-as": [
+      "light-rx",
+      "light-tx"
+    ],
+    "pins-ao": [],
+    "stdpins-ao": [],
+    "lens-holder-o": {
+      "thread-s": "M12x0.5",
+      "mount-hole-spacing-mm-x10-i": 200,
+      "mount-screw-s": "M2x0.4",
+      "height-mm-x10-i": 130,
+      "material-s": "metal",
+      "ir-filter-b": false
+    }
+  }
+}

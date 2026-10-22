@@ -1,0 +1,36 @@
+{
+  "component-o": {
+    "type-s": "ferrite-bead",
+    "vendor-s": "Murata",
+    "part-s": "BLM31PG121SN1L",
+    "description-s": "Ferrite Beads Multi-Layer 120Ohm 25% 100MHz 3.5A 0.02Ohm DCR 1206 T/R",
+    "package-ao": [
+      { "ptype-s": "Ferrite Beads and Chips" },
+      { "ppins-i": 2 }
+    ],
+    "passive-o": {},
+    "non-technical-o": {
+      "cost-o": {
+        "100": 0.1427,
+        "1K": 0.0762,
+        "10K": 0.0704,
+        "100K": 0.0704
+      },
+      "distributor-s": "Verical",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "490-1056-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/murata-electronics/BLM31PG121SN1L/584265",
+        "datasheet-url-s": "https://www.murata.com/en-us/products/productdata/8796739698718/ENFA0006.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 388551,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.50",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    }
+  }
+}

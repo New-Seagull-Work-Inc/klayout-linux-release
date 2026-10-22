@@ -1,0 +1,256 @@
+{
+  "component-o": {
+    "type-s": "regulator",
+    "vendor-s": "Analog Devices",
+    "description-s": "40VIN, 3.5A Step-Down µModule Regulator",
+    "package-ao": [
+      { "ptype-s": "bga-48" },
+      { "ppins-i": 48 }
+    ],
+    "blocks-as": [
+      "regulator",
+      "regulator-buck",
+      "current-mode-controller",
+      "thermal-shutdown",
+      "current-limit",
+      "soft-start",
+      "power-good",
+      "enable",
+      "frequency-foldback",
+      "spread-spectrum",
+      "synchronization"
+    ],
+    "interfaces-as": [
+      "ds-power-rx",
+      "ds-power-tx"
+    ],
+    "voltages-ao": [
+      { "vin": 12000 },
+      { "vout": 970 }
+    ],
+    "max_currents-ao": [
+      { "out": 3500 }
+    ],
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -40,
+          "max-i": 125
+        }
+      },
+      {
+        "storage-o": {
+          "min-i": -40,
+          "max-i": 125
+        }
+      },
+      {
+        "junction-o": {
+          "min-i": -40,
+          "max-i": 125
+        }
+      }
+    ],
+    "pins-ao": [
+      { "A1": "GND" },
+      { "A2": "SYNC" },
+      { "A3": "TR/SS" },
+      { "A4": "RT" },
+      { "A5": "RT" },
+      { "A6": "GND" },
+      { "B1": "PG" },
+      { "B2": "SYNC" },
+      { "B3": "TR/SS" },
+      { "B4": "GND" },
+      { "B5": "RUN" },
+      { "B6": "RUN" },
+      { "C1": "PG" },
+      { "C2": "GND" },
+      { "C3": "GND" },
+      { "C4": "GND" },
+      { "C5": "NC" },
+      { "C6": "VIN" },
+      { "D1": "GND" },
+      { "D2": "GND" },
+      { "D3": "GND" },
+      { "D4": "GND" },
+      { "D5": "NC" },
+      { "D6": "VIN" },
+      { "E1": "GND" },
+      { "E2": "GND" },
+      { "E3": "GND" },
+      { "E4": "GND" },
+      { "E5": "NC" },
+      { "E6": "NC" },
+      { "F1": "FB" },
+      { "F2": "FB" },
+      { "F3": "GND" },
+      { "F4": "GND" },
+      { "F5": "GND" },
+      { "F6": "GND" },
+      { "G1": "BIAS" },
+      { "G2": "BIAS" },
+      { "G3": "VOUT" },
+      { "G4": "VOUT" },
+      { "G5": "VOUT" },
+      { "G6": "VOUT" },
+      { "H1": "VOUT" },
+      { "H2": "VOUT" },
+      { "H3": "VOUT" },
+      { "H4": "VOUT" },
+      { "H5": "VOUT" },
+      { "H6": "VOUT" }
+    ],
+    "cfgpins-ao": [
+      { "B5": "run" },
+      { "B5": "vin" },
+      { "B6": "run" },
+      { "B6": "vin" },
+      { "B5c": "RUN: below 0.9 V shuts down; if the shutdown feature is not used tie to VIN (p14)" },
+      { "A4": "rt" },
+      { "A4": "40.2k-avss" },
+      { "A5": "rt" },
+      { "A4c": "RT to GND sets fSW: 40.2k = 1 MHz for VOUT 5 V (Table 1, p17); A4/A5 are one net; do not drive (p14)" },
+      { "F1": "fb" },
+      { "F1": "24.3k-avss" },
+      { "F2": "fb" },
+      { "F1c": "FB regulates to 0.97 V; RFB from FB to GND = 97/(VOUT - 0.97) kOhm: 24.3k gives 5 V (p15, Table 1); F1/F2 are one net" },
+      { "G1": "bias" },
+      { "G1": "vout" },
+      { "G2": "bias" },
+      { "G2": "vout" },
+      { "G1c": "BIAS: connect to VOUT when VOUT > 3.2 V (p14)" },
+      { "A2": "sync" },
+      { "B2": "sync" },
+      { "A2c": "SYNC: float = pulse-skipping, GND = Burst Mode, 2.9-4.2 V = spread spectrum, clock = sync (p14); left floating (pulse-skipping)" },
+      { "A3": "tr/ss" },
+      { "B3": "tr/ss" },
+      { "A3c": "TR/SS: 2 uA internal pull-up; may be left floating when tracking is not needed (p15)" },
+      { "B1": "pg" },
+      { "C1": "pg" },
+      { "B1c": "PG: open collector; leave floating if unused (p15)" }
+    ],
+    "stdpins-ao": [
+      { "A1": "avss" },
+      { "A6": "avss" },
+      { "B4": "avss" },
+      { "C2": "avss" },
+      { "C3": "avss" },
+      { "C4": "avss" },
+      { "C6": "ds-power-rx" },
+      { "D1": "avss" },
+      { "D2": "avss" },
+      { "D3": "avss" },
+      { "D4": "avss" },
+      { "D6": "ds-power-rx" },
+      { "E1": "avss" },
+      { "E2": "avss" },
+      { "E3": "avss" },
+      { "E4": "avss" },
+      { "F3": "avss" },
+      { "F4": "avss" },
+      { "F5": "avss" },
+      { "F6": "avss" },
+      { "G3": "ds-power-tx" },
+      { "G4": "ds-power-tx" },
+      { "G5": "ds-power-tx" },
+      { "G6": "ds-power-tx" },
+      { "H1": "ds-power-tx" },
+      { "H2": "ds-power-tx" },
+      { "H3": "ds-power-tx" },
+      { "H4": "ds-power-tx" },
+      { "H5": "ds-power-tx" },
+      { "H6": "ds-power-tx" },
+      { "C6": "4.7uf-avss" },
+      { "C6c": "CIN 4.7 uF 50 V 1206 X5R (Table 1, p17)" },
+      { "G3": "47uf-avss" },
+      { "G3c": "COUT 47 uF 6.3 V 0805 X5R for VOUT 5 V (Table 1, p17)" }
+    ],
+    "specs-o": {
+      "topology_s": "buck",
+      "adjustable_b": true,
+      "vin_min_mv": 3400,
+      "vin_max_mv": 40000,
+      "vout_min_mv": 970,
+      "vout_max_mv": 18000,
+      "iout_max_ma": 3500,
+      "iq_typ_ua": 25,
+      "switching_freq_khz": 200,
+      "has_enable_b": true,
+      "has_pgood_b": true,
+      "has_thermal_shutdown_b": true,
+      "has_current_limit_b": true,
+      "has_softstart_b": true
+    },
+    "non-technical-o": {
+      "lifecycle-o": {
+        "samples": {
+          "month": 0,
+          "year": 0
+        },
+        "mp": {
+          "month": 0,
+          "year": 0
+        },
+        "eol": {
+          "month": 0,
+          "year": 0
+        }
+      },
+      "cost-o": {
+        "10": 37.008,
+        "100": 35.0454,
+        "1K": 22.54,
+        "10K": 22.54,
+        "100K": 22.54
+      },
+      "distributor-s": "Analog Devices",
+      "stock-i": 585,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "LTM8003IY-ND",
+        "package-s": "Tray",
+        "product-url-s": "https://www.digikey.com/en/products/detail/analog-devices-inc/LTM8003IY/7417364",
+        "datasheet-url-s": "https://www.analog.com/media/en/technical-documentation/data-sheets/LTM8003.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 324,
+        "moq-i": 1,
+        "unit-price-s": "USD 39.07",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "part-s": "LTM8003IY",
+    "supplies-ao": [
+      {
+        "rail-s": "GND",
+        "role-s": "gnd",
+        "pins-as": [
+          "15"
+        ],
+        "vmax_mv": 3400,
+        "source-o": {
+          "datasheet-s": "datasheet_2.pdf",
+          "page_n": 3,
+          "table-s": "ELECTRICAL CHARACTERISTICS"
+        }
+      },
+      {
+        "rail-s": "VIN",
+        "role-s": "vin",
+        "pins-as": [
+          "15",
+          "16"
+        ],
+        "vmax_mv": 3400,
+        "source-o": {
+          "datasheet-s": "datasheet_2.pdf",
+          "page_n": 3,
+          "table-s": "ELECTRICAL CHARACTERISTICS"
+        }
+      }
+    ],
+    "pins_source-s": "ball map: datasheet Rev E p2 Pin Configuration figure (banks) and p14-15 Pin Functions; matches footprints/LTM8003IY.kicad_sym"
+  }
+}

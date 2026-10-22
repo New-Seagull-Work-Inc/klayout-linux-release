@@ -1,0 +1,75 @@
+{
+  "component-o": {
+    "specs-o": {
+      "esr_mohm": 81.01,
+      "esl_ph": 471,
+      "srf_mhz": 69.0318,
+      "dc_bias-ao": [
+        { "v_mv": 0, "c_pct": 100 },
+        { "v_mv": 1000, "c_pct": 100.7 },
+        { "v_mv": 1800, "c_pct": 101 },
+        { "v_mv": 3300, "c_pct": 101.2 },
+        { "v_mv": 5000, "c_pct": 100.9 },
+        { "v_mv": 10000, "c_pct": 99.2 },
+        { "v_mv": 12000, "c_pct": 98.5 },
+        { "v_mv": 16000, "c_pct": 96.8 },
+        { "v_mv": 20000, "c_pct": 95 },
+        { "v_mv": 25000, "c_pct": 92.1 },
+        { "v_mv": 35000, "c_pct": 84.3 },
+        { "v_mv": 50000, "c_pct": 69.8 }
+      ],
+      "esr_esl_dc_bias_source-s": "Murata SimSurfing (ds.murata.co.jp/simserve): measured series-thru S-parameters GCM188R71H103KA37.s2p (25 degC, 0 V; data generated Nov 6, 2018) -> ESR at SRF, ESL at 10x SRF; DC-bias curve c_dcbias_capchange (25 degC, AC 1 Vrms), read 2026-10-21"
+    },
+    "type-s": "capacitor",
+    "vendor-s": "Murata Electronics",
+    "part-s": "GCM188R71H103KA37D",
+    "description-s": "10 nF ±10% 50 V X7R 0603 (1608M) automotive-grade MLCC, SMD, 0.8 mm thick",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "distributor-s": "DigiKey",
+      "stock-o": {
+        "digikey-i": 4859105,
+        "mouser-i": 326434,
+        "newark-i": null,
+        "checked-s": "2026-10-21",
+        "source-s": "DigiKey Product Information API v4 (max QuantityAvailable over packagings); Mouser / Newark public pages via browser; null = not listed, key absent = not checked"
+      },
+      "cost-o": {
+        "10": 0.068,
+        "100": 0.0408,
+        "1K": 0.0301,
+        "10K": 0.02032,
+        "100K": 0.01779
+      },
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "490-4778-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/murata-electronics/GCM188R71H103KA37D/1641652",
+        "datasheet-url-s": "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCM188R71H103KA37-01C-EN_PDF_CERAMICCAPACITORSMD",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 4859205,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.12",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0603" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-ceramic"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 10000,
+      "value-unit-s": "nf",
+      "voltage-max-i": 50000,
+      "tolerance-pct-x10": 100,
+      "dielectric-s": "x7r"
+    }
+  }
+}

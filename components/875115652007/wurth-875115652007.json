@@ -1,0 +1,66 @@
+{
+  "component-o": {
+    "specs-o": {
+      "esr_mohm": 12.39,
+      "esl_ph": 5291,
+      "srf_mhz": 0.2188,
+      "esr_esl_dc_bias_source-s": "Würth Elektronik LTspice library LTSpice_WCAP-PSHP (rev22a, 2022-06-01; we-online.com WCAP-PSHP product page), subckt 875115652007_100uF: Rser 12.387 mOhm, Lser 5.291 nH, C 100 µF, Rpar 50 kOhm -> esr_mohm = Rser (frequency-independent model, so also ESR at SRF), esl_ph = Lser, srf_mhz = 1/(2 pi sqrt(Lser C)). Model values, not a measured curve; temperature not stated. Catalog: ESR 30 mOhm (max), ripple 3000 mA, 2000 h. Read 2026-10-21"
+    },
+    "type-s": "capacitor",
+    "vendor-s": "Würth Elektronik",
+    "part-s": "875115652007",
+    "description-s": "100 µF ±20% 35 V WCAP-PSHP aluminum polymer capacitor, SMD can 8 x 8.7 mm (land 8.3 x 8.3 mm), 30 mΩ max ESR, 3 A ripple at 100 kHz, 2000 h at 105 °C",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 2.94,
+        "100": 2.162,
+        "1K": 1.4782,
+        "10K": 1.4782,
+        "100K": 1.4782
+      },
+      "distributor-s": "DigiKey",
+      "cost-source-s": "DigiKey API v4 StandardPricing, USD, 2026-10-21: per quantity the lowest unit price among DigiKey's non-Digi-Reel packagings whose first break is at or below that quantity (732-11942-2-ND Tape & Reel (TR), 732-11942-1-ND Cut Tape (CT))",
+      "lifecycle-s": "Active (DigiKey)",
+      "stock-o": {
+        "digikey-i": 4586,
+        "newark-i": 591,
+        "checked-s": "2026-10-21",
+        "source-s": "DigiKey Product Information API v4; Newark public search page via browser; null = not listed, key absent = not checked (Mouser blocks automated access and Octopart showed no Mouser offer)"
+      },
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "732-11942-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/würth-elektronik/875115652007/8556615",
+        "datasheet-url-s": "https://www.we-online.com/components/products/datasheet/875115652007.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 4586,
+        "moq-i": 1,
+        "unit-price-s": "USD 2.94",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-can-8x8.7" },
+      { "ppins-i": 2 },
+      { "can-diameter-mm-f": 8 },
+      { "can-length-mm-f": 8.7 },
+      { "land-mm-s": "8.3x8.3" }
+    ],
+    "blocks-as": [
+      "capacitor-aluminum-polymer"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 100000000,
+      "value-unit-s": "uf",
+      "voltage-max-i": 35000,
+      "tolerance-pct-x10": 200,
+      "esr-mr-i": 30,
+      "dielectric-s": "aluminum-polymer"
+    }
+  }
+}

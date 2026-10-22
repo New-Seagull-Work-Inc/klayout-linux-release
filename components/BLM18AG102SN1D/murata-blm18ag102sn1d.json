@@ -1,0 +1,37 @@
+{
+  "component-o": {
+    "type-s": "ferrite-bead",
+    "vendor-s": "Murata",
+    "part-s": "BLM18AG102SN1D",
+    "description-s": "Ferrite Beads Multi-Layer 1KOhm 25% 100MHz 400mA 500mOhm DCR 0603 T/R",
+    "package-ao": [
+      { "ptype-s": "Ferrite Beads and Chips" },
+      { "ppins-i": 2 }
+    ],
+    "passive-o": {},
+    "non-technical-o": {
+      "cost-o": {
+        "10": 0.014,
+        "100": 0.014,
+        "1K": 0.014,
+        "10K": 0.009,
+        "100K": 0.009
+      },
+      "distributor-s": "CoreStaff",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "490-1015-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/murata-electronics/BLM18AG102SN1D/584226",
+        "datasheet-url-s": "https://pim.murata.com/asset/pim4/ferriteBeadInductortypefilter/ENFA0003_PDF_FERRITEBEADINDUCTORTYPEFILTER?lastModifiedDatetime=20250707190934",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 2106572,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.13",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    }
+  }
+}

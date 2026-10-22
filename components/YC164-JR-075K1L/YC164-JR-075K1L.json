@@ -1,0 +1,62 @@
+{
+  "component-o": {
+    "type-s": "resistor",
+    "vendor-s": "Yageo",
+    "part-s": "YC164-JR-075K1L",
+    "description-s": "4 x 5.1 kOhm +/-5% isolated convex chip resistor array, 4 x 0603 (3.2 x 1.6 mm, 0.8 mm pitch), 1/16 W per element",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "distributor-s": "DigiKey",
+      "stock-i": 31418,
+      "stock-checked-s": "2026-10-21",
+      "lifecycle-s": "Active",
+      "distributor-sku-s": "YC164J-5.1KTR-ND",
+      "distributor-url-s": "https://www.digikey.com/en/products/detail/yageo/YC164-JR-075K1L/1005140",
+      "moq-i": 5000,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "YC164J-5.1KCT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/yageo/YC164-JR-075K1L/1005140",
+        "datasheet-url-s": "https://yageogroup.com/content/datasheet/asset/file/PYU-YC_TC_GROUP_51_ROHS_L",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 31418,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.10",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-yc164-4x0603" },
+      { "ppins-i": 8 }
+    ],
+    "blocks-as": [
+      "resistor-array"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 5100000,
+      "value-unit-s": "k",
+      "power-mw-i": 63,
+      "tolerance-pct-x10": 50
+    },
+    "rating_source-o": {
+      "datasheet-s": "PYU-YC_TC_GROUP_51_ROHS_L.pdf",
+      "page_n": 7,
+      "table-s": "ELECTRICAL CHARACTERISTICS (YC164 1/16 W, 50 V max working); Table 1 p6 dimensions L 3.20, W 1.60, pitch P 0.80 mm"
+    },
+    "elements-i": 4,
+    "pins-ao": [
+      { "1": "r1a" },
+      { "8": "r1b" },
+      { "2": "r2a" },
+      { "7": "r2b" },
+      { "3": "r3a" },
+      { "6": "r3b" },
+      { "4": "r4a" },
+      { "5": "r4b" }
+    ]
+  }
+}

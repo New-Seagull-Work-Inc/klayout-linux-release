@@ -1,0 +1,73 @@
+{
+  "component-o": {
+    "specs-o": {
+      "esr_mohm": 7.67,
+      "esl_ph": 283,
+      "srf_mhz": 5.1111,
+      "dc_bias-ao": [
+        { "v_mv": 0, "c_pct": 100 },
+        { "v_mv": 1000, "c_pct": 96 },
+        { "v_mv": 1800, "c_pct": 85.2 },
+        { "v_mv": 2500, "c_pct": 74.6 },
+        { "v_mv": 3300, "c_pct": 62.5 },
+        { "v_mv": 5000, "c_pct": 43.9 },
+        { "v_mv": 6300, "c_pct": 34.5 },
+        { "v_mv": 10000, "c_pct": 19.9 },
+        { "v_mv": 12000, "c_pct": 16.6 },
+        { "v_mv": 16000, "c_pct": 10.9 }
+      ],
+      "esr_esl_dc_bias_source-s": "Samsung Electro-Mechanics product page chart data (product.samsungsem.com/mlcc/CL10A225KO8NNN.do, datasheetData): |Z| and R 'Precise' model at 0 V, 25 degC -> ESR at SRF (|Z| min), ESL at 10x SRF; DC-bias delta-C curve at 1000 Hz (dsDcSign 1.0, AC level not otherwise stated), read 2026-10-21"
+    },
+    "type-s": "capacitor",
+    "vendor-s": "Samsung Electro-Mechanics",
+    "part-s": "CL10A225KO8NNNC",
+    "description-s": "2.2 µF ±10% 16 V X5R 0603 multilayer ceramic capacitor (MLCC), SMD, 0.8 mm thick",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "distributor-s": "DigiKey",
+      "stock-o": {
+        "digikey-i": 80000,
+        "mouser-i": 76436,
+        "newark-i": 68000,
+        "checked-s": "2026-10-21",
+        "source-s": "DigiKey Product Information API v4 (max QuantityAvailable over packagings); Mouser / Newark public pages via browser; null = not listed, key absent = not checked"
+      },
+      "cost-o": {
+        "10": 0.058,
+        "100": 0.0345,
+        "1K": 0.02524,
+        "10K": 0.0193,
+        "100K": 0.01681
+      },
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "1276-1040-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10A225KO8NNNC/3886698",
+        "datasheet-url-s": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/421/CL10A225KO8NNNC_Spec.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 80000,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.11",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0603" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-ceramic"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 2200000,
+      "value-unit-s": "uf",
+      "voltage-max-i": 16000,
+      "tolerance-pct-x10": 100,
+      "dielectric-s": "x5r"
+    }
+  }
+}

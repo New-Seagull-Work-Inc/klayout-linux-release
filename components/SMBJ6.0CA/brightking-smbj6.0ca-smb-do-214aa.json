@@ -1,0 +1,48 @@
+{
+  "component-o": {
+    "type-s": "tvs",
+    "vendor-s": "BrightKing",
+    "description-s": "6.0V bidirectional TVS, 600W (10/1000us), VC 10.3V @ 58.3A, SMB/DO-214AA, for power-input and signal-line surge protection",
+    "non-technical-o": {
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "product-url-s": "https://www.digikey.com/en/products/detail/nextgen-components/SMBJ6-0CA/15211179",
+        "datasheet-url-s": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6674/3372_SMBJ060CA0S0AG.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 300000,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "SMB-DO-214AA" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "tvs-diode"
+    ],
+    "interfaces-as": [
+      "ds-power-rx"
+    ],
+    "tvs-o": {
+      "bidirectional-b": true,
+      "standoff-voltage-mv-i": 6000,
+      "breakdown-voltage-min-mv-i": 6670,
+      "breakdown-voltage-max-mv-i": 7370,
+      "clamping-voltage-mv-i": 10300,
+      "peak-pulse-current-a-i": 58,
+      "peak-pulse-power-w-i": 600,
+      "pulse-waveform-s": "10/1000us",
+      "reverse-leakage-ua-i": 800
+    },
+    "part-s": "SMBJ6.0CA",
+    "pins-ao": [
+      { "1": "cathode" },
+      { "2": "anode" }
+    ],
+    "stdpins-ao": [
+      { "1": "ds-power-rx" },
+      { "2": "avss" }
+    ]
+  }
+}

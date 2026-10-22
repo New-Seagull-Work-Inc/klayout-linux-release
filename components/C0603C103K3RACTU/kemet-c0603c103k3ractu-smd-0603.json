@@ -1,0 +1,42 @@
+{
+  "component-o": {
+    "type-s": "capacitor",
+    "vendor-s": "KEMET",
+    "description-s": "10000 pF (0.01 µF) 25 V ±10% X7R dielectric SMD ceramic capacitor, EIA 0603 case, 100% matte Sn termination, 7\" reel unmarked",
+    "package-ao": [
+      { "ptype-s": "smd-0603" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-ceramic"
+    ],
+    "non-technical-o": {
+      "cost-o": {},
+      "distributor-s": "",
+      "lifecycle-o": {},
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "399-C0603C103K3RACTUCT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/kemet/C0603C103K3RACTU/2199753",
+        "datasheet-url-s": "https://yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 223827,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.12",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "passive-o": {
+      "value-i": 10000,
+      "value-unit-s": "nf",
+      "voltage-max-i": 25000,
+      "tolerance-pct-x10": 100,
+      "dielectric-s": "x7r",
+      "lead-style-s": "smd"
+    },
+    "part-s": "C0603C103K3RACTU"
+  }
+}

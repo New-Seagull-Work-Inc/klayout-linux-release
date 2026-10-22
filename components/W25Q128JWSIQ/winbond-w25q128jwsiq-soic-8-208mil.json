@@ -1,0 +1,139 @@
+{
+  "component-o": {
+    "bringup-o": {
+      "interface-s": "SPI",
+      "address-s": "NOT STATED (SPI, chip-select addressed)",
+      "id-register-s": "9Fh Read JEDEC ID (MF7-0, ID15-8, ID7-0); also ABh Device ID, 90h Manufacturer/Device ID",
+      "id-expect-s": "9Fh: EFh 60h 18h (Winbond EFh, W25Q128JW-IQ/JQ device ID 6018h); ABh/90h device ID 17h",
+      "check-s": "05h Read Status Register-1: BUSY (S0) = 0 when idle; 35h Status Register-2: QE = 1 (factory-fixed default for IQ/JQ ordering options)",
+      "source-s": "W25Q128JW datasheet Rev E: 8.1 Manufacturer and Device Identification table p21 (pdf p22); Instruction Set Table 1 p22; Read JEDEC ID (9Fh) p49; QE bit description p16; ordering W25Q128JWSIQ p75"
+    },
+    "type-s": "flash",
+    "vendor-s": "Winbond",
+    "part-s": "W25Q128JWSIQ",
+    "description-s": "128 Mbit 1.8 V serial NOR flash, standard / dual / quad SPI, 133 MHz, 1.7 V to 1.95 V, -40 to 85 °C, SOIC-8 208 mil. The 100 nF VCC decoupling in stdpins-ao is common practice, not a datasheet value",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "1K": 2.088,
+        "10K": 2.088,
+        "100K": 2.088
+      },
+      "distributor-s": "Arrow Electronics",
+      "moq-i": 300,
+      "order-mult-i": 1,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "256-W25Q128JWSIQ-ND",
+        "package-s": "Tube",
+        "product-url-s": "https://www.digikey.com/en/products/detail/winbond-electronics/W25Q128JWSIQ/12090690",
+        "datasheet-url-s": "https://www.winbond.com/resource-files/W25Q128JW_RevG_07292021%20Plus.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 3,
+        "moq-i": 1,
+        "unit-price-s": "USD 6.29",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "soic-8-208mil" },
+      { "ppins-i": 8 }
+    ],
+    "blocks-as": [
+      "flash",
+      "flash-nor"
+    ],
+    "interfaces-as": [
+      "ds-qspi-rxtx",
+      "ds-power-rx"
+    ],
+    "voltages-ao": [
+      { "vcc": 1800 }
+    ],
+    "max_currents-ao": [
+      { "vcc": 20 }
+    ],
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -40,
+          "max-i": 85
+        }
+      }
+    ],
+    "pins-ao": [
+      { "1": "/CS" },
+      { "2": "DO (IO1)" },
+      { "3": "/WP (IO2)" },
+      { "4": "GND" },
+      { "5": "DI (IO0)" },
+      { "6": "CLK" },
+      { "7": "/HOLD or /RESET (IO3)" },
+      { "8": "VCC" }
+    ],
+    "stdpins-ao": [
+      { "1": "ds-qspi-cs" },
+      { "2": "ds-qspi-io1" },
+      { "3": "ds-qspi-io2" },
+      { "4": "dvss" },
+      { "5": "ds-qspi-io0" },
+      { "6": "ds-qspi-clk" },
+      { "7": "ds-qspi-io3" },
+      { "8": "ds-power-rx" },
+      { "8": "100nf-gnd" },
+      { "8": "dvdd-1_8" }
+    ],
+    "cfgpins-ao": [
+      { "1": "/CS" },
+      { "1c": "/CS must track VCC at power-up and power-down; the datasheet says a pull-up resistor on /CS can be used for this (section 6.5 write protection). Value not given, 10k used." },
+      { "1": "10k-vcc" },
+      { "3": "/WP (IO2)" },
+      { "3c": "Write protect in standard / dual SPI, IO2 in quad SPI (QE = 1). Wire to the host's IO2." },
+      { "7": "/HOLD or /RESET (IO3)" },
+      { "7c": "Hold or reset in standard / dual SPI, IO3 in quad SPI (QE = 1). Wire to the host's IO3." }
+    ],
+    "flash-o": {
+      "technology-s": "nor",
+      "interface-s": "spi-quad",
+      "density-mbit-i": 128,
+      "address-bytes-i": 3,
+      "clock-max-mhz-i": 133,
+      "vcc-min-mv-i": 1700,
+      "vcc-max-mv-i": 1950,
+      "icc-active-ma-i": 20,
+      "icc-standby-ua-i": 10
+    },
+    "supplies-ao": [
+      {
+        "rail-s": "VCC",
+        "role-s": "vcc",
+        "pins-as": [
+          "8"
+        ],
+        "vmin_mv": 1700,
+        "vmax_mv": 1950,
+        "i_max_ma": 20,
+        "i_typ_ma": 15,
+        "source-o": {
+          "datasheet-s": "W25Q128JWSIQ.pdf",
+          "page_n": 60,
+          "table-s": "9.2 Operating Ranges"
+        },
+        "i_source-o": {
+          "datasheet-s": "W25Q128JWSIQ.pdf",
+          "page_n": 63,
+          "table-s": "9.4 DC Electrical Characteristics-"
+        },
+        "i_step_ma": 19.999,
+        "step_source-o": {
+          "datasheet-s": "W25Q128JWSIQ.pdf",
+          "page_n": 63,
+          "table-s": "9.4 DC Electrical Characteristics",
+          "derived": "operating max 20 mA (ICC3 quad read 104 MHz / ICC4-7 write, program, erase) less the smallest low-power current 1 uA typ (ICC2 power-down, 85 C)"
+        }
+      }
+    ]
+  }
+}

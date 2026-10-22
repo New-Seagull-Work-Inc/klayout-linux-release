@@ -1,0 +1,107 @@
+{
+  "component-o": {
+    "type-s": "oscillator",
+    "vendor-s": "ECS Inc.",
+    "part-s": "ECS-2520MV-250-BN-TR",
+    "description-s": "25.000 MHz HCMOS (LVCMOS) MultiVolt crystal oscillator, 1.6-3.6 V, +/-50 ppm, -40..85 C, 2.5 x 2.0 x 0.8 mm, tri-state. Reference clock for a deserializer REFCLK input (TDES960: 23-26 MHz LVCMOS, 100 ppm) at the chip's VDDIO.",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {},
+      "distributor-s": "",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "XC2751CT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/ecs-inc/ECS-2520MV-250-BN-TR/8593607",
+        "datasheet-url-s": "https://ecsxtal.com/store/pdf/ECS-2520MV.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 39662,
+        "moq-i": 1,
+        "unit-price-s": "USD 1.18",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-2520-4pin" },
+      { "ppins-i": 4 }
+    ],
+    "blocks-as": [
+      "oscillator"
+    ],
+    "interfaces-as": [
+      "ds-refclk-tx"
+    ],
+    "pins-ao": [
+      { "1": "TRI-STATE" },
+      { "2": "GND" },
+      { "3": "OUT" },
+      { "4": "VDD" }
+    ],
+    "stdpins-ao": [
+      { "3": "ds-refclk-tx" },
+      { "4": "ds-power-rx" },
+      { "4": "iovdd-1_8" },
+      { "4": "100nf-dvss" },
+      { "2": "dvss" }
+    ],
+    "cfgpins-ao": [
+      { "1": "oe" },
+      { "1": "vdd" },
+      { "1c": "Tri-state: >= 0.7 x Vdd or NC = output active, <= 0.3 x Vdd = high impedance (p1); tied to VDD, always on" }
+    ],
+    "voltages-ao": [
+      { "iovdd": 1800 }
+    ],
+    "max_currents-ao": [
+      { "iovdd": 4 }
+    ],
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -40,
+          "max-i": 85
+        }
+      }
+    ],
+    "osc-o": {
+      "frequency-hz-i": 25000000,
+      "stability-ppm-i": 50,
+      "output-s": "hcmos",
+      "supply-min-mv-i": 1600,
+      "supply-max-mv-i": 3600,
+      "supply-current-max-ma-x10-i": 35,
+      "load-pf-i": 15,
+      "rise-fall-ns-x10-i": 70,
+      "startup-ms-x10-i": 50,
+      "duty-min-pct-i": 45,
+      "duty-max-pct-i": 55,
+      "jitter-rms-ps-x10-i": 10,
+      "enable-s": "tri-state",
+      "osc_note-s": "Supply current 3.5 mA max at 1.8 V, 7.0 mA at 3.3 V (19-39.9 MHz column); standby 10 uA; stability includes initial tolerance, temperature, supply, load, reflow and aging (BN option). The 1.8 V rail here: the TDES960's VDDIO (REFCLK VIH 0.65 x VDDIO, abs max VDDIO + 0.3 V, TDES960 p7/p10).",
+      "source-o": {
+        "datasheet-s": "ECS-2520MV.pdf",
+        "page_n": 1,
+        "table-s": "Operating Conditions / Electrical Characteristics; Current Consumption; Pad Connections; Tri State Function"
+      }
+    },
+    "supplies-ao": [
+      {
+        "rail-s": "VDD",
+        "role-s": "iovdd",
+        "pins-as": [
+          "4"
+        ],
+        "vmin_mv": 1600,
+        "vmax_mv": 3600,
+        "i_max_ma": 4,
+        "source-o": {
+          "datasheet-s": "ECS-2520MV.pdf",
+          "page_n": 1,
+          "table-s": "Supply Voltage 1.6-3.6 V; Current Consumption 3.5 mA max at +1.8 V, 25 MHz"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "component-o": {
+    "type-s": "capacitor",
+    "vendor-s": "Panasonic",
+    "part-s": "EEE-FK1V471AQ",
+    "description-s": "470 µF 35 V ±20% ALUMINUM-ELECTROLYTIC SMD aluminum electrolytic, FK series",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {},
+      "distributor-s": "",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "PCE4862CT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/panasonic-industry/EEE-FK1V471AQ/1879860",
+        "datasheet-url-s": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1178.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 935,
+        "moq-i": 1,
+        "unit-price-s": "USD 1.99",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-can" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-electrolytic"
+    ],
+    "passive-o": {
+      "value-i": 470000000,
+      "value-unit-s": "uf",
+      "voltage-max-i": 35000,
+      "tolerance-pct-x10": 200,
+      "dielectric-s": "aluminum-electrolytic",
+      "lead-style-s": "smd"
+    }
+  }
+}

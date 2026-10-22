@@ -1,0 +1,210 @@
+{
+  "component-o": {
+    "type-s": "regulator",
+    "vendor-s": "Texas Instruments",
+    "description-s": "17-V Input 3-A Step-Down Converter MicroSiP Power Module with Integrated Inductor",
+    "package-ao": [
+      { "ptype-s": "usip-sil-8" },
+      { "ppins-i": 8 }
+    ],
+    "blocks-as": [
+      "regulator",
+      "regulator-buck",
+      "thermal-shutdown",
+      "current-limit",
+      "soft-start",
+      "power-good",
+      "enable"
+    ],
+    "interfaces-as": [
+      "ds-power-rx",
+      "ds-power-tx"
+    ],
+    "voltages-ao": [
+      { "vin": 12000 },
+      { "vout": 1800 }
+    ],
+    "max_currents-ao": [
+      { "out": 3000 }
+    ],
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -40,
+          "max-i": 125
+        }
+      },
+      {
+        "storage-o": {
+          "min-i": -55,
+          "max-i": 125
+        }
+      }
+    ],
+    "pins-ao": [
+      { "1": "en" },
+      { "2": "vin" },
+      { "3": "gnd" },
+      { "4": "vout" },
+      { "5": "vout" },
+      { "6": "fb" },
+      { "7": "pg" },
+      { "8": "ss/tr" },
+      { "9": "ep" }
+    ],
+    "cfgpins-ao": [
+      { "1": "en" },
+      { "1": "vin" },
+      { "1c": "EN pull high to enable (internal 400 k pull-down when disabled); tied to VIN, always on" },
+      { "6": "fb" },
+      { "6": "124k-out" },
+      { "6": "100k-avss" },
+      { "7": "pg" },
+      { "7": "100k-out" },
+      { "8": "ss/tr" },
+      { "8": "3.3nf-avss" }
+    ],
+    "stdpins-ao": [
+      { "2": "ds-power-rx" },
+      { "2": "10uf-avss" },
+      { "3": "avss" },
+      { "4": "ds-power-tx" },
+      { "4": "22uf-avss" },
+      { "5": "ds-power-tx" },
+      { "9": "avss" }
+    ],
+    "specs-o": {
+      "topology_s": "buck",
+      "adjustable_b": true,
+      "vin_min_mv": 3000,
+      "vin_max_mv": 17000,
+      "vout_min_mv": 900,
+      "vout_max_mv": 6000,
+      "iout_max_ma": 3000,
+      "iq_typ_ua": 20,
+      "switching_freq_khz": 2000,
+      "has_enable_b": true,
+      "has_pgood_b": true,
+      "has_thermal_shutdown_b": true,
+      "has_current_limit_b": true,
+      "has_softstart_b": true,
+      "integrated_inductor_b": true,
+      "en_vil_min_mv": 300,
+      "en_vih_max_mv": 900,
+      "en_note-s": "internal 400 k pulldown while disabled (Pin Functions p3)",
+      "en_source-o": {
+        "datasheet-s": "tps82130.pdf",
+        "page_n": 5,
+        "table-s": "6.5 Electrical Characteristics, LOGIC INTERFACE (EN): VIH 0.65 typ / 0.9 max V, VIL 0.3 min / 0.45 typ V"
+      },
+      "vref_mv": 800,
+      "vref_min_mv": 785,
+      "vref_max_mv": 815,
+      "vref_source-o": {
+        "datasheet-s": "tps82130.pdf",
+        "page_n": 5,
+        "table-s": "6.5 Electrical Characteristics, OUTPUT: VFB 785 / 800 / 815 mV PWM mode"
+      },
+      "vout_set_note-s": "VOUT = 0.8 V x (1 + R1/R2), R2 <= 100 k (8.2.1.2.2 p11): 124 k / 100 k = 1.79 V, TI's 1.8 V application (Figure 8-1)",
+      "cin_min_nf": 10000,
+      "cout_min_nf": 22000,
+      "cout_max_nf": 400000,
+      "cout_source-o": {
+        "datasheet-s": "tps82130.pdf",
+        "page_n": 11,
+        "table-s": "8.2.1.2.3 Input and Output Capacitor Selection: 10 uF or larger input capacitor required; output capacitor from 22 uF up to more than 400 uF (higher evaluated through the transient response)"
+      },
+      "iout_source-o": {
+        "datasheet-s": "tps82130.pdf",
+        "page_n": 4,
+        "table-s": "6.3 Recommend Operating Conditions: VIN 3-17 V, VOUT 0.9-6 V, IOUT 0-3 A"
+      },
+      "load_regulation_pct_per_a": 0.12,
+      "load_regulation_mv_per_a": 2.16,
+      "load_regulation_source-o": {
+        "datasheet-s": "tps82130.pdf",
+        "page_n": 5,
+        "table-s": "6.5 Electrical Characteristics: Load regulation IOUT = 0.5 A to 3 A, VOUT = 1.8 V, 0.12 %/A",
+        "derived": "0.12 %/A x 1800 mV = 2.16 mV/A"
+      },
+      "load_regulation-ao": [
+        { "i_from_ma": 500, "i_to_ma": 3000, "pct_per_a": 0.12, "mv_per_a": 2.16, "vout_mv": 1800, "mode-s": "PWM", "fig-s": "6.5 Electrical Characteristics, Load regulation", "page_n": 5, "derived-s": "0.12 %/A x 1.8 V" }
+      ],
+      "load_transient-ao": [
+        { "i_from_ma": 500, "i_to_ma": 3000, "i_step_ma": 2500, "slew_a_per_us": 1, "cout_uf": 22, "cout_part-s": "C2 TDK C2012X7S1A226M125AC 22 uF 10 V X7S 0805 (Table 8-2 p11)", "cff_pf": 0, "vout_mv": 1800, "vin_mv": 12000, "ta_c": 25, "page_n": 16, "fig-s": "Figure 8-22. Load Transient", "dv_mv": 43, "dv_overshoot_mv": 37, "conditions_source-s": "Application Curves header p13: TA = 25 C, VIN = 12 V, VOUT = 1.8 V; circuit Figure 8-1 (no feed-forward capacitor)", "read-s": "oscilloscope capture rendered at 300 dpi: 50 mV/div = 68.5 px, trace noise about +/-4 mV; undershoot on 0.5 -> 3 A 43 mV, overshoot on 3 -> 0.5 A 37 mV" },
+        { "i_from_ma": 0, "i_to_ma": 3000, "i_step_ma": 3000, "slew_a_per_us": 1, "cout_uf": 22, "cout_part-s": "C2 TDK C2012X7S1A226M125AC 22 uF 10 V X7S 0805 (Table 8-2 p11)", "cff_pf": 0, "vout_mv": 1800, "vin_mv": 12000, "ta_c": 25, "page_n": 16, "fig-s": "Figure 8-21. Load Transient", "dv_mv": 42, "dv_overshoot_mv": 44, "conditions_source-s": "Application Curves header p13", "read-s": "300 dpi render, 50 mV/div = 68 px: starts in Power Save Mode (sawtooth); undershoot 42 mV below the PSM level, overshoot 44 mV above the PWM level" }
+      ],
+      "load_transient_note-s": "Both figures at VIN 12 V; the datasheet draws no load step at 5 V in. DCS-Control's response is set by the loop and COUT, with VIN entering through the inductor slew (VIN - VOUT) / L, which is smaller at 5 V, so a 5 V step can be somewhat slower; that is not a datasheet curve",
+      "efficiency-ao": [
+        { "vin_mv": 5000, "vout_mv": 1800, "iout_ma": 100, "efficiency_pct": 86.8, "fig-s": "Figure 8-4. Efficiency, VOUT = 1.8 V", "page_n": 13 },
+        { "vin_mv": 5000, "vout_mv": 1800, "iout_ma": 200, "efficiency_pct": 87.5, "fig-s": "Figure 8-4. Efficiency, VOUT = 1.8 V", "page_n": 13 },
+        { "vin_mv": 5000, "vout_mv": 1800, "iout_ma": 500, "efficiency_pct": 89.5, "fig-s": "Figure 8-4. Efficiency, VOUT = 1.8 V", "page_n": 13 },
+        { "vin_mv": 5000, "vout_mv": 1800, "iout_ma": 1000, "efficiency_pct": 89, "fig-s": "Figure 8-5. Efficiency, VOUT = 1.8 V", "page_n": 13 }
+      ],
+      "efficiency_source-s": "pdf-graph curve points, VIN = 5.0 V trace (Figure 8-4) and IOUT = 1.0 A trace at 5 V (Figure 8-5), TA = 25 C",
+      "inductor_note-s": "inductor integrated in the module: no SW pin, no external coil (MicroSiP, Pin Functions p3)",
+      "rth_ja_c_per_w": 58.2,
+      "rth_source-s": "6.4 Thermal Information p4: RthetaJA 58.2 C/W JEDEC 51-5, 46.1 C/W on TPS82130EVM-720",
+      "not_stated-o": {
+        "loop_crossover_khz": "not stated (DCS-Control, internally compensated)",
+        "output_impedance_mohm": "no Zout curve"
+      },
+      "source-o": {
+        "datasheet-s": "tps82130.pdf",
+        "page_n": 11,
+        "figure-s": "Figure 8-1. 1.8-V Output Application"
+      }
+    },
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 3.31,
+        "100": 2.78,
+        "1K": 2.68,
+        "10K": 2.56,
+        "100K": 2.56
+      },
+      "distributor-s": "Mouser",
+      "moq-i": 1,
+      "order-mult-i": 1,
+      "stock-i": 0,
+      "lifecycle-s": "active",
+      "lifecycle-source-s": "DigiKey: Active; Mouser: Active",
+      "stock-mouser-i": 0,
+      "stock-digikey-i": 0,
+      "stock-note-s": "2026-10-21: 0 at Mouser and DigiKey for both SILR and SILT (TI factory lead time); LCSC C473914 shows 4330 SILR at $4.75 (not a TI franchise)",
+      "stock-checked-s": "2026-10-21",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "296-47436-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/texas-instruments/TPS82130SILR/5931040",
+        "datasheet-url-s": "https://www.ti.com/lit/gpn/tps82130",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 0,
+        "moq-i": 1,
+        "unit-price-s": "USD 3.09",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "part-s": "TPS82130SILR",
+    "supplies-ao": [
+      {
+        "rail-s": "VIN",
+        "role-s": "vin",
+        "pins-as": [
+          "2"
+        ],
+        "vmin_mv": 3000,
+        "vmax_mv": 17000,
+        "source-o": {
+          "datasheet-s": "tps82130.pdf",
+          "page_n": 4,
+          "table-s": "6.3 Recommend Operating Conditions"
+        }
+      }
+    ]
+  }
+}

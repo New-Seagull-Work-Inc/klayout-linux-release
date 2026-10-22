@@ -1,0 +1,31 @@
+{
+  "component-o": {
+    "type-s": "capacitor",
+    "vendor-s": "Panasonic",
+    "part-s": "ECA-1EM101B",
+    "description-s": "Aluminum Electrolytic Capacitor, Polarized, Aluminum (wet), 25V, 20% +Tol, 20% -Tol, 100uF",
+    "package-ao": [
+      { "ptype-s": "Aluminum Electrolytic Capacitors" },
+      { "ppins-i": 2 }
+    ],
+    "passive-o": {
+      "lead-style-s": "radial"
+    },
+    "non-technical-o": {
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "10-ECA-1EM101BCT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/panasonic-industry/ECA-1EM101B/268461",
+        "datasheet-url-s": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2452/ECA-xxM%20Series%2CTypeA.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 978,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.33",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    }
+  }
+}

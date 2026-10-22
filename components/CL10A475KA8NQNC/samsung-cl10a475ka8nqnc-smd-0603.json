@@ -1,0 +1,51 @@
+{
+  "component-o": {
+    "type-s": "capacitor",
+    "vendor-s": "Samsung Electro-Mechanics",
+    "part-s": "CL10A475KA8NQNC",
+    "description-s": "4.7 uF ±10% 25 V X5R 0603 MLCC; second source for C1608X5R1E475K080AC",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.073,
+        "100": 0.073,
+        "1K": 0.073,
+        "10K": 0.069,
+        "100K": 0.043
+      },
+      "distributor-s": "Newark",
+      "moq-i": 4000,
+      "order-mult-i": 1,
+      "stock-i": 36000,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "1276-1900-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10A475KA8NQNC/3887558",
+        "datasheet-url-s": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/43/CL10A475KA8NQNC_Spec.pdf",
+        "lifecycle-s": "nrnd",
+        "status-s": "Not For New Designs",
+        "available-i": 303703,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.39",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0603" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-ceramic"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 4700000,
+      "value-unit-s": "uf",
+      "voltage-max-i": 25000,
+      "tolerance-pct-x10": 100,
+      "dielectric-s": "x5r"
+    }
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "component-o": {
+    "type-s": "regulator",
+    "vendor-s": "Texas Instruments",
+    "part-s": "TPS7A2028PDBVR",
+    "description-s": "300 mA ultra-low-noise, low-IQ LDO, fixed 2.8 V output, active output discharge, SOT-23-5",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.261,
+        "100": 0.197,
+        "1K": 0.162,
+        "10K": 0.154,
+        "100K": 0.154
+      },
+      "distributor-s": "Mouser",
+      "moq-i": 1,
+      "order-mult-i": 1,
+      "stock-i": 447,
+      "lifecycle-s": "active",
+      "lifecycle-source-s": "DigiKey: Active; TI package addendum: Active",
+      "stock-mouser-i": 447,
+      "stock-digikey-i": 0,
+      "stock-checked-s": "2026-10-21",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "296-TPS7A2028PDBVRCT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/texas-instruments/TPS7A2028PDBVR/13566848",
+        "datasheet-url-s": "https://www.ti.com/lit/gpn/tps7a20",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 0,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.35",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "sot-23-5" },
+      { "ppins-i": 5 }
+    ],
+    "blocks-as": [
+      "regulator",
+      "regulator-ldo",
+      "reference-bandgap",
+      "thermal-shutdown",
+      "current-limit",
+      "enable"
+    ],
+    "interfaces-as": [
+      "ds-power-rx",
+      "ds-power-tx"
+    ],
+    "temperatures-ao": [
+      {
+        "junction-o": {
+          "min-i": -40,
+          "max-i": 125
+        }
+      }
+    ],
+    "voltages-ao": [
+      { "vin": 5000 },
+      { "vout": 2800 }
+    ],
+    "max_currents-ao": [
+      { "out": 300 }
+    ],
+    "pins-ao": [
+      { "1": "in" },
+      { "2": "gnd" },
+      { "3": "en" },
+      { "4": "nc" },
+      { "5": "out" }
+    ],
+    "cfgpins-ao": [
+      { "3": "en" },
+      { "3": "in" },
+      { "3c": "EN active high (VEN(HI) 0.9 V max, VEN(LOW) 0.3 V min, p7); internal 500 k smart pulldown holds the LDO off when EN floats (p4): tied to IN, always on; a sequenced design drives it instead" },
+      { "4": "nc" },
+      { "4c": "N/C: no internal connection (Pin Functions p4); MIC5205's BYP pin sits here, so the 470 pF BYP cap of a MIC5205 layout is simply not fitted" }
+    ],
+    "stdpins-ao": [
+      { "1": "ds-power-rx" },
+      { "1": "1uf-avss" },
+      { "5": "ds-power-tx" },
+      { "5": "1uf-avss" },
+      { "2": "avss" }
+    ],
+    "specs-o": {
+      "en_vil_max_mv": 300,
+      "en_vih_max_mv": 900,
+      "en_note-s": "internal 500 k smart enable pulldown (disconnected once VEN > VEN(HI)); EN floating = off",
+      "en_source-o": {
+        "datasheet-s": "TPS7A2028PDBVR.pdf",
+        "page_n": 7,
+        "table-s": "5.5 Electrical Characteristics: VEN(LOW) 0.3 V, VEN(HI) 0.9 V (VIN 1.6-6.0 V); REN(PULL-DOWN) 500 kOhm"
+      },
+      "topology_s": "ldo",
+      "adjustable_b": false,
+      "vin_min_mv": 1600,
+      "vin_max_mv": 6000,
+      "vout_fixed_mv": 2800,
+      "vout_accuracy_pct_x10": 15,
+      "iout_max_ma": 300,
+      "iq_typ_ua": 6.5,
+      "ish_typ_ua": 0.07,
+      "dropout_mv_at_iout": 145,
+      "dropout_note-s": "145 mV max at 300 mA, 2.5 V <= VOUT < 5.5 V, DBV package (p6)",
+      "psrr_db_at_1khz": 95,
+      "noise_uvrms": 7,
+      "has_enable_b": true,
+      "has_pgood_b": false,
+      "has_thermal_shutdown_b": true,
+      "has_current_limit_b": true,
+      "has_active_discharge_b": true,
+      "rth_ja_c_per_w": 187.1,
+      "rth_source-s": "5.4 Thermal Information p6, DBV (SOT-23) RthetaJA 187.1 C/W (JEDEC board)",
+      "ilimit_min_ma": 360,
+      "ilimit_typ_ma": 520,
+      "ilimit_max_ma": 730,
+      "ilimit_source-o": {
+        "datasheet-s": "TPS7A2028PDBVR.pdf",
+        "page_n": 7,
+        "table-s": "5.5 Electrical Characteristics: ICL 360 / 520 / 730 mA (DQN; DBV row given for VOUT < 1.5 V with the same limits); ISC 160 mA at VOUT = 0 V"
+      },
+      "cout_min_nf": 1000,
+      "cout_max_nf": 200000,
+      "cout_esr_max_mohm": 100,
+      "cout_source-o": {
+        "datasheet-s": "TPS7A2028PDBVR.pdf",
+        "page_n": 5,
+        "table-s": "5.3 Recommended Operating Conditions: COUT 1 uF min / 200 uF max, ESR 100 mOhm max; note 3: effective output capacitance 0.47 uF min and 200 uF max required for stability"
+      },
+      "iout_source-o": {
+        "datasheet-s": "TPS7A2028PDBVR.pdf",
+        "page_n": 5,
+        "table-s": "5.3 Recommended Operating Conditions: VIN 1.6-6.0 V, IOUT 0-300 mA"
+      },
+      "replaces_s": "MIC5205-2.8YM5-TR: same SOT-23-5 IN/GND/EN/OUT on pins 1/2/3/5; pin 4 is N/C here (MIC5205 BYP), so a MIC5205 footprint takes it with the BYP cap left off. Unlike MIC5205, it publishes load-transient figures",
+      "load_regulation_mv": 19,
+      "load_regulation_mv_per_a": 63.5,
+      "load_regulation_source-o": {
+        "datasheet-s": "TPS7A2028PDBVR.pdf",
+        "page_n": 6,
+        "table-s": "5.5 Electrical Characteristics: Load regulation IOUT = 1 mA to 300 mA (DBV package) 19 mV",
+        "derived": "19 mV / 0.299 A = 63.5 mV/A over the full range; the 1-50 mA end is steeper than the linear part (Figure 5-7)"
+      },
+      "load_regulation-ao": [
+        { "i_from_ma": 1, "i_to_ma": 300, "mv_per_a": 63.5, "vout_mv": 2800, "vin_mv": 3100, "fig-s": "5.5 Electrical Characteristics, Load regulation (DBV) 19 mV", "page_n": 6, "derived-s": "19 mV / 0.299 A" },
+        { "i_from_ma": 50, "i_to_ma": 300, "mv_per_a": 46, "pct_per_a": 1.64, "vout_mv": 2800, "vin_mv": 3100, "tj_c": 25, "fig-s": "Figure 5-7. Load Regulation vs IOUT (DBV package)", "page_n": 9, "derived-s": "TJ = 25 C trace read at 300 dpi: -8.5 mV at 50 mA, -20.0 mV at 300 mA -> 11.5 mV / 0.25 A = 46 mV/A. Caption says VIN = 2.8 V; the page header gives VIN = VOUT(NOM) + 0.3 V = 3.1 V, which is what an LDO out of dropout needs" }
+      ],
+      "load_transient-ao": [
+        { "i_from_ma": 1, "i_to_ma": 300, "i_step_ma": 299, "rise_ns": 1000, "cout_uf": 1, "cin_uf": 1, "vout_mv": 2800, "vin_mv": 3100, "ta_c": 25, "page_n": 16, "fig-s": "Figure 5-51. Load Transient", "dv_mv": 50, "dv_overshoot_mv": 17, "overshoot_fig-s": "Figure 5-52 (300 -> 1 mA, 1 us fall)", "conditions_source-s": "Typical Characteristics header p16: VIN = VOUT(NOM) + 0.3 V, VOUT = 2.8 V, CIN = 1 uF, COUT = 1 uF, TA = 25 C", "read-s": "vector plot, pdf-graph points mapped to the right axis (AC-coupled mV) and checked on a render: +2 mV before the step, -48 mV at the trough; 300 -> 1 mA: -10.6 mV before, +6.6 mV peak" },
+        { "i_from_ma": 1, "i_to_ma": 300, "i_step_ma": 299, "rise_ns": 200, "cout_uf": 1, "cin_uf": 1, "vout_mv": 2800, "vin_mv": 3100, "ta_c": 25, "page_n": 16, "fig-s": "Figure 5-53. Load Transient", "dv_mv": 91, "dv_overshoot_mv": 32, "overshoot_fig-s": "Figure 5-54 (300 -> 1 mA, 200 ns fall)", "conditions_source-s": "Typical Characteristics header p16", "read-s": "pdf-graph points mapped to the right axis: +2.6 mV before, -88.9 mV trough; 300 -> 1 mA: -10.5 mV before, +21.3 mV peak" },
+        { "i_from_ma": 0, "i_to_ma": 300, "i_step_ma": 300, "rise_ns": 1000, "cout_uf": 1, "cin_uf": 1, "vout_mv": 2800, "vin_mv": 3100, "ta_c": 25, "page_n": 17, "fig-s": "Figure 5-55. Load Transient", "dv_mv": 192, "dv_overshoot_mv": 20, "overshoot_fig-s": "Figure 5-56 (300 -> 0 mA, 1 us fall)", "conditions_source-s": "Typical Characteristics header p17", "read-s": "from a true 0 mA start: +3.7 mV before, -188.8 mV trough; 300 -> 0 mA: -20 mV before, about -0.5 mV peak" },
+        { "i_from_ma": 0, "i_to_ma": 300, "i_step_ma": 300, "rise_ns": 200, "cout_uf": 1, "cin_uf": 1, "vout_mv": 2800, "vin_mv": 3100, "ta_c": 25, "page_n": 17, "fig-s": "Figure 5-57. Load Transient", "dv_mv": 191, "dv_overshoot_mv": 31, "overshoot_fig-s": "Figure 5-58 (300 -> 0 mA, 200 ns fall)", "conditions_source-s": "Typical Characteristics header p17", "read-s": "+2.8 mV before, -188.2 mV trough; 300 -> 0 mA: -20 mV before, +11 mV peak" }
+      ],
+      "load_transient_note-s": "All four rising steps at COUT = 1 uF (the minimum); a 0 mA start dips about 4x deeper than 1 mA. Figures are drawn at VIN 3.1 V, not 5 V. An LDO's response is set by its loop and COUT rather than by VIN headroom, but that is not a datasheet curve",
+      "not_stated-o": {
+        "loop_crossover_khz": "not stated",
+        "output_impedance_mohm": "no Zout curve (Typical Characteristics p8-22: line/load regulation, accuracy, dropout, IGND, current limit, load/line transient, PSRR, noise, start-up)",
+        "efficiency_pct": "not plotted (LDO): input current = output current + IGND (2000 uA max at 300 mA, p6)"
+      },
+      "source-o": {
+        "datasheet-s": "TPS7A2028PDBVR.pdf",
+        "page_n": 30,
+        "figure-s": "Figure 7-4. TPS7A20 Typical Application (1.0 uF in and out, EN to IN)"
+      }
+    },
+    "thermal-o": {
+      "tj-max-c-i": 125,
+      "rtheta-ja-c-per-w-f": 187.1
+    },
+    "supplies-ao": [
+      {
+        "rail-s": "IN",
+        "role-s": "in",
+        "pins-as": [
+          "1"
+        ],
+        "vmin_mv": 1600,
+        "vmax_mv": 6000,
+        "source-o": {
+          "datasheet-s": "TPS7A2028PDBVR.pdf",
+          "page_n": 5,
+          "table-s": "5.3 Recommended Operating Conditions"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "component-o": {
+    "type-s": "resistor",
+    "vendor-s": "Yageo",
+    "part-s": "RC0402JR-070RL",
+    "description-s": "0 Ohm jumper (<50 mOhm), 0402 thick film, rated current 1 A, max 2 A",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "distributor-s": "DigiKey",
+      "stock-i": 787859,
+      "stock-checked-s": "2026-10-21",
+      "lifecycle-s": "Active",
+      "distributor-sku-s": "311-0.0JRTR-ND",
+      "moq-i": 10000,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "311-0.0JRCT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/yageo/RC0402JR-070RL/726406",
+        "datasheet-url-s": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 754110,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.10",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0402" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "resistor-thick-film"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 0,
+      "value-unit-s": "r",
+      "current-max-i": 1000
+    },
+    "rating_source-o": {
+      "datasheet-s": "PYU-RC_GROUP_51_ROHS_L.pdf",
+      "page_n": 5,
+      "table-s": "ELECTRICAL CHARACTERISTICS (RC0402 jumper <50 mOhm; rated current 1.0 A, maximum current 2.0 A)"
+    },
+    "jumper_resistance_max_mohm": 50,
+    "rated_current_ma": 1000,
+    "current_max_ma": 2000
+  }
+}

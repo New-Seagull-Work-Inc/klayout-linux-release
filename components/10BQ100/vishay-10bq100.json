@@ -1,0 +1,37 @@
+{
+  "component-o": {
+    "type-s": "diode",
+    "vendor-s": "Vishay",
+    "part-s": "10BQ100",
+    "description-s": "Rectifier Diode Schottky 100V 1A 2-Pin SMB T/R / DIODE SCHOTTKY 100V 1A SMB",
+    "package-ao": [
+      { "ptype-s": "Schottky Diodes" },
+      { "ppins-i": 2 }
+    ],
+    "passive-o": {},
+    "non-technical-o": {
+      "cost-o": {
+        "10": 0.04,
+        "100": 0.04,
+        "1K": 0.04,
+        "10K": 0.04,
+        "100K": 0.04
+      },
+      "distributor-s": "RS (Formerly Allied Electronics)",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "1655-10BQ100CT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/smc-diode-solutions/10BQ100/12142370",
+        "datasheet-url-s": "https://www.smc-diodes.com/propdf/10BQ100%20N0646%20REV.A.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 21638,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.37",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    }
+  }
+}

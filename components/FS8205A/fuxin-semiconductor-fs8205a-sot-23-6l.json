@@ -1,0 +1,71 @@
+{
+  "component-o": {
+    "type-s": "protection-ic",
+    "vendor-s": "Fuxin Semiconductor",
+    "description-s": "Dual N-channel MOSFET for battery protection, 20V 6A, 25mΩ@4.5V, SOT-23-6L",
+    "package-ao": [
+      { "ptype-s": "SOT-23-6L" },
+      { "ppins-i": 6 }
+    ],
+    "blocks-as": [
+      "mosfet-dual-n-channel"
+    ],
+    "interfaces-as": [
+      "ds-power-rxtx"
+    ],
+    "temperatures-ao": [
+      {
+        "junction-o": {
+          "min-i": -55,
+          "max-i": 150
+        }
+      },
+      {
+        "storage-o": {
+          "min-i": -55,
+          "max-i": 150
+        }
+      }
+    ],
+    "voltages-ao": [
+      { "vds_max": 20000 },
+      { "vgs_max": 12000 },
+      { "vgs_threshold_min": 500 },
+      { "vgs_threshold_max": 1200 }
+    ],
+    "max_currents-ao": [
+      { "id_continuous": 6000 },
+      { "id_pulsed": 25000 }
+    ],
+    "pins-ao": [
+      { "1": "G1" },
+      { "2": "S1" },
+      { "3": "S2" },
+      { "4": "G2" },
+      { "5": "D1/D2" },
+      { "6": "D1/D2" }
+    ],
+    "protection-o": {
+      "chemistry-s": "lithium-ion",
+      "cells-i": 1,
+      "integrated-fets-b": true
+    },
+    "non-technical-o": {
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "5272-FS8205ACT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/evvo/FS8205A/26220994",
+        "datasheet-url-s": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/9053/FS8205A-new.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 3618,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.65",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "part-s": "FS8205A"
+  }
+}

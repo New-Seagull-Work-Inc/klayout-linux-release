@@ -1,0 +1,80 @@
+{
+  "component-o": {
+    "type-s": "switch",
+    "vendor-s": "HCTL (Shenzhen Huacan Tianlu)",
+    "part-s": "TC-S3601-3.5-260G-F0.6",
+    "description-s": "SMT side-push (right-angle) tactile switch, SPST-NO, 7.0 x 3.5 mm body, 3.5 mm tall, 2 signal tabs + 2 bracket tabs + 2 locating posts, 12 VDC 50 mA, 260 gf",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "distributor-s": "LCSC",
+      "cost-o": {
+        "1": 0.018,
+        "500": 0.0141,
+        "2K": 0.0119,
+        "4K": 0.0106
+      },
+      "moq-i": 1,
+      "stock-i": 127470,
+      "stock-note-s": "LCSC C49101620, 127470 in stock (pcbparts jlc_stock_check 2026-10-21); not carried by DigiKey"
+    },
+    "package-ao": [
+      {
+        "ptype-s": "smd-7.0x3.5-side-push"
+      },
+      {
+        "ppins-i": 4
+      }
+    ],
+    "blocks-as": [
+      "switch",
+      "tactile",
+      "side-push"
+    ],
+    "pins-ao": [
+      {
+        "1": "1"
+      },
+      {
+        "2": "2"
+      },
+      {
+        "3": "bracket"
+      },
+      {
+        "4": "bracket"
+      }
+    ],
+    "switch-o": {
+      "function-s": "tactile",
+      "circuit-s": "spst-no",
+      "positions-i": 1,
+      "current-max-ma-i": 50,
+      "voltage-max-v-i": 12,
+      "operating-force-n-x100-i": 255,
+      "height-mm-x10-i": 35,
+      "life-cycles-i": 30000,
+      "contact_resistance_mohm": 50,
+      "height_mm": 3.5,
+      "insulation_min_mohm": 100,
+      "withstand_vac": 250,
+      "source-o": {
+        "datasheet-s": "TC-S3601-3.5-260G-F0.6_C49101620.pdf",
+        "page_n": 1,
+        "table-s": "技术参数 (technical parameters): -20..+70 C; DC 12V 50mA; contact resistance <= 50 mOhm; insulation >= 100 MOhm; AC250V(50Hz)/min; operating force 260+/-50 g; life 30,000 cycles; body height 3.5+/-0.2 mm"
+      }
+    },
+    "footprint_check-s": "P.C.B LAND DIMENSION (p1): 2 x dia 0.9 posts 2.3 mm apart (board: holes 0.9 at x +/-1.15), signal pads 1.2 wide between 3.0 and 5.4 mm (board: 1.2 x 1.2 at x +/-2.1), bracket L-pads between 5.4 and 8.4 mm (board: custom pads 3/4 at x +/-3.45) -- matches",
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -20,
+          "max-i": 70
+        }
+      }
+    ],
+    "not_stated-o": {
+      "operating-force-n-x100-i": "stated as 260+/-50 gf; 255 is 260 gf x 9.80665 mN rounded (unit conversion, not a new figure)",
+      "bounce_ms": "no bounce time stated"
+    }
+  }
+}

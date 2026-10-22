@@ -1,0 +1,66 @@
+{
+  "component-o": {
+    "specs-o": {
+      "esr_mohm": 488.71,
+      "esl_ph": 4372,
+      "srf_mhz": 0.2407,
+      "esr_esl_dc_bias_source-s": "Würth Elektronik LTspice model library LTSpice_WCAP-ATG8 (rev22a, 2022-06-01).zip (we-online.com WCAP-ATG8 product page), subckt 860010473007_100uF: Rser 0.488708 ohm, Lser 4.372 nH, C 100 µF, Rpar 1 Mohm -> esr_mohm = Rser (model is frequency-independent, so also the ESR at SRF), esl_ph = Lser, srf_mhz = 1/(2 pi sqrt(Lser C)). Model values, not a measured curve; temperature not stated. DC bias not applicable (electrolytic). Würth catalog row: ripple 209 mA, DF 14 %, leakage 25 µA, 2000 h. Read 2026-10-21"
+    },
+    "type-s": "capacitor",
+    "vendor-s": "Würth Elektronik",
+    "part-s": "860010473007",
+    "description-s": "100 µF ±20% 25 V aluminum electrolytic capacitor, WCAP-ATG8 (general purpose, 85 °C 2000 h), radial can 6.3 x 11 mm, 2.5 mm lead pitch, ammopack",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.13,
+        "100": 0.097,
+        "1K": 0.075,
+        "10K": 0.06745,
+        "100K": 0.06745
+      },
+      "distributor-s": "DigiKey",
+      "cost-source-s": "DigiKey API v4 StandardPricing, USD, 2026-10-21: per quantity the lowest unit price among DigiKey's own non-Digi-Reel packagings whose first break is at or below that quantity (732-8630-1-ND Cut Tape (CT), 732-8630-3-ND Tape & Box (TB))",
+      "lifecycle-s": "Active (DigiKey)",
+      "stock-o": {
+        "digikey-i": 24834,
+        "mouser-i": 19084,
+        "newark-i": 1422,
+        "checked-s": "2026-10-21",
+        "source-s": "DigiKey Product Information API v4 (max QuantityAvailable over packagings); Mouser / Newark public pages via browser; null = not listed, key absent = not checked; mouser-i from Octopart's Mouser offer (Mouser blocked automated access); newark-i from Newark's product page"
+      },
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "732-8630-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/würth-elektronik/860010473007/5726878",
+        "datasheet-url-s": "https://www.we-online.com/components/products/datasheet/860010473007.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 810,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.13",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "radial-electrolytic" },
+      { "ppins-i": 2 },
+      { "can-diameter-mm-f": 6.3 },
+      { "can-length-mm-f": 11 },
+      { "lead-pitch-mm-f": 2.5 }
+    ],
+    "blocks-as": [
+      "capacitor-electrolytic"
+    ],
+    "passive-o": {
+      "lead-style-s": "radial",
+      "value-i": 100000000,
+      "value-unit-s": "uf",
+      "voltage-max-i": 25000,
+      "tolerance-pct-x10": 200,
+      "dielectric-s": "aluminum-electrolytic"
+    }
+  }
+}

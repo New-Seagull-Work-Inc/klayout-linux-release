@@ -1,0 +1,187 @@
+{
+  "component-o": {
+    "type-s": "sensor",
+    "subtype-s": "humidity-temperature",
+    "vendor-s": "Sensirion",
+    "part-s": "SHT40-AD1B-R2",
+    "description-s": "SHT40 digital relative-humidity and temperature sensor, base accuracy, I2C address 0x44, 1.08-3.6 V, DFN-4 1.5 x 1.5 mm, polyimide cover, 2500-pc reel",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "distributor-s": "DigiKey",
+      "cost-o": {
+        "1": 1.94,
+        "2.5K": 1.19624,
+        "5K": 1.1591
+      },
+      "moq-i": 1,
+      "stock-i": 8911,
+      "stock-note-s": "DigiKey 1649-SHT40-AD1B-R2TR-ND 8911 in stock (pcbparts digikey_get_part 2026-10-21)"
+    },
+    "package-ao": [
+      {
+        "ptype-s": "dfn-4-1.5x1.5"
+      },
+      {
+        "ppins-i": 4
+      }
+    ],
+    "blocks-as": [
+      "sensor-humidity",
+      "sensor-temperature",
+      "heater",
+      "i2c"
+    ],
+    "interfaces-as": [
+      "ds-power-rx",
+      "ds-i2c-rxtx"
+    ],
+    "voltages-ao": [
+      {
+        "vdd": 3300
+      }
+    ],
+    "max_currents-ao": [
+      {
+        "vdd": 100
+      }
+    ],
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -40,
+          "max-i": 125
+        }
+      },
+      {
+        "storage-o": {
+          "min-i": -40,
+          "max-i": 150
+        }
+      }
+    ],
+    "pins-ao": [
+      {
+        "1": "SDA"
+      },
+      {
+        "2": "SCL"
+      },
+      {
+        "3": "VDD"
+      },
+      {
+        "4": "VSS"
+      }
+    ],
+    "stdpins-ao": [
+      {
+        "3": "ds-power-rx"
+      },
+      {
+        "3": "100nf-avss"
+      },
+      {
+        "4": "avss"
+      },
+      {
+        "1": "ds-i2c-sda"
+      },
+      {
+        "2": "ds-i2c-scl"
+      }
+    ],
+    "specs-o": {
+      "i2c_addr-s": "0x44",
+      "i_idle_typ_ua": 0.08,
+      "i_idle_max_25c_ua": 1.0,
+      "i_idle_max_125c_ua": 3.4,
+      "i_powerup_typ_ua": 50,
+      "i_meas_typ_ua": 320,
+      "i_meas_max_ua": 500,
+      "i_heater_typ_ma-ao": [
+        {
+          "mw": 200,
+          "typ": 60,
+          "max": 100
+        },
+        {
+          "mw": 110,
+          "typ": 33,
+          "max": 55
+        },
+        {
+          "mw": 20,
+          "typ": 6,
+          "max": 10
+        }
+      ],
+      "t_meas_high_rep_max_ms": 8.3,
+      "pullup_min_ohm": 390,
+      "pullup_note-s": "Rp min 390 ohm at VDD >= 1.62 V, 820 ohm below",
+      "vdd_slew_max_v_per_ms": 20,
+      "i_source-o": {
+        "datasheet-s": "HT_DS_Datasheet_SHT4x_V7.3.pdf",
+        "page_n": 9,
+        "table-s": "3 Electrical Specifications (supply current heater off / on)"
+      },
+      "land_pattern_source-o": {
+        "datasheet-s": "HT_DS_Datasheet_SHT4x_V7.3.pdf",
+        "page_n": 16,
+        "figure-s": "Figure 17: pads 0.5 x 0.3 mm, 1.4 mm row-to-row, 0.8 mm pitch, no copper under the die pad"
+      },
+      "pinout_source-o": {
+        "datasheet-s": "HT_DS_Datasheet_SHT4x_V7.3.pdf",
+        "page_n": 17,
+        "table-s": "5.4 Pin Assignment"
+      },
+      "ordering_source-o": {
+        "datasheet-s": "HT_DS_Datasheet_SHT4x_V7.3.pdf",
+        "page_n": 22,
+        "table-s": "Ordering: SHT40-AD1B-R2 3.000.465 base acc., 0x44, 2500/reel; -R3 = 10000/reel"
+      }
+    },
+    "supplies-ao": [
+      {
+        "rail-s": "VDD",
+        "role-s": "vdd",
+        "pins-as": [
+          "3"
+        ],
+        "vnom_mv": 3300,
+        "vmin_mv": 1080,
+        "vmax_mv": 3600,
+        "i_max_ma": 100,
+        "i_step_ma": 99.999,
+        "step_source-o": {
+          "datasheet-s": "HT_DS_Datasheet_SHT4x_V7.3.pdf",
+          "page_n": 9,
+          "table-s": "3 Electrical Specifications",
+          "derived-s": "heater 200 mW IDD max 100 mA less idle IDD max 1.0 uA (25 C)"
+        },
+        "decap-ao": [
+          {
+            "value_nf": 100,
+            "count": 1,
+            "per-s": "rail",
+            "page_n": 3
+          }
+        ],
+        "source-o": {
+          "datasheet-s": "HT_DS_Datasheet_SHT4x_V7.3.pdf",
+          "page_n": 9,
+          "table-s": "3 Electrical Specifications: VDD 1.08 / 3.3 / 3.6 V"
+        },
+        "i_source-o": {
+          "datasheet-s": "HT_DS_Datasheet_SHT4x_V7.3.pdf",
+          "page_n": 9,
+          "table-s": "Supply current (heater on) 200 mW: 60 typ / 100 max mA; heater off measurement 320 typ / 500 max uA"
+        }
+      }
+    ],
+    "not_stated-o": {
+      "ripple_max_mvpp": "no supply ripple limit; only VDD slew <= 20 V/ms (p9)",
+      "i_step_ns": "no current-step rise time (the heater draw is 'smoothly' ramped, p14 note 5, no figure)",
+      "schema": "designer-parts has no sensor schema; record follows generic-component.json + supplies-ao"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "component-o": {
+    "type-s": "switch",
+    "vendor-s": "Omron",
+    "part-s": "B3U-1000P",
+    "description-s": "Ultra-small SMD tactile switch, SPST-NO momentary, 3.0 x 2.5 x 1.6 mm, top actuated, 1-50 mA at 3-12 VDC, 1.5 N. Bring-up reset button (NRST to GND).",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {},
+      "distributor-s": "",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "SW1020CT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/aratas-formerly-omron-components/B3U-1000P/1534338",
+        "datasheet-url-s": "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3u.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 114289,
+        "moq-i": 1,
+        "unit-price-s": "USD 1.17",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-3.0x2.5" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "switch",
+      "tactile",
+      "reset"
+    ],
+    "interfaces-as": [
+      "ds-reset-tx"
+    ],
+    "pins-ao": [
+      { "1": "1" },
+      { "2": "2" }
+    ],
+    "stdpins-ao": [
+      { "1": "ds-reset-tx" },
+      { "2": "dvss" }
+    ],
+    "switch-o": {
+      "function-s": "tactile",
+      "circuit-s": "spst-no",
+      "positions-i": 1,
+      "current-max-ma-i": 50,
+      "voltage-max-v-i": 12,
+      "operating-force-n-x100-i": 150,
+      "bounce-ms-i": 5,
+      "height-mm-x10-i": 16,
+      "source-o": {
+        "datasheet-s": "en-b3u.pdf",
+        "table-s": "Ratings/Characteristics: rating 1-50 mA, 3-12 VDC (resistive); bounce 5 ms max; operating force 1.50 +/- 0.49 N; ambient -25..+70 C"
+      }
+    },
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -25,
+          "max-i": 70
+        }
+      }
+    ]
+  }
+}

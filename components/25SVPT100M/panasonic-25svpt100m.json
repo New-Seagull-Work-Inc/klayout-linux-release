@@ -1,0 +1,66 @@
+{
+  "component-o": {
+    "specs-o": {
+      "esr_mohm": 15.6,
+      "esl_ph": 3413,
+      "srf_mhz": 0.3447,
+      "esr_esl_dc_bias_source-s": "Panasonic characteristic viewer (util01.industrial.panasonic.com/ww/utilities/ds/chr-vw/iframe/25SVPT100M, hidden graphValues JSON: |Z|, ESR, capacitance and ESL vs frequency) (identical curve data to 25SVT100M) -> ESR at SRF (|Z| minimum), ESL = (|X|+1/wC0)/w at 10.0x SRF (Panasonic's own ESL curve reads 3.39 nH there); ESR at 100 kHz 17.3 mOhm typ (catalog max 24 mOhm at 100-300 kHz). Curve temperature not stated; no DC-bias effect for polymer. Read 2026-10-21"
+    },
+    "type-s": "capacitor",
+    "vendor-s": "Panasonic",
+    "part-s": "25SVPT100M",
+    "description-s": "100 µF ±20% 25 V OS-CON SVPT conductive-polymer aluminum solid capacitor, SMD can 8 x 7 mm (land 8.3 x 8.3 mm), 24 mΩ max ESR, 3.2 A ripple at 100 kHz, 20000 h at 105 °C",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 1.596,
+        "100": 1.1442,
+        "1K": 0.91056,
+        "10K": 0.7766,
+        "100K": 0.7766
+      },
+      "distributor-s": "DigiKey",
+      "cost-source-s": "DigiKey API v4 StandardPricing, USD, 2026-10-21: per quantity the lowest unit price among DigiKey's non-Digi-Reel packagings whose first break is at or below that quantity (10-25SVPT100MTR-ND Tape & Reel (TR), 10-25SVPT100MCT-ND Cut Tape (CT))",
+      "lifecycle-s": "Active (DigiKey)",
+      "stock-o": {
+        "digikey-i": 3252,
+        "newark-i": 876,
+        "checked-s": "2026-10-21",
+        "source-s": "DigiKey Product Information API v4; Newark public search page via browser; null = not listed, key absent = not checked (Mouser blocks automated access and Octopart showed no Mouser offer)"
+      },
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "10-25SVPT100MCT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/panasonic-industry/25SVPT100M/13539343",
+        "datasheet-url-s": "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/8462",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 3252,
+        "moq-i": 1,
+        "unit-price-s": "USD 2.42",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-can-8x7" },
+      { "ppins-i": 2 },
+      { "can-diameter-mm-f": 8 },
+      { "can-height-max-mm-f": 7 },
+      { "land-mm-s": "8.3x8.3" }
+    ],
+    "blocks-as": [
+      "capacitor-aluminum-polymer"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 100000000,
+      "value-unit-s": "uf",
+      "voltage-max-i": 25000,
+      "tolerance-pct-x10": 200,
+      "esr-mr-i": 24,
+      "dielectric-s": "aluminum-polymer"
+    }
+  }
+}

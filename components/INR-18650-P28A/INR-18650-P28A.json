@@ -1,0 +1,114 @@
+{
+  "component-o": {
+    "type-s": "battery",
+    "vendor-s": "Molicel (E-One Moli Energy)",
+    "part-s": "INR-18650-P28A",
+    "description-s": "Li-ion 18650 cell, 3.6 V nominal (2.5 - 4.2 V), 2800 mAh typ, 35 A max continuous discharge, internal resistance 20 mOhm max (AC 1 kHz and DC 10 A/1 s), unprotected",
+    "package-ao": [
+      {
+        "ptype-s": "18650"
+      },
+      {
+        "ppins-i": 2
+      }
+    ],
+    "blocks-as": [
+      "battery-lithium-ion"
+    ],
+    "battery-o": {
+      "chemistry-s": "lithium-ion",
+      "cell-format-s": "18650",
+      "rechargeable-b": true,
+      "capacity-mah-i": 2800,
+      "voltage-nominal-mv-i": 3600,
+      "voltage-charge-max-mv-i": 4200,
+      "voltage-cutoff-mv-i": 2500,
+      "energy-wh-x10-i": 103,
+      "discharge-max-ma-i": 35000,
+      "protection-b": false,
+      "cell_nominal_mv": 3600,
+      "internal_resistance_mohm": 20,
+      "internal_resistance_ac_1khz_mohm": 20,
+      "internal_resistance_dc_mohm": 20,
+      "charge_current_std_ma": 2800,
+      "charge_current_max_ma": 6000,
+      "source-o": {
+        "datasheet-s": "INR18650P28A-V1-80093.pdf",
+        "page_n": 1,
+        "table-s": "Cell Characteristics: capacity typ 2800 mAh / 10.3 Wh, min 2600 mAh / 9.56 Wh; voltage nominal 3.6 V, charge 4.2 V, discharge 2.5 V; charge current std 2.8 A, max 6.0 A; max discharge current 35 A; internal resistance (max) AC 1 kHz 20 mOhm, DC 10 A / 1 s 20 mOhm; charge 0..60 C, discharge -40..60 C; 18.6 mm dia x 65.2 mm max, 46 g typ"
+      }
+    },
+    "voltages-ao": [
+      {
+        "out": 3600
+      }
+    ],
+    "max_currents-ao": [
+      {
+        "out": 35000
+      }
+    ],
+    "supplies-ao": [
+      {
+        "rail-s": "+",
+        "role-s": "out",
+        "pins-as": [
+          "1"
+        ],
+        "vnom_mv": 3600,
+        "vmin_mv": 2500,
+        "vmax_mv": 4200,
+        "i_max_ma": 35000,
+        "source-o": {
+          "datasheet-s": "INR18650P28A-V1-80093.pdf",
+          "page_n": 1,
+          "table-s": "Cell Characteristics: capacity typ 2800 mAh / 10.3 Wh, min 2600 mAh / 9.56 Wh; voltage nominal 3.6 V, charge 4.2 V, discharge 2.5 V; charge current std 2.8 A, max 6.0 A; max discharge current 35 A; internal resistance (max) AC 1 kHz 20 mOhm, DC 10 A / 1 s 20 mOhm; charge 0..60 C, discharge -40..60 C; 18.6 mm dia x 65.2 mm max, 46 g typ"
+        }
+      }
+    ],
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -40,
+          "max-i": 60
+        }
+      }
+    ],
+    "pins-ao": [
+      {
+        "1": "+"
+      },
+      {
+        "2": "-"
+      }
+    ],
+    "interfaces-as": [
+      "ds-batt-rxtx",
+      "ds-power-tx",
+      "ds-battneg-rxtx"
+    ],
+    "stdpins-ao": [
+      {
+        "1": "ds-power-tx"
+      },
+      {
+        "1": "ds-batt-rxtx"
+      },
+      {
+        "2": "ds-battneg-rxtx"
+      }
+    ],
+    "not_stated-o": {
+      "voltage-abs-max-mv-i": "no absolute-maximum charge voltage row",
+      "cycle-life-i": "not on the 1-page product data sheet",
+      "nominal_3700": "the sheet states 3.6 V nominal (not 3.7 V) and 2.5 V discharge cut-off (not 3.0 V)"
+    },
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {},
+      "distributor-s": "",
+      "stock-checked-s": "2026-10-21",
+      "stock-note-s": "DigiKey: not listed (INR-18650-P28A / INR18650P28A not found); LCSC/JLC: not listed; Mouser not checked (API quota exhausted). Sold through cell retailers (e.g. 18650batterystore.com) -- no franchise stock confirmed"
+    }
+  }
+}

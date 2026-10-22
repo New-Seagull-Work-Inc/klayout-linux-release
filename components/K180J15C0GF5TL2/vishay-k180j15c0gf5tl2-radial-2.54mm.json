@@ -1,0 +1,42 @@
+{
+  "component-o": {
+    "type-s": "capacitor",
+    "vendor-s": "Vishay",
+    "part-s": "K180J15C0GF5TL2",
+    "description-s": "18 pF 50 V ±5% C0G radial leaded ceramic capacitor, K series",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {},
+      "distributor-s": "",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "BC1004CT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/K180J15C0GF5TL2/286458",
+        "datasheet-url-s": "https://www.vishay.com/docs/45171/kseries.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 52457,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.27",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "radial-2.54mm" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-ceramic"
+    ],
+    "passive-o": {
+      "value-i": 18,
+      "value-unit-s": "pf",
+      "voltage-max-i": 50000,
+      "tolerance-pct-x10": 50,
+      "dielectric-s": "c0g",
+      "lead-style-s": "radial"
+    }
+  }
+}

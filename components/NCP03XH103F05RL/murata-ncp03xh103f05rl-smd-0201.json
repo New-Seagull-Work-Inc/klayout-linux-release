@@ -1,0 +1,79 @@
+{
+  "component-o": {
+    "type-s": "thermistor",
+    "vendor-s": "Murata",
+    "description-s": "10k NTC thermistor, B25/85 3434K, ±1% resistance, ±1% Beta, 0201 (0.6x0.3mm) SMD, -40 to +125°C, for Li-ion cell temperature sensing",
+    "package-ao": [
+      { "ptype-s": "smd-0201" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "ntc-thermistor"
+    ],
+    "interfaces-as": [
+      "ds-temp-sense"
+    ],
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -40,
+          "max-i": 125
+        }
+      }
+    ],
+    "thermistor-o": {
+      "ntc-b": true,
+      "resistance-25c-ohm-i": 10000,
+      "resistance-tolerance-pct-x10-i": 10,
+      "beta-25-85-k-i": 3434,
+      "beta-tolerance-pct-x10-i": 10,
+      "dissipation-constant-mw-c-x10-i": 10,
+      "mounting-s": "smd"
+    },
+    "non-technical-o": {
+      "cost-o": {
+        "10": 0.091,
+        "100": 0.069,
+        "1K": 0.065,
+        "10K": 0.065,
+        "100K": 0.065
+      },
+      "distributor-s": "Newark",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "490-11806-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/murata-electronics/NCP03XH103F05RL/5451936",
+        "datasheet-url-s": "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/thermistor/r01e.ashx",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 967,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.12",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "part-s": "NCP03XH103F05RL",
+    "pins-ao": [
+      { "1": "t1" },
+      { "2": "t2" }
+    ],
+    "stdpins-ao": [
+      { "1": "ds-temp-sense" },
+      { "2": "avss" }
+    ],
+    "cfgpins-ao": [
+      { "1c": "NTC 10 k at 25 C, B25/50 3380 K, +/-1 % (Murata NTC catalog R03E p8-9, NCP03XH103F05RL tight-tolerance type). The chip has two identical, unmarked terminals (0201, 0.6 x 0.3 mm): pin 1 carries the sense node, pin 2 goes to ground, so the thermistor is the lower leg of its divider." }
+    ],
+    "specs-o": {
+      "r25_ohm_i": 10000,
+      "b_25_50_k_i": 3380,
+      "tolerance_pct_x10": 10,
+      "source-o": {
+        "datasheet-s": "NCP03XH103F05RL.pdf",
+        "page_n": 8
+      }
+    }
+  }
+}

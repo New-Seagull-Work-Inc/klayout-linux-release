@@ -1,0 +1,31 @@
+{
+  "component-o": {
+    "type-s": "capacitor",
+    "vendor-s": "Panasonic",
+    "part-s": "EEU-FR1E101",
+    "description-s": "Panasonic EEUFR1E101 - Aluminum Electrolytic Capacitors (Radial Lead Type)",
+    "package-ao": [
+      { "ptype-s": "Aluminum Electrolytic Capacitors" },
+      { "ppins-i": 2 }
+    ],
+    "passive-o": {
+      "lead-style-s": "radial"
+    },
+    "non-technical-o": {
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "P14413-ND",
+        "package-s": "Bulk",
+        "product-url-s": "https://www.digikey.com/en/products/detail/panasonic-industry/EEU-FR1E101/2433547",
+        "datasheet-url-s": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1259.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 0,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.45",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "component-o": {
+    "type-s": "diode",
+    "vendor-s": "onsemi",
+    "part-s": "SS34FA",
+    "description-s": "3 A 40 V Schottky barrier rectifier, SOD-123FL; buyable replacement for DSK32 (20 V)",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.138,
+        "100": 0.138,
+        "1K": 0.138,
+        "10K": 0.138,
+        "100K": 0.138
+      },
+      "distributor-s": "Arrow Electronics",
+      "moq-i": 1,
+      "order-mult-i": 1,
+      "stock-i": 4,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "SS34FACT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/onsemi/SS34FA/5892116",
+        "datasheet-url-s": "https://www.onsemi.com/pdf/datasheet/ss36fa-d.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 55092,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.78",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-sod-123fl" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "diode-schottky"
+    ],
+    "passive-o": {
+      "voltage-max-i": 40000,
+      "current-max-i": 3000,
+      "lead-style-s": "smd"
+    }
+  }
+}

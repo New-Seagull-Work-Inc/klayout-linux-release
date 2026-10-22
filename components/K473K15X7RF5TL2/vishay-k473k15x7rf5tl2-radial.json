@@ -1,0 +1,48 @@
+{
+  "component-o": {
+    "type-s": "capacitor",
+    "vendor-s": "Vishay",
+    "part-s": "K473K15X7RF5TL2",
+    "description-s": "47 nF 50 V ±10% X7R ceramic disc capacitor, 5 mm pitch, thru-hole, K series",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.151,
+        "100": 0.095,
+        "1K": 0.068,
+        "10K": 0.066,
+        "100K": 0.061
+      },
+      "distributor-s": "Newark",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "BC1082CT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/K473K15X7RF5TL2/286536",
+        "datasheet-url-s": "https://www.vishay.com/docs/45171/kseries.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 3915,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.31",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "radial" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-ceramic"
+    ],
+    "passive-o": {
+      "value-i": 47000,
+      "value-unit-s": "pf",
+      "voltage-max-i": 50000,
+      "tolerance-pct-x10": 100,
+      "dielectric-s": "X7R",
+      "lead-style-s": "radial"
+    }
+  }
+}

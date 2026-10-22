@@ -1,0 +1,71 @@
+{
+  "component-o": {
+    "specs-o": {
+      "esr_mohm": 3.49,
+      "esl_ph": 427,
+      "srf_mhz": 1.4575,
+      "dc_bias-ao": [
+        { "v_mv": 0, "c_pct": 100 },
+        { "v_mv": 1000, "c_pct": 103.5 },
+        { "v_mv": 1800, "c_pct": 100.8 },
+        { "v_mv": 2500, "c_pct": 95.9 },
+        { "v_mv": 3300, "c_pct": 88.9 },
+        { "v_mv": 5000, "c_pct": 73 },
+        { "v_mv": 6300, "c_pct": 62 },
+        { "v_mv": 10000, "c_pct": 39.7 },
+        { "v_mv": 12000, "c_pct": 32 },
+        { "v_mv": 16000, "c_pct": 22 },
+        { "v_mv": 20000, "c_pct": 16.2 },
+        { "v_mv": 25000, "c_pct": 12.3 }
+      ],
+      "esr_esl_dc_bias_source-s": "Taiyo Yuden TY-COMPAS standard model for MSAST31LBB5226MTNA01 (the renamed TMK316BBJ226ML-T, per TY's rename notice): ESR at SRF, ESL at 10x SRF; DC bias (conditions not stated), read 2026-10-21"
+    },
+    "type-s": "capacitor",
+    "vendor-s": "Taiyo Yuden",
+    "part-s": "TMK316BBJ226ML-T",
+    "description-s": "22 uF ±20% 25 V X5R 1206 MLCC",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.119,
+        "100": 0.119,
+        "1K": 0.119,
+        "10K": 0.108,
+        "100K": 0.108
+      },
+      "distributor-s": "TTI",
+      "moq-i": 2000,
+      "order-mult-i": 1,
+      "stock-i": 142000,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "587-3246-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/taiyo-yuden/TMK316BBJ226ML-T/3660084",
+        "datasheet-url-s": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/506/TMK316BBJ226ML-T_SS.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 492,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.42",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-1206" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-ceramic"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 22000000,
+      "value-unit-s": "uf",
+      "voltage-max-i": 25000,
+      "tolerance-pct-x10": 200,
+      "dielectric-s": "x5r"
+    }
+  }
+}

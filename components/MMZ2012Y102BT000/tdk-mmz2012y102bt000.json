@@ -1,0 +1,35 @@
+{
+  "component-o": {
+    "type-s": "ferrite-bead",
+    "vendor-s": "TDK",
+    "part-s": "MMZ2012Y102BT000",
+    "description-s": "Ferrite Beads Multi-Layer 1KOhm 25% 100MHz 0.5A 0.3Ohm DCR 0805 T/R",
+    "package-ao": [
+      { "ptype-s": "Ferrite Beads and Chips" },
+      { "ppins-i": 2 }
+    ],
+    "passive-o": {},
+    "non-technical-o": {
+      "cost-o": {
+        "10": 0.0243,
+        "100": 0.0238,
+        "1K": 0.0229,
+        "10K": 0.022442,
+        "100K": 0.022442
+      },
+      "distributor-s": "Worldway Electronics",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "445-MMZ2012Y102BT000TR-ND",
+        "package-s": "Tape & Reel (TR)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/tdk/MMZ2012Y102BT000/571866",
+        "datasheet-url-s": "https://product.tdk.com/en/system/files?file=dam/doc/product/emc/emc/beads/catalog/beads_commercial_signal_mmz2012_en.pdf",
+        "lifecycle-s": "obsolete",
+        "status-s": "Obsolete",
+        "available-i": 0,
+        "moq-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    }
+  }
+}

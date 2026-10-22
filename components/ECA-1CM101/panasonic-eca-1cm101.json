@@ -1,0 +1,42 @@
+{
+  "component-o": {
+    "non-technical-o": {
+      "stock-o": {
+        "digikey-i": 0,
+        "newark-i": 555,
+        "checked-s": "2026-10-21",
+        "source-s": "DigiKey Product Information API v4 (max QuantityAvailable over packagings); Mouser / Newark public pages via browser; null = not listed, key absent = not checked; newark-i read from Octopart's Newark offer (SKU ECA1CM101); Mouser not checked (Mouser blocked automated access)"
+      },
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "P5138-ND",
+        "package-s": "Bulk",
+        "product-url-s": "https://www.digikey.com/en/products/detail/panasonic-industry/ECA-1CM101/244997",
+        "datasheet-url-s": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2452/ECA-xxM%20Series%2CTypeA.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 0,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.25",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "radial-electrolytic" },
+      { "ppins-i": 2 }
+    ],
+    "type-s": "capacitor",
+    "vendor-s": "Panasonic",
+    "part-s": "ECA-1CM101",
+    "description-s": "100 uF +/-20% 16 V aluminium electrolytic capacitor, Panasonic M series (ECA), radial can 5 x 11 mm, 2.0 mm lead pitch; tan delta 0.20, ripple 180 mA. No ESR / impedance figure published (datasheet or Panasonic's viewer): 16ZLH100MEFC5X11 is the same-can equivalent with a stated impedance",
+    "passive-o": {
+      "lead-style-s": "radial",
+      "value-i": 100000000,
+      "value-unit-s": "uf",
+      "voltage-max-i": 16000,
+      "tolerance-pct-x10": 200,
+      "dielectric-s": "aluminum-electrolytic"
+    }
+  }
+}

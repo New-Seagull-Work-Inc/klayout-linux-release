@@ -1,0 +1,62 @@
+{
+  "component-o": {
+    "type-s": "tvs",
+    "vendor-s": "Ruilon",
+    "description-s": "6.0V bidirectional TVS, 400W (10/1000us), VC 10.3V @ 38.8A, DO-214AC/SMA, for power-input surge protection",
+    "package-ao": [
+      { "ptype-s": "DO-214AC" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "tvs-diode"
+    ],
+    "interfaces-as": [
+      "ds-power-rx"
+    ],
+    "tvs-o": {
+      "bidirectional-b": true,
+      "standoff-voltage-mv-i": 6000,
+      "breakdown-voltage-min-mv-i": 6670,
+      "breakdown-voltage-max-mv-i": 7670,
+      "clamping-voltage-mv-i": 10300,
+      "peak-pulse-current-a-i": 38,
+      "peak-pulse-power-w-i": 400,
+      "pulse-waveform-s": "10/1000us",
+      "reverse-leakage-ua-i": 800
+    },
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -55,
+          "max-i": 150
+        }
+      },
+      {
+        "storage-o": {
+          "min-i": -55,
+          "max-i": 150
+        }
+      }
+    ],
+    "non-technical-o": {
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "product-url-s": "https://www.digikey.com/en/products/detail/nextgen-components/SMAJ6-0CA/14837140",
+        "datasheet-url-s": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8789/3372_SMAJ060CA0S0WG.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 2000000,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "part-s": "SMAJ6.0CA",
+    "pins-ao": [
+      { "1": "cathode" },
+      { "2": "anode" }
+    ],
+    "stdpins-ao": [
+      { "1": "ds-power-rx" },
+      { "2": "avss" }
+    ]
+  }
+}

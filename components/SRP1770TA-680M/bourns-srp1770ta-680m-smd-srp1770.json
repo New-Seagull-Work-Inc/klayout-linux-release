@@ -1,0 +1,53 @@
+{
+  "component-o": {
+    "type-s": "inductor",
+    "vendor-s": "Bourns",
+    "part-s": "SRP1770TA-680M",
+    "description-s": "68 µH 8 A shielded SMD power inductor, SRP1770TA series",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 3.041,
+        "100": 2.5011,
+        "1K": 2.1819,
+        "10K": 2.0581,
+        "100K": 2.0581
+      },
+      "distributor-s": "DigiKey",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "SRP1770TA-680MCT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/bourns-inc/SRP1770TA-680M/5429648",
+        "datasheet-url-s": "https://www.bourns.com/docs/Product-Datasheets/SRP1770TA.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 1755,
+        "moq-i": 1,
+        "unit-price-s": "USD 3.70",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-srp1770" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "inductor"
+    ],
+    "specs-o": {
+      "irms_ma_i": 7000,
+      "irms_rise_c_i": 40,
+      "isat_ma_i": 8000,
+      "isat_drop_pct_i": 20,
+      "current_note_s": "Bourns SRP table: Isat = inductance drops 20 % (typ); Irms = 40 °C rise; Isat2 (30 % drop) 13 A"
+    },
+    "passive-o": {
+      "value-i": 68000,
+      "value-unit-s": "nh",
+      "current-max-i": 8000,
+      "lead-style-s": "smd"
+    }
+  }
+}

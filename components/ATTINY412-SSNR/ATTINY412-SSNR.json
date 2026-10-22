@@ -1,0 +1,163 @@
+{
+  "component-o": {
+    "type-s": "soc",
+    "vendor-s": "Microchip Technology",
+    "part-s": "ATTINY412-SSNR",
+    "description-s": "tinyAVR 1-series 8-bit AVR MCU, 4 KB flash / 256 B SRAM / 128 B EEPROM, 20 MHz, 1.8-5.5 V, 8-pin SOIC 150 mil (3.9 mm), -40..105 C, tape and reel",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "distributor-s": "DigiKey",
+      "cost-o": {
+        "4K": 0.47
+      },
+      "moq-i": 4000,
+      "stock-i": 7655,
+      "stock-note-s": "DigiKey ATTINY412-SSNRTR-ND, 7655 in stock, 4000-pc reel 0.47 USD (pcbparts digikey_get_part 2026-10-21); cut-tape/tube ATTINY412-SSN is the small-quantity variant",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "ATTINY412-SSNRCT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/microchip-technology/ATTINY412-SSNR/8594943",
+        "datasheet-url-s": "https://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny212-214-412-414-416-DataSheet-DS40002287A.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 7655,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.58",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "soic-8" },
+      { "ppins-i": 8 }
+    ],
+    "blocks-as": [
+      "cpu-avr-8bit",
+      "adc",
+      "dac",
+      "i2c",
+      "spi",
+      "uart",
+      "timers",
+      "updi"
+    ],
+    "interfaces-as": [
+      "ds-power-rx",
+      "ds-i2c-rxtx"
+    ],
+    "voltages-ao": [
+      { "vdd": 3000 }
+    ],
+    "max_currents-ao": [
+      { "vdd": 9 }
+    ],
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -40,
+          "max-i": 105
+        }
+      },
+      {
+        "storage-o": {
+          "min-i": -65,
+          "max-i": 150
+        }
+      }
+    ],
+    "pins-ao": [
+      { "1": "VDD" },
+      { "2": "PA6" },
+      { "3": "PA7" },
+      { "4": "PA1" },
+      { "5": "PA2" },
+      { "6": "PA0/RESET/UPDI" },
+      { "7": "PA3/EXTCLK" },
+      { "8": "GND" }
+    ],
+    "stdpins-ao": [
+      { "1": "ds-power-rx" },
+      { "8": "dvss" },
+      { "4": "ds-i2c-sda" },
+      { "5": "ds-i2c-scl" },
+      { "6": "updi" }
+    ],
+    "specs-o": {
+      "voltages_note-s": "voltages-ao vdd 3000 is the datasheet's typical-value test condition (VDD = 3 V, p499 35.1), not a stated nominal; max_currents-ao vdd 9 is the largest TYPICAL active current stated (20 MHz, VDD 5 V, Table 35-4 p502) -- the datasheet states no maximum active current",
+      "clk_max_mhz_by_vdd-ao": [
+        { "vdd_min_mv": 1800, "mhz": 5 },
+        { "vdd_min_mv": 2700, "mhz": 10 },
+        { "vdd_min_mv": 4500, "mhz": 20 }
+      ],
+      "clk_source-o": {
+        "datasheet-s": "ATtiny212-214-412-414-416-DataSheet-DS40002287A.pdf",
+        "page_n": 500,
+        "table-s": "Table 35-3. Operating Voltage and Frequency"
+      },
+      "i_active_typ_ma-ao": [
+        { "mhz": 20, "vdd_mv": 5000, "ma": 9 },
+        { "mhz": 10, "vdd_mv": 5000, "ma": 4.8 },
+        { "mhz": 10, "vdd_mv": 3000, "ma": 2.7 },
+        { "mhz": 5, "vdd_mv": 3000, "ma": 1.6 },
+        { "mhz": 5, "vdd_mv": 2000, "ma": 1 }
+      ],
+      "i_idle_max_ma-ao": [
+        { "mhz": 20, "vdd_mv": 5000, "ma": 6.3, "note-s": "characterization, not production tested" },
+        { "mhz": 5, "vdd_mv": 3000, "ma": 1.2 }
+      ],
+      "i_powerdown_typ_ua": 0.1,
+      "i_powerdown_max_25c_ua": 2,
+      "i_powerdown_max_85c_ua": 5,
+      "i_source-o": {
+        "datasheet-s": "ATtiny212-214-412-414-416-DataSheet-DS40002287A.pdf",
+        "page_n": 502,
+        "table-s": "Table 35-4 Power Consumption in Active and Idle Mode; Table 35-5 Power-Down/Standby (VDD 3 V)"
+      },
+      "vdd_abs_max_mv": 6000,
+      "ivdd_abs_max_ma": 200,
+      "abs_source-o": {
+        "datasheet-s": "ATtiny212-214-412-414-416-DataSheet-DS40002287A.pdf",
+        "page_n": 499,
+        "table-s": "Table 35-1. Absolute Maximum Ratings (IVDD 200 mA at -40..85 C)"
+      },
+      "pinout_source-o": {
+        "datasheet-s": "ATtiny212-214-412-414-416-DataSheet-DS40002287A.pdf",
+        "page_n": 14,
+        "figure-s": "4.1 8-Pin SOIC"
+      },
+      "ordering_source-o": {
+        "datasheet-s": "ATtiny212-214-412-414-416-DataSheet-DS40002287A.pdf",
+        "page_n": 554,
+        "table-s": "Ordering information: ATtiny412-SSNR 4 KB/256B, 8 pins, 20 MHz, 1.8-5.5 V, SOIC, -40..105 C"
+      }
+    },
+    "not_stated-o": {
+      "vnom_mv": "no nominal supply in DS40002287A; only the 1.8-5.5 V operating range (Table 35-2) and the 3 V typical test condition",
+      "i_max_ma": "no maximum active supply current in Tables 35-4/35-5 (typ only for Active; Idle max is characterization-only); abs max IVDD 200 mA is a stress rating",
+      "i_step_ma": "left out: no operating maximum current to step from",
+      "ripple_max_mvpp": "no supply ripple/noise limit",
+      "decap-ao": "no decoupling value stated (searched 'decoupl'; no hits)"
+    },
+    "thermal-o": {
+      "rtheta-ja-c-per-w-f": 38
+    },
+    "supplies-ao": [
+      {
+        "rail-s": "VDD",
+        "role-s": "vdd",
+        "pins-as": [
+          "1"
+        ],
+        "vmin_mv": 1800,
+        "vmax_mv": 5500,
+        "source-o": {
+          "datasheet-s": "ATtiny212-214-412-414-416-DataSheet-DS40002287A.pdf",
+          "page_n": 500,
+          "table-s": "Table 35-2. General Operating Conditions"
+        }
+      }
+    ],
+    "interfaces_note-s": "UART (USART0) and SPI0 are available on the pins by port mux, but this record wires only I2C (PA1 SDA, PA2 SCL) and UPDI; add a mux SKU to claim them."
+  }
+}

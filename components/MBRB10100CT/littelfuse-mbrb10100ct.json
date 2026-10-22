@@ -1,0 +1,36 @@
+{
+  "component-o": {
+    "type-s": "diode",
+    "vendor-s": "Littelfuse",
+    "part-s": "MBRB10100CT",
+    "description-s": "Rectifier Diode, Schottky, 1 Phase, 2 Element, 100V V(RRM), Silicon, TO-263AB",
+    "package-ao": [
+      { "ptype-s": "Rectifier Diodes" },
+      { "ppins-i": 2 }
+    ],
+    "passive-o": {},
+    "non-technical-o": {
+      "cost-o": {
+        "100": 0.5133,
+        "1K": 0.5133,
+        "10K": 0.5133,
+        "100K": 0.5133
+      },
+      "distributor-s": "Verical",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "1655-MBRB10100CTCT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/smc-diode-solutions/MBRB10100CT/6022531",
+        "datasheet-url-s": "https://www.smc-diodes.com/propdf/MBR1080(90)(100)CT(-1)%20MBRB1080(90)(100)CT%20N0735%20REV.A.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 797,
+        "moq-i": 1,
+        "unit-price-s": "USD 1.20",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    }
+  }
+}

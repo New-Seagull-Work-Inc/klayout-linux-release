@@ -1,0 +1,68 @@
+{
+  "component-o": {
+    "specs-o": {
+      "esr_mohm": 41.11,
+      "esl_ph": 413,
+      "srf_mhz": 130.7,
+      "dc_bias-ao": [
+        { "v_mv": 0, "c_pct": 100 },
+        { "v_mv": 1000, "c_pct": 100 },
+        { "v_mv": 1800, "c_pct": 100 },
+        { "v_mv": 3300, "c_pct": 100 },
+        { "v_mv": 5000, "c_pct": 100 },
+        { "v_mv": 10000, "c_pct": 100 },
+        { "v_mv": 12000, "c_pct": 100 },
+        { "v_mv": 16000, "c_pct": 100 },
+        { "v_mv": 20000, "c_pct": 100 },
+        { "v_mv": 25000, "c_pct": 100 },
+        { "v_mv": 35000, "c_pct": 100 },
+        { "v_mv": 50000, "c_pct": 100 }
+      ],
+      "esr_esl_dc_bias_source-s": "Murata SimSurfing (ds.murata.co.jp/simserve): measured series-thru S-parameters GRM1885C1H272JA01.s2p (25 degC, 0 V; data generated Jan 10, 2017) -> ESR at SRF, ESL at 10x SRF; DC-bias curve c_dcbias_capchange (25 degC, AC 1 Vrms), read 2026-10-21"
+    },
+    "type-s": "capacitor",
+    "vendor-s": "Murata Electronics",
+    "part-s": "GRM1885C1H272JA01D",
+    "description-s": "2.7 nF ±5% 50 V C0G 0603 (1608M) MLCC, SMD, 0.8 mm thick",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "distributor-s": "DigiKey",
+      "stock-o": {
+        "digikey-i": 488721,
+        "mouser-i": 21617,
+        "newark-i": 10082,
+        "checked-s": "2026-10-21",
+        "source-s": "DigiKey Product Information API v4 (max QuantityAvailable over packagings); Mouser and Newark public product/search pages via browser; null = not listed"
+      },
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "490-3283-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/murata-electronics/GRM1885C1H272JA01D/702547",
+        "datasheet-url-s": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/Chip_Multilayer_CAT2021_MLCC.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 488621,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.13",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0603" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-ceramic"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 2700,
+      "value-unit-s": "nf",
+      "voltage-max-i": 50000,
+      "tolerance-pct-x10": 50,
+      "dielectric-s": "c0g"
+    }
+  }
+}

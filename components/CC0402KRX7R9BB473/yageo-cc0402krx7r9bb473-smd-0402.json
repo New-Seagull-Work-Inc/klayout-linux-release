@@ -1,0 +1,50 @@
+{
+  "component-o": {
+    "type-s": "capacitor",
+    "vendor-s": "Yageo",
+    "part-s": "CC0402KRX7R9BB473",
+    "description-s": "47 nF ±10% 50 V X7R 0402 multilayer ceramic capacitor (MLCC), SMD, 0.5 mm thick",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.005,
+        "100": 0.005,
+        "1K": 0.005,
+        "10K": 0.003,
+        "100K": 0.003
+      },
+      "distributor-s": "CoreStaff",
+      "moq-i": 1,
+      "stock-i": 9950,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "311-3815-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/yageo/CC0402KRX7R9BB473/5883379",
+        "datasheet-url-s": "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 114122,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.10",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0402" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-ceramic"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 47000,
+      "value-unit-s": "nf",
+      "voltage-max-i": 50000,
+      "tolerance-pct-x10": 100,
+      "dielectric-s": "x7r"
+    }
+  }
+}

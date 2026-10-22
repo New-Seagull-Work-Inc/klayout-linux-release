@@ -1,0 +1,48 @@
+{
+  "component-o": {
+    "type-s": "capacitor",
+    "vendor-s": "Samsung Electro-Mechanics",
+    "part-s": "CL05B223KB5NNNC",
+    "description-s": "22 nF ±10% 50 V X7R 0402 multilayer ceramic capacitor (MLCC), SMD, 0.5 mm thick",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "1K": 0.0161,
+        "10K": 0.0101,
+        "100K": 0.0101
+      },
+      "distributor-s": "Schukat",
+      "moq-i": 500,
+      "stock-i": 31000,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "1276-CL05B223KB5NNNCCT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL05B223KB5NNNC/10478981",
+        "datasheet-url-s": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/339/CL05B223KB5NNNC_Spec.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 2334,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.10",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0402" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-ceramic"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 22000,
+      "value-unit-s": "nf",
+      "voltage-max-i": 50000,
+      "tolerance-pct-x10": 100,
+      "dielectric-s": "x7r"
+    }
+  }
+}

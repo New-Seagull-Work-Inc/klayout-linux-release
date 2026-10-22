@@ -1,0 +1,40 @@
+{
+  "component-o": {
+    "type-s": "battery",
+    "vendor-s": "Texas Instruments",
+    "part-s": "BQ29700DSET",
+    "description-s": "IC BATT PROT LI-ION 1CELL 6WSON Battery Battery Protection IC Lithium Ion/Polymer 6-WSON (1.5x1.5)",
+    "package-ao": [
+      { "ptype-s": "Battery Management" },
+      { "ppins-i": 2 }
+    ],
+    "interfaces-as": [
+      "ds-power-rxtx"
+    ],
+    "pins-ao": [
+      { "1": "+" },
+      { "2": "-" }
+    ],
+    "stdpins-ao": [
+      { "1": "ds-power-rxtx" },
+      { "2": "avss" }
+    ],
+    "battery-o": {},
+    "non-technical-o": {
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "296-37746-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/texas-instruments/BQ29700DSET/4811482",
+        "datasheet-url-s": "https://www.ti.com/lit/gpn/bq2971",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 2478,
+        "moq-i": 1,
+        "unit-price-s": "USD 1.19",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    }
+  }
+}

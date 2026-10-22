@@ -1,0 +1,42 @@
+{
+  "component-o": {
+    "type-s": "resistor",
+    "vendor-s": "Vishay",
+    "part-s": "CRCW06039R31FKEA",
+    "description-s": "9.31 Ω ±1% 0.1 W thick film chip resistor, 0603, CRCW-e3, AEC-Q200; TL4242DRJR REF current-set resistor (I = 177 mV / 9.31 Ω = 19 mA for the 20 mA 850 nm IR LED)",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {},
+      "distributor-s": "",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "541-9.31HHCT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/vishay-dale/CRCW06039R31FKEA/1961648",
+        "datasheet-url-s": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 10826,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.10",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0603" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "resistor"
+    ],
+    "passive-o": {
+      "value-i": 9310,
+      "value-unit-s": "ohm",
+      "power-mw-i": 100,
+      "voltage-max-i": 75000,
+      "tolerance-pct-x10": 10,
+      "lead-style-s": "smd"
+    }
+  }
+}

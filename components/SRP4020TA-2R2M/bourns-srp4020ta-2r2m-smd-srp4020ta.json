@@ -1,0 +1,56 @@
+{
+  "component-o": {
+    "type-s": "inductor",
+    "vendor-s": "Bourns",
+    "part-s": "SRP4020TA-2R2M",
+    "description-s": "2.2 µH ±20% shielded power inductor, SRP4020TA series, 4.45 x 4.06 x 2.0 mm, DCR 61 mΩ max, Irms 4.0 A, Isat 6.0 A, AEC-Q200; buyable replacement for the Coilcraft XAL4020-222MEB (current-max-i = Isat, as the XAL row)",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "1K": 0.4915,
+        "10K": 0.4796,
+        "100K": 0.476
+      },
+      "distributor-s": "Onlinecomponents.com",
+      "moq-i": 500,
+      "order-mult-i": 1,
+      "lead-time-weeks-i": 16,
+      "stock-i": 3820,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "SRP4020TA-2R2MCT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/bourns-inc/SRP4020TA-2R2M/4901004",
+        "datasheet-url-s": "https://www.bourns.com/docs/Product-Datasheets/SRP4020TA.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 9747,
+        "moq-i": 1,
+        "unit-price-s": "USD 1.13",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-srp4020ta" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "inductor"
+    ],
+    "specs-o": {
+      "irms_ma_i": 4000,
+      "irms_rise_c_i": 40,
+      "isat_ma_i": 6000,
+      "isat_drop_pct_i": 20,
+      "current_note_s": "Bourns SRP table: Isat = inductance drops 20 % (typ); Irms = 40 °C rise"
+    },
+    "passive-o": {
+      "esr-mr-i": 61,
+      "value-i": 2200,
+      "value-unit-s": "nh",
+      "current-max-i": 6000,
+      "lead-style-s": "smd"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "component-o": {
+    "type-s": "led",
+    "vendor-s": "Lite-On",
+    "part-s": "LTST-C191KGKT",
+    "description-s": "Green (571 nm) AlInGaP LED, 0603, water clear, Vf 1.9-2.4 V at 20 mA, 30 mA DC max. Bring-up indicator (power-good, heartbeat): driven at ~1.4 mA through 1k (CRCW06031K00FKEA) from 3.3 V.",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {},
+      "distributor-s": "",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "160-1446-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/liteon/LTST-C191KGKT/386835",
+        "datasheet-url-s": "https://optoelectronics.liteon.com/upload/download/DS22-2000-228/LTST-C191KGKT.PDF",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 2631075,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.15",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0603" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "led",
+      "visible",
+      "indicator"
+    ],
+    "interfaces-as": [
+      "ds-led-rx"
+    ],
+    "pins-ao": [
+      { "1": "K" },
+      { "2": "A" }
+    ],
+    "stdpins-ao": [
+      { "1": "ds-led-c" },
+      { "2": "ds-led-a" }
+    ],
+    "led-o": {
+      "color-s": "green",
+      "vf-mv-i": 2000,
+      "if-test-ma-i": 20,
+      "if-max-ma-i": 30,
+      "wavelength-nm-i": 571,
+      "lead-style-s": "smd",
+      "source-o": {
+        "datasheet-s": "LTST-C191KGKT.pdf",
+        "page_n": 5,
+        "table-s": "Absolute Maximum Ratings (DC forward current 30 mA, 75 mW, -55..85 C); Bin Rank: Vf 1.90-2.40 V at 20 mA (bins 4-8), dominant wavelength 567.5-576.5 nm"
+      },
+      "led_note-s": "pads per KiCad LED_0603_1608Metric: 1 = K, 2 = A; series resistor 1k (CRCW06031K00FKEA) from a 3.3 V GPIO or PG pull-up gives about 1.4 mA"
+    },
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -55,
+          "max-i": 85
+        }
+      }
+    ]
+  }
+}

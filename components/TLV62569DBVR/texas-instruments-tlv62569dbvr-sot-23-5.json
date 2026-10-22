@@ -1,0 +1,216 @@
+{
+  "component-o": {
+    "type-s": "regulator",
+    "vendor-s": "Texas Instruments",
+    "part-s": "TLV62569DBVR",
+    "description-s": "2.5-5.5 V input, 2 A, 1.5 MHz synchronous step-down converter, adjustable output 0.6 V to VIN, SOT-23-5",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.201,
+        "100": 0.137,
+        "1K": 0.07,
+        "10K": 0.07,
+        "100K": 0.07
+      },
+      "distributor-s": "Texas Instruments",
+      "moq-i": 1,
+      "stock-i": 955627,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "296-47360-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/texas-instruments/TLV62569DBVR/6580119",
+        "datasheet-url-s": "https://www.ti.com/lit/gpn/tlv62569",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 241124,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.28",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "sot-23-5" },
+      { "ppins-i": 5 }
+    ],
+    "blocks-as": [
+      "regulator",
+      "regulator-buck",
+      "soft-start",
+      "enable",
+      "thermal-shutdown",
+      "current-limit"
+    ],
+    "interfaces-as": [
+      "ds-power-rx",
+      "ds-power-tx"
+    ],
+    "temperatures-ao": [
+      {
+        "junction-o": {
+          "min-i": -40,
+          "max-i": 125
+        }
+      }
+    ],
+    "voltages-ao": [
+      { "vin": 5000 },
+      { "vout": 1800 }
+    ],
+    "max_currents-ao": [
+      { "out": 2000 }
+    ],
+    "pins-ao": [
+      { "1": "en" },
+      { "2": "gnd" },
+      { "3": "sw" },
+      { "4": "vin" },
+      { "5": "fb" }
+    ],
+    "stdpins-ao": [
+      { "4": "ds-power-rx" },
+      { "4": "4.7uf-avss" },
+      { "3": "2.2uh-vout" },
+      { "vout": "ds-power-tx" },
+      { "vout": "10uf-avss" },
+      { "2": "avss" }
+    ],
+    "cfgpins-ao": [
+      { "1": "en" },
+      { "1": "vin" },
+      { "1c": "EN high (VIH 1.2 V max) enables, do not leave floating: tied to VIN" },
+      { "5": "fb" },
+      { "5": "300k-vout" },
+      { "5": "150k-avss" },
+      { "5c": "VFB 0.6 V; VOUT = 0.6 V x (1 + R1/R2): 300k / 150k gives the row's 1.8 V (TI typical application R1, R2 0603 1 %; C3 feed-forward optional)" }
+    ],
+    "specs-o": {
+      "en_vil_max_mv": 400,
+      "en_vih_max_mv": 1200,
+      "en_note-s": "no internal pull: the EN input must be terminated and not left floating",
+      "en_source-o": {
+        "page_n": 4,
+        "table-s": "Electrical Characteristics: VIL low-level threshold at EN 0.4 V min, VIH high-level threshold at EN 1.2 V max (2.5 V <= VIN <= 5.5 V)",
+        "datasheet-s": "TLV62569DBVR.pdf"
+      },
+      "topology_s": "buck",
+      "adjustable_b": true,
+      "vin_min_mv": 2500,
+      "vin_max_mv": 5500,
+      "vout_min_mv": 600,
+      "vout_max_mv": 5500,
+      "iout_max_ma": 2000,
+      "iq_typ_ua": 35,
+      "ish_max_ua": 2,
+      "switching_freq_khz": 1500,
+      "has_enable_b": true,
+      "has_pgood_b": false,
+      "has_thermal_shutdown_b": true,
+      "has_current_limit_b": true,
+      "has_softstart_b": true,
+      "replaces_s": "AP3429KTTR-G1 (NRND): same SOT-23-5 pin order EN/GND/LX/VIN/FB and VFB 0.6 V",
+      "synchronous_b": true,
+      "sw_pins-as": [
+        "3"
+      ],
+      "vin_pins-as": [
+        "4"
+      ],
+      "pgnd_pins-as": [
+        "2"
+      ],
+      "l_nh_typ": 2200,
+      "cin_nf_typ": 4700,
+      "cout_nf_typ": 10000,
+      "sw_ratings-ao": [
+        {
+          "pins-as": [
+            "3"
+          ],
+          "abs_min_mv": -300,
+          "abs_max_ref-s": "vin",
+          "abs_max_above_ref_mv": 300,
+          "abs_min_transient_mv": -3000,
+          "abs_max_transient_mv": 9000,
+          "abs_max_transient_ns": 10
+        }
+      ],
+      "sw_abs_min_mv": -300,
+      "sw_abs_max_ref-s": "vin",
+      "sw_abs_max_above_ref_mv": 300,
+      "sw_abs_min_transient_mv": -3000,
+      "sw_abs_max_transient_mv": 9000,
+      "sw_abs_max_transient_ns": 10,
+      "sw_not_stated-o": {
+        "sw_rise_ns": "not stated in TLV62569DBVR.pdf: no switch rise-time row in its tables (27 pages)",
+        "sw_fall_ns": "not stated in TLV62569DBVR.pdf: no switch fall-time row in its tables (27 pages)",
+        "sw_coss_pf": "not stated in TLV62569DBVR.pdf: no switch-pin or C_oss capacitance row in its tables (27 pages)"
+      },
+      "sw_source-o": {
+        "datasheet-s": "TLV62569DBVR.pdf",
+        "page_n": 3,
+        "table-s": "Absolute Maximum Ratings"
+      },
+      "source-o": {
+        "datasheet-s": "TLV62569DBVR.pdf",
+        "page_n": 8,
+        "figure-s": "Typical Application"
+      },
+      "vref_mv": 600,
+      "vref_min_mv": 588,
+      "vref_max_mv": 612,
+      "vref_source-o": {
+        "datasheet-s": "TLV62569DBVR.pdf",
+        "page_n": 4,
+        "table-s": "6.5 Electrical Characteristics, OUTPUT: VFB feedback regulation voltage 0.588 / 0.6 / 0.612 V"
+      },
+      "cout_min_nf": 10000,
+      "cout_max_nf": 47000,
+      "cout_source-o": {
+        "datasheet-s": "TLV62569DBVR.pdf",
+        "page_n": 10,
+        "table-s": "8.2.2.5 Input and Output Capacitor Selection: 'designed to operate with an output capacitor of 10 uF to 47 uF, as outlined in Table 4' (Table 4 p9: 2.2 uH with 10 uF standard; 22 uF and 2x22 uF also checked; effective C may vary +20 %/-50 %)"
+      },
+      "iout_source-o": {
+        "datasheet-s": "TLV62569DBVR.pdf",
+        "page_n": 4,
+        "table-s": "6.3 Recommended Operating Conditions: IOUT output current max 2 A"
+      },
+      "loop_note-s": "internally compensated; a 6.8 pF feed-forward capacitor across R2 (100 k) 'improves the loop bandwidth' (8.2.2.2, p9); no bandwidth figure",
+      "not_stated-o": {
+        "loop_crossover_khz": "not stated",
+        "output_impedance_mohm": "no Zout curve",
+        "load_transient": "Figure 18/19 (p12): 0.8 A -> 2 A at 1 A/us, scope shot, no deviation figure stated"
+      },
+      "load_regulation_mv_per_a": 6.04,
+      "load_regulation_mv_per_a_at_3v3": 0.28,
+      "load_regulation_source-o": {
+        "datasheet-s": "TLV62569DBVR.pdf",
+        "page_n": 11,
+        "table-s": "Figure 10. Load Regulation (curve points via pdf-graph)",
+        "derived": "CCM portion 1.0 -> 1.994 A: VOUT 1.8 V +0.0005 % -> -0.3332 % = 6.01 mV / 0.994 A = 6.04 mV/A (matches the record's VOUT 1.8 V, so it is the klayout key); VOUT 3.3 V +0.0005 % -> -0.0079 % = 0.28 mV / 0.994 A = 0.28 mV/A (at the plot resolution; the curve is flat within +/-0.02 %). Below ~0.8 A the curve is the PFM offset"
+      }
+    },
+    "thermal-o": {
+      "tj-max-c-i": 125
+    },
+    "supplies-ao": [
+      {
+        "rail-s": "VIN",
+        "role-s": "vin",
+        "pins-as": [
+          "4"
+        ],
+        "vmin_mv": 2500,
+        "vmax_mv": 5500,
+        "source-o": {
+          "datasheet-s": "TLV62569DBVR.pdf",
+          "page_n": 4,
+          "table-s": "6.3 Recommended Operating Conditions(1)"
+        }
+      }
+    ]
+  }
+}

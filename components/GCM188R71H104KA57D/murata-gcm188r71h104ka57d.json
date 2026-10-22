@@ -1,0 +1,68 @@
+{
+  "component-o": {
+    "specs-o": {
+      "esr_mohm": 19.52,
+      "esl_ph": 302,
+      "srf_mhz": 23.3742,
+      "dc_bias-ao": [
+        { "v_mv": 0, "c_pct": 100 },
+        { "v_mv": 1000, "c_pct": 100.2 },
+        { "v_mv": 1800, "c_pct": 100.3 },
+        { "v_mv": 3300, "c_pct": 100.2 },
+        { "v_mv": 5000, "c_pct": 99.9 },
+        { "v_mv": 10000, "c_pct": 97.9 },
+        { "v_mv": 12000, "c_pct": 96.7 },
+        { "v_mv": 16000, "c_pct": 93.7 },
+        { "v_mv": 20000, "c_pct": 89.7 },
+        { "v_mv": 25000, "c_pct": 83.7 },
+        { "v_mv": 35000, "c_pct": 69.6 },
+        { "v_mv": 50000, "c_pct": 49.4 }
+      ],
+      "esr_esl_dc_bias_source-s": "Murata SimSurfing (ds.murata.co.jp/simserve): measured series-thru S-parameters GCM188R71H104KA57.s2p (25 degC, 0 V; data generated Aug 1, 2022) -> ESR at SRF, ESL at 10x SRF; DC-bias curve c_dcbias_capchange (25 degC, AC 1 Vrms), read 2026-10-21"
+    },
+    "type-s": "capacitor",
+    "vendor-s": "Murata Electronics",
+    "part-s": "GCM188R71H104KA57D",
+    "description-s": "0.1 µF ±10% 50 V X7R 0603 (1608M) automotive-grade MLCC, SMD, 0.8 mm thick",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "distributor-s": "DigiKey",
+      "stock-o": {
+        "digikey-i": 1822703,
+        "mouser-i": 360000,
+        "newark-i": 15099,
+        "checked-s": "2026-10-21",
+        "source-s": "DigiKey Product Information API v4 (max QuantityAvailable over packagings); Mouser and Newark public product/search pages via browser; null = not listed"
+      },
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "490-4779-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/murata-electronics/GCM188R71H104KA57D/1641653",
+        "datasheet-url-s": "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCM188R71H104KA57-01A-EN_PDF_CERAMICCAPACITORSMD",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 1822553,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.20",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0603" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-ceramic"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 100000,
+      "value-unit-s": "nf",
+      "voltage-max-i": 50000,
+      "tolerance-pct-x10": 100,
+      "dielectric-s": "x7r"
+    }
+  }
+}

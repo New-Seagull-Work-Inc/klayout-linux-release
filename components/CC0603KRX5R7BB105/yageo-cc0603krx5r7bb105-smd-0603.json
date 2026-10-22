@@ -1,0 +1,62 @@
+{
+  "component-o": {
+    "not_stated-o": {
+      "dc_bias-ao": "not stated for this part: Yageo's family datasheet has no DC-bias curve (searched 'bias')",
+      "esr_mohm": "not stated for this part: the X5R family sheet's Fig. 4 (p11) is a typical curve for 0603 1 uF / 10 V, not this 16 V part; not used",
+      "esl_ph": "not stated (same as esr_mohm)"
+    },
+    "rating_source-o": {
+      "datasheet-s": "UPY-GPHC_X5R_4V-TO-50V.pdf",
+      "page_n": 6,
+      "table-s": "Table 6 Sizes from 0603 to 0805"
+    },
+    "type-s": "capacitor",
+    "vendor-s": "Yageo",
+    "part-s": "CC0603KRX5R7BB105",
+    "description-s": "1 µF ±10% 16 V X5R 0603 multilayer ceramic capacitor (MLCC), SMD, 0.9 mm max thickness; drop-in for GRM188R61C105KA12D (NRND, 2026-10-14)",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.01,
+        "100": 0.01,
+        "1K": 0.01,
+        "10K": 0.00727,
+        "100K": 0.00535
+      },
+      "distributor-s": "TME",
+      "moq-i": 1,
+      "order-mult-i": 1,
+      "lead-time-weeks-i": 1,
+      "stock-i": 382,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "311-1444-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/yageo/CC0603KRX5R7BB105/2833609",
+        "datasheet-url-s": "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X5R_4V-TO-50V",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 484239,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.19",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0603" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-ceramic"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 1000000,
+      "value-unit-s": "uf",
+      "voltage-max-i": 16000,
+      "tolerance-pct-x10": 100,
+      "dielectric-s": "x5r"
+    }
+  }
+}

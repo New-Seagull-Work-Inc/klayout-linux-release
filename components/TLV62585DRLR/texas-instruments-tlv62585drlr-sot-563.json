@@ -1,0 +1,248 @@
+{
+  "component-o": {
+    "type-s": "regulator",
+    "vendor-s": "Texas Instruments",
+    "part-s": "TLV62585DRLR",
+    "description-s": "2.5-5.5 V input, 3 A, 1.5 MHz synchronous step-down converter, adjustable output 0.6 V to VIN, SOT-563 (DRL)",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.267,
+        "100": 0.205,
+        "1K": 0.173,
+        "10K": 0.155,
+        "100K": 0.155
+      },
+      "distributor-s": "Mouser",
+      "moq-i": 1,
+      "order-mult-i": 1,
+      "lifecycle-s": "active",
+      "lifecycle-source-s": "DigiKey: Active; Mouser: Active",
+      "stock-note-s": "2026-10-21: Mouser 2535, DigiKey 4639 (296-51694-2-ND, reel), LCSC C485117 920",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "296-51694-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/texas-instruments/TLV62585DRLR/9489213",
+        "datasheet-url-s": "https://www.ti.com/lit/gpn/tlv62585",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 4639,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.38",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "sot-563" },
+      { "ppins-i": 6 }
+    ],
+    "blocks-as": [
+      "regulator",
+      "regulator-buck",
+      "soft-start",
+      "enable",
+      "thermal-shutdown",
+      "current-limit"
+    ],
+    "interfaces-as": [
+      "ds-power-rx",
+      "ds-power-tx"
+    ],
+    "temperatures-ao": [
+      {
+        "junction-o": {
+          "min-i": -40,
+          "max-i": 125
+        }
+      }
+    ],
+    "voltages-ao": [
+      { "vin": 5000 },
+      { "vout": 1800 }
+    ],
+    "max_currents-ao": [
+      { "out": 3000 }
+    ],
+    "pins-ao": [
+      { "1": "gnd" },
+      { "2": "sw" },
+      { "3": "vin" },
+      { "4": "en" },
+      { "5": "fb" },
+      { "6": "nc" }
+    ],
+    "stdpins-ao": [
+      { "3": "ds-power-rx" },
+      { "3": "10uf-avss" },
+      { "2": "1uh-vout" },
+      { "vout": "ds-power-tx" },
+      { "vout": "22uf-avss" },
+      { "1": "avss" }
+    ],
+    "cfgpins-ao": [
+      { "4": "en" },
+      { "4": "vin" },
+      { "4c": "EN high (VIH 1.2 V max) enables, do not leave floating: tied to VIN" },
+      { "5": "fb" },
+      { "5": "200k-vout" },
+      { "5": "100k-avss" },
+      { "5c": "VFB 0.6 V; VOUT = 0.6 V x (1 + R1/R2): R1 200k / R2 100k gives the row's 1.8 V (Figure 4 / Table 3 p9, R2 not above 100k per 8.2.2.2); C3 feed-forward optional, not fitted" },
+      { "6": "nc" },
+      { "6c": "NC: leave open, or connect to the output or AGND (Pin Functions p4)" }
+    ],
+    "specs-o": {
+      "en_vil_max_mv": 400,
+      "en_vih_max_mv": 1200,
+      "en_note-s": "no internal pull: the EN input must be terminated and not left floating",
+      "en_source-o": {
+        "page_n": 6,
+        "table-s": "6.5 Electrical Characteristics, LOGIC INTERFACE EN: VIH 1.2 V, VIL 0.4 V (VIN = 2.5 V to 5.5 V)",
+        "datasheet-s": "TLV62585DRLR.pdf"
+      },
+      "topology_s": "buck",
+      "adjustable_b": true,
+      "vin_min_mv": 2500,
+      "vin_max_mv": 5500,
+      "vout_min_mv": 600,
+      "vout_max_mv": 5500,
+      "iout_max_ma": 3000,
+      "iq_typ_ua": 35,
+      "ish_max_ua": 2,
+      "switching_freq_khz": 1500,
+      "rdson_hs_mohm": 56,
+      "rdson_ls_mohm": 32,
+      "ilim_hs_typ_ma": 4600,
+      "ilim_hs_min_ma": 4000,
+      "has_enable_b": true,
+      "has_pgood_b": false,
+      "has_thermal_shutdown_b": true,
+      "has_current_limit_b": true,
+      "has_softstart_b": true,
+      "soft_start_us": 900,
+      "replaces_s": "TLV62568DBVR / TPS82130SILR on 1.8 V rails: same 0.6 V VFB and 2.5-5.5 V input as TLV62568, but SOT-563 with a different pin order (GND/SW/VIN/EN/FB/NC)",
+      "vref_mv": 600,
+      "vref_min_mv": 588,
+      "vref_max_mv": 612,
+      "vref_source-o": {
+        "datasheet-s": "TLV62585DRLR.pdf",
+        "page_n": 6,
+        "table-s": "6.5 Electrical Characteristics, OUTPUT: VFB 594 / 600 / 606 mV (0 to 85 C), 588 / 600 / 612 mV (-40 to 125 C), PWM mode"
+      },
+      "cin_min_nf": 10000,
+      "cout_min_nf": 10000,
+      "cout_max_nf": 47000,
+      "cout_source-o": {
+        "datasheet-s": "TLV62585DRLR.pdf",
+        "page_n": 11,
+        "table-s": "8.2.2.5: 'designed to operate with an output capacitor of 10 uF to 47 uF, as outlined in Table 4'; Table 4 p10: 1 uH with 10 / 22 (typical) / 47 uF; above 47 uF a feed-forward capacitor is needed; 10 uF input 'sufficient for most applications'"
+      },
+      "iout_source-o": {
+        "datasheet-s": "TLV62585DRLR.pdf",
+        "page_n": 5,
+        "table-s": "6.3 Recommended Operating Conditions: IOUT output current 0 to 3 A"
+      },
+      "loop_note-s": "adaptive off-time peak-current control, internally compensated; a feed-forward capacitor C3 across R1 'reduces the output ripple in PSM and improves the load transient response', 22 pF for the 1.8 V typical application (8.2.2.5 p11); no bandwidth figure",
+      "not_stated-o": {
+        "loop_crossover_khz": "not stated",
+        "output_impedance_mohm": "no Zout curve"
+      },
+      "load_transient-ao": [
+        { "i_from_ma": 100, "i_to_ma": 3000, "i_step_ma": 2900, "slew_a_per_us": 0.18, "slew_note-s": "edge not stated; read off the capture: about 16 us for 0.1 -> 3 A at 100 us/div", "cout_uf": 22, "cout_part-s": "C2 GRM21BD70J226ME44 22 uF 6.3 V X7T 0805 (Table 3 p9)", "l_uh": 1, "vout_mv": 1800, "vin_mv": 5000, "ta_c": 25, "page_n": 14, "conditions_source-s": "Application Curves header p12: VIN = 5 V, VOUT = 1.8 V, TA = 25 C unless otherwise noted; circuit Figure 4 / Table 3 (p9), C3 optional and not fitted (Figure 19 is the C3 case)", "fig-s": "Figure 18. Load Transient", "dv_mv": 114, "dv_overshoot_mv": 104, "cff_pf": 0, "read-s": "oscilloscope capture rendered at 600 dpi: 0.1 V/div = 138.5 px, about +/-10 mV; starts in Power Save Mode (sawtooth): undershoot on 0.1 -> 3 A 114 mV below the PSM mean (90 mV below the ripple floor), overshoot on 3 -> 0.1 A 104 mV above the loaded PWM level" },
+        { "i_from_ma": 100, "i_to_ma": 3000, "i_step_ma": 2900, "slew_a_per_us": 0.18, "slew_note-s": "edge not stated; read off the capture: about 16 us for 0.1 -> 3 A at 100 us/div", "cout_uf": 22, "cout_part-s": "C2 GRM21BD70J226ME44 22 uF 6.3 V X7T 0805 (Table 3 p9)", "l_uh": 1, "vout_mv": 1800, "vin_mv": 5000, "ta_c": 25, "page_n": 14, "conditions_source-s": "Application Curves header p12; C3 = 22 pF feed-forward across R1", "fig-s": "Figure 19. Load Transient with A Feedforward Capacitor", "dv_mv": 93, "dv_overshoot_mv": 80, "cff_pf": 22, "read-s": "600 dpi render, 0.1 V/div = 138 px: undershoot 93 mV below the PSM mean, overshoot 80 mV above the loaded PWM level" }
+      ],
+      "load_transient_note-s": "Both figures step from 0.1 A (Power Save Mode) to 3 A with a slow edge (about 0.18 A/us, read off the capture, not stated). A faster edge would deepen the dip; the 114 mV / 2.9 A = 0.039 ohm still leaves about 2.8x margin to 0.110 ohm",
+      "load_regulation_pct_per_a": 0.125,
+      "load_regulation_mv_per_a": 2.25,
+      "load_regulation_source-o": {
+        "datasheet-s": "TLV62585DRLR.pdf",
+        "page_n": 12,
+        "table-s": "Figure 9. Load Regulation (VIN 5 V; curve points via pdf-graph)",
+        "derived": "VOUT 1.8 V: +0.0558 % at 0.507 A, -0.2558 % at 2.993 A -> 0.312 % / 2.49 A = 0.125 %/A; x 1.8 V = 2.25 mV/A"
+      },
+      "load_regulation-ao": [
+        { "i_from_ma": 500, "i_to_ma": 3000, "pct_per_a": 0.125, "mv_per_a": 2.25, "vout_mv": 1800, "vin_mv": 5000, "mode-s": "PWM", "fig-s": "Figure 9. Load Regulation", "page_n": 12, "derived-s": "pdf-graph: +0.0558 % at 0.507 A, -0.2558 % at 2.993 A" },
+        { "i_from_ma": 500, "i_to_ma": 3000, "pct_per_a": 0.058, "mv_per_a": 1.92, "vout_mv": 3300, "vin_mv": 5000, "mode-s": "PWM", "fig-s": "Figure 9. Load Regulation", "page_n": 12, "derived-s": "pdf-graph VOUT 3.3 V: +0.0272 % at 0.63 A, -0.1174 % at 2.993 A -> 0.061 %/A; x 3.3 V" }
+      ],
+      "load_regulation_note-s": "Figure 9 starts at 0.5 A; below that the converter is in Power Save Mode, where VOUT sits slightly above nominal (7.3.1)",
+      "efficiency-ao": [
+        { "vin_mv": 5000, "vout_mv": 1800, "iout_ma": 100, "efficiency_pct": 90.6, "fig-s": "Figure 6. Efficiency (VOUT = 1.8 V)", "page_n": 12 },
+        { "vin_mv": 5000, "vout_mv": 1800, "iout_ma": 200, "efficiency_pct": 91, "fig-s": "Figure 6. Efficiency (VOUT = 1.8 V)", "page_n": 12 },
+        { "vin_mv": 5000, "vout_mv": 1800, "iout_ma": 500, "efficiency_pct": 91.9, "fig-s": "Figure 6. Efficiency (VOUT = 1.8 V)", "page_n": 12 },
+        { "vin_mv": 5000, "vout_mv": 1800, "iout_ma": 1000, "efficiency_pct": 93.1, "fig-s": "Figure 6. Efficiency (VOUT = 1.8 V)", "page_n": 12 },
+        { "vin_mv": 5000, "vout_mv": 1800, "iout_ma": 2000, "efficiency_pct": 91.3, "fig-s": "Figure 6. Efficiency (VOUT = 1.8 V)", "page_n": 12 }
+      ],
+      "efficiency_source-s": "pdf-graph curve points, VIN = 5.0 V trace, L = 1 uH, TA = 25 C (p12 header)",
+      "inductor_note-s": "Table 4 p10: 1 uH is the typical application (0.47 uH and 2.2 uH not checked); Table 3 L1 Coilcraft XFL4020-102ME 1 uH 4 x 4 x 1.5 mm; saturation current 20-30 % above IL,MAX (Equation 3, 8.2.2.4). ILIM 4.0 A min",
+      "rth_ja_c_per_w": 132.7,
+      "rth_source-s": "6.4 Thermal Information p5: RthJA DRL (SOT) 132.7 C/W (JEDEC board); Figure 22 p14: 45 C rise at 3 A, 1.8 V out, 5 V in on the EVM",
+      "synchronous_b": true,
+      "sw_pins-as": [
+        "2"
+      ],
+      "vin_pins-as": [
+        "3"
+      ],
+      "pgnd_pins-as": [
+        "1"
+      ],
+      "l_nh_typ": 1000,
+      "cin_nf_typ": 10000,
+      "cout_nf_typ": 22000,
+      "sw_ratings-ao": [
+        {
+          "pins-as": [
+            "2"
+          ],
+          "abs_min_mv": -300,
+          "abs_max_ref-s": "vin",
+          "abs_max_above_ref_mv": 300,
+          "abs_min_transient_mv": -3000,
+          "abs_max_transient_mv": 9000,
+          "abs_max_transient_ns": 10
+        }
+      ],
+      "sw_abs_min_mv": -300,
+      "sw_abs_max_ref-s": "vin",
+      "sw_abs_max_above_ref_mv": 300,
+      "sw_abs_min_transient_mv": -3000,
+      "sw_abs_max_transient_mv": 9000,
+      "sw_abs_max_transient_ns": 10,
+      "sw_not_stated-o": {
+        "sw_rise_ns": "not stated in TLV62585DRLR.pdf: no switch rise-time row in its tables (29 pages)",
+        "sw_fall_ns": "not stated in TLV62585DRLR.pdf: no switch fall-time row in its tables (29 pages)",
+        "sw_coss_pf": "not stated in TLV62585DRLR.pdf: no switch-pin or C_oss capacitance row in its tables (29 pages)"
+      },
+      "sw_source-o": {
+        "datasheet-s": "TLV62585DRLR.pdf",
+        "page_n": 5,
+        "table-s": "Absolute Maximum Ratings"
+      },
+      "source-o": {
+        "datasheet-s": "TLV62585DRLR.pdf",
+        "page_n": 9,
+        "figure-s": "Figure 4"
+      }
+    },
+    "thermal-o": {
+      "tj-max-c-i": 125
+    },
+    "supplies-ao": [
+      {
+        "rail-s": "VIN",
+        "role-s": "vin",
+        "pins-as": [
+          "3"
+        ],
+        "vmin_mv": 2500,
+        "vmax_mv": 5500,
+        "source-o": {
+          "datasheet-s": "TLV62585DRLR.pdf",
+          "page_n": 5,
+          "table-s": "6.3 Recommended Operating Conditions"
+        }
+      }
+    ]
+  }
+}

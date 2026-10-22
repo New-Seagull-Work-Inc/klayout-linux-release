@@ -1,0 +1,63 @@
+{
+  "component-o": {
+    "type-s": "switch",
+    "vendor-s": "CTS",
+    "part-s": "219-2MST",
+    "description-s": "2-position SPST slide DIP switch, SMD gull wing, 2.54 mm pitch, gold contacts, tape seal, 100 mA at 20 VDC. Bring-up BOOT0 / BOOT1 selector: each position ties its boot pin to the I/O rail over the board's 10k pull-down.",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {},
+      "distributor-s": "",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "CT2192MST-ND",
+        "package-s": "Tube",
+        "product-url-s": "https://www.digikey.com/en/products/detail/cts-electrocomponents/219-2MST/223191",
+        "datasheet-url-s": "https://www.ctscorp.com/Files/DataSheets/Switches/DIP-Switches/CTS-Switches-DIP-219-Series-Datasheet.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 15195,
+        "moq-i": 85,
+        "unit-price-s": "USD 0.49",
+        "price-qty-i": 85,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-dip-2-2.54mm" },
+      { "ppins-i": 4 }
+    ],
+    "blocks-as": [
+      "switch",
+      "dip",
+      "boot-select"
+    ],
+    "interfaces-as": [],
+    "pins-ao": [
+      { "1": "1A" },
+      { "2": "2A" },
+      { "3": "2B" },
+      { "4": "1B" }
+    ],
+    "stdpins-ao": [],
+    "cfgpins-ao": [
+      { "1": "sw1-a" },
+      { "4": "sw1-b" },
+      { "2": "sw2-a" },
+      { "3": "sw2-b" },
+      { "1c": "position 1 switches pin 1 to pin 4, position 2 pin 2 to pin 3 (KiCad SW_DIP_SPSTx02 numbering); wire one side to the boot pin, the other to the I/O rail" }
+    ],
+    "switch-o": {
+      "function-s": "dip-slide",
+      "circuit-s": "spst",
+      "positions-i": 2,
+      "current-max-ma-i": 100,
+      "voltage-max-v-i": 20,
+      "pitch-mm-x100-i": 254,
+      "source-o": {
+        "datasheet-s": "CTS-219.pdf",
+        "table-s": "Electrical: switch rating 100 mA at 20 VDC; insulation 1000 Mohm; ordering: 219-2MST = 2 positions, gull wing, tape seal"
+      }
+    }
+  }
+}

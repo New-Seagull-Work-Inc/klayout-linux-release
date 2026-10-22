@@ -1,0 +1,50 @@
+{
+  "component-o": {
+    "type-s": "resistor",
+    "vendor-s": "Panasonic",
+    "part-s": "ERJ-2RKF9310X",
+    "description-s": "931 Ohm ±1% 0.1 W thick film chip resistor, 0402; second source for the Yageo RC0402FR-07 part",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.0054,
+        "100": 0.0054,
+        "1K": 0.0054,
+        "10K": 0.0054,
+        "100K": 0.0054
+      },
+      "distributor-s": "Arrow Electronics",
+      "moq-i": 1764,
+      "order-mult-i": 1,
+      "stock-i": 1764,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "P931LCT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/panasonic-industry/ERJ-2RKF9310X/192514",
+        "datasheet-url-s": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 39515,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.11",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0402" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "resistor-thick-film"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 931000,
+      "value-unit-s": "r",
+      "power-mw-i": 100,
+      "tolerance-pct-x10": 10
+    }
+  }
+}

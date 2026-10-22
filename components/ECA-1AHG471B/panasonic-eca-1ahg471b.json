@@ -1,0 +1,37 @@
+{
+  "component-o": {
+    "type-s": "capacitor",
+    "vendor-s": "Panasonic",
+    "part-s": "ECA-1AHG471B",
+    "description-s": "Cap Aluminum 470uF 10V 20% (8 X 11.5mm) Radial 5mm 250mA 1000h 105C Ammo Pack",
+    "package-ao": [
+      { "ptype-s": "Aluminum Electrolytic Capacitors" },
+      { "ppins-i": 2 }
+    ],
+    "passive-o": {
+      "lead-style-s": "radial"
+    },
+    "non-technical-o": {
+      "cost-o": {
+        "1K": 0.09,
+        "10K": 0.09,
+        "100K": 0.09
+      },
+      "distributor-s": "Verical",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "10-ECA-1AHG471BCT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/panasonic-industry/ECA-1AHG471B/2688633",
+        "datasheet-url-s": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1215.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 104,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.63",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    }
+  }
+}

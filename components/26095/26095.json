@@ -1,0 +1,127 @@
+{
+  "component-o": {
+    "type-s": "display",
+    "subtype-s": "oled-module-i2c",
+    "vendor-s": "CANADUINO (Universal-Solder Electronics)",
+    "part-s": "26095",
+    "description-s": "0.96 in 128 x 64 monochrome OLED module, I2C (0x3C), SSD1306 or SH1106 controller (maker does not say which), 27 x 28 mm PCB, 4-pin 2.54 mm header GND-VCC-SCL-SDA",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "distributor-s": "DigiKey",
+      "cost-o": {
+        "1": 4.99,
+        "3": 4.49
+      },
+      "moq-i": 1,
+      "stock-i": 20,
+      "stock-note-s": "DigiKey 3647-26095-ND, 20 in stock (pcbparts digikey_get_part 2026-10-21) -- thin stock; the module class is generic (many clones with the same 27 x 27 mm board and pinout)"
+    },
+    "package-ao": [
+      {
+        "ptype-s": "module-27x28-header-1x4-2.54"
+      },
+      {
+        "ppins-i": 4
+      }
+    ],
+    "blocks-as": [
+      "display-oled",
+      "i2c"
+    ],
+    "interfaces-as": [
+      "ds-power-rx",
+      "ds-i2c-rxtx"
+    ],
+    "pins-ao": [
+      {
+        "1": "GND"
+      },
+      {
+        "2": "VCC"
+      },
+      {
+        "3": "SCL"
+      },
+      {
+        "4": "SDA"
+      }
+    ],
+    "stdpins-ao": [
+      {
+        "2": "ds-power-rx"
+      },
+      {
+        "1": "dvss"
+      },
+      {
+        "3": "ds-i2c-scl"
+      },
+      {
+        "4": "ds-i2c-sda"
+      }
+    ],
+    "footprint_check-s": "board footprint DISPLAY:OLED 0.91: 4 pads at 2.54 mm pitch along the top edge (y -12.75), silkscreen outline 27.5 x 27.5 mm, nets pad1 GND, pad2 VCC, pad3 SCL, pad4 SDA; the maker's photo (p1) shows header silk 'GND VCC SCL SDA' and states PCB 27 x 28 mm -- matches",
+    "specs-o": {
+      "power_max_mw": 40,
+      "i2c_addr-s": "0x3C",
+      "module_source-o": {
+        "datasheet-s": "canaduino_oled_128x64_i2c.pdf",
+        "page_n": 1,
+        "table-s": "Power consumption: <40mW; PCB size 27 x 28 mm; I2C address 0x3C (typically)"
+      },
+      "controller-o": {
+        "part-s": "SSD1306 (or SH1106 -- undisclosed by the module maker)",
+        "vdd_logic_min_mv": 1650,
+        "vdd_logic_max_mv": 3300,
+        "vcc_panel_min_mv": 7000,
+        "vcc_panel_max_mv": 15000,
+        "vbat_chargepump_min_mv": 3300,
+        "vbat_chargepump_max_mv": 4200,
+        "idd_typ_ua": 50,
+        "idd_max_ua": 150,
+        "icc_typ_ua": 430,
+        "icc_max_ua": 780,
+        "idd_sleep_max_ua": 10,
+        "icc_sleep_max_ua": 10,
+        "vdd_abs_max_mv": 4000,
+        "source-o": {
+          "datasheet-s": "SSD1306.pdf",
+          "page_n": 48,
+          "table-s": "Table 12-1 DC Characteristics (IDD/ICC at VDD 2.8 V, VCC 12 V, display ON all pixels, no panel loading)"
+        },
+        "chargepump_source-o": {
+          "datasheet-s": "SSD1306.pdf",
+          "page_n": 62,
+          "table-s": "charge-pump application note: VDD 1.65-3.3 V (< VBAT), VBAT 3.3-4.2 V"
+        },
+        "abs_source-o": {
+          "datasheet-s": "SSD1306.pdf",
+          "page_n": 47,
+          "table-s": "Table 11-1 Maximum Ratings"
+        }
+      }
+    },
+    "supplies-ao": [
+      {
+        "rail-s": "VCC",
+        "role-s": "vcc",
+        "pins-as": [
+          "2"
+        ],
+        "source-o": {
+          "datasheet-s": "canaduino_oled_128x64_i2c.pdf",
+          "page_n": 1,
+          "table-s": "Power consumption <40mW (the module's only supply figure)"
+        }
+      }
+    ],
+    "not_stated-o": {
+      "vmin_mv": "module input range not stated in the maker datasheet (DigiKey's listing text says 3.3-5 V, not in the PDF)",
+      "vmax_mv": "not stated in the module datasheet",
+      "i_max_ma": "not stated; only power < 40 mW (at an unstated voltage)",
+      "on_board_regulator": "the module's regulator / charge-pump arrangement is not documented; SSD1306's own charge pump needs VBAT >= 3.3 V (p62), above a CR2032's 3.0 V nominal -- whether the module works from 3.0 V is not stated",
+      "controller": "maker says SSD1306 OR SH1106; controller figures above are SSD1306's (Solomon Systech Rev 1.1)",
+      "height_mm": "not stated"
+    }
+  }
+}

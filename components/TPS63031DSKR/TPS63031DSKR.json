@@ -1,0 +1,243 @@
+{
+  "component-o": {
+    "type-s": "regulator",
+    "vendor-s": "Texas Instruments",
+    "part-s": "TPS63031DSKR",
+    "description-s": "TPS6303x 1.8-5.5 V input buck-boost converter, fixed 3.3 V output, 1-A switches, 2.4 MHz, 2.5 x 2.5 mm VSON-10 (DSK)",
+    "package-ao": [
+      { "ptype-s": "vson-10-2.5x2.5-dsk" },
+      { "ppins-i": 11 }
+    ],
+    "blocks-as": [
+      "regulator",
+      "regulator-buck-boost",
+      "thermal-shutdown",
+      "current-limit",
+      "soft-start",
+      "enable"
+    ],
+    "interfaces-as": [
+      "ds-power-rx",
+      "ds-power-tx"
+    ],
+    "voltages-ao": [
+      { "vin": 5500 },
+      { "vout": 3300 }
+    ],
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -40,
+          "max-i": 85
+        }
+      },
+      {
+        "junction-o": {
+          "min-i": -40,
+          "max-i": 125
+        }
+      },
+      {
+        "storage-o": {
+          "min-i": -65,
+          "max-i": 150
+        }
+      }
+    ],
+    "pins-ao": [
+      { "1": "vout" },
+      { "2": "l2" },
+      { "3": "pgnd" },
+      { "4": "l1" },
+      { "5": "vin" },
+      { "6": "en" },
+      { "7": "ps_sync" },
+      { "8": "vina" },
+      { "9": "gnd" },
+      { "10": "fb" },
+      { "11": "pgnd" }
+    ],
+    "cfgpins-ao": [
+      { "10": "fb" },
+      { "10": "vout" },
+      { "10c": "fixed 3.3 V version: FB must be connected directly to VOUT (Pin Functions p3, 9.2.2.1 p11)" },
+      { "6": "en" },
+      { "6": "vina" },
+      { "6c": "EN tied to VINA, always on (Figure 6 p10)" },
+      { "7": "ps_sync" },
+      { "7": "vina" },
+      { "7c": "PS/SYNC tied to VINA: power save disabled (1 = disabled, p3; Figure 6 p10)" },
+      { "4c": "L1 1.5 uH between L1 and L2 (Table 2 p11: Coilcraft LPS3015-1R5); C1 10 uF on VIN, C2 2 x 10 uF on VOUT, C3 0.1 uF on VINA (Figure 6 p10, Table 2 p11)" }
+    ],
+    "stdpins-ao": [
+      { "5": "ds-power-rx" },
+      { "5": "10uf-pgnd" },
+      { "8": "ds-power-rx" },
+      { "8": "100nf-gnd" },
+      { "1": "ds-power-tx" },
+      { "1": "10uf-pgnd" },
+      { "1": "10uf-pgnd" },
+      { "3": "avss" },
+      { "9": "avss" },
+      { "11": "avss" },
+      { "4": "1.5uh-l2" }
+    ],
+    "specs-o": {
+      "topology_s": "buck-boost",
+      "adjustable_b": false,
+      "vin_min_mv": 1800,
+      "vin_max_mv": 5500,
+      "vout_fixed_mv": 3300,
+      "vout_accuracy-s": "3.267 / 3.3 / 3.333 V with PS/SYNC = VIN; -3 % / +6 % referenced to 3.3 V with PS/SYNC = GND (power save)",
+      "vout_source-o": {
+        "datasheet-s": "tps63030.pdf",
+        "page_n": 5,
+        "table-s": "7.5 Electrical Characteristics, DC/DC STAGE: VFB row 'TPS63031 output voltage' 3.267 / 3.3 / 3.333 V (PS/SYNC = VIN)"
+      },
+      "switching_freq_khz": 2400,
+      "switching_freq_min_khz": 2200,
+      "switching_freq_max_khz": 2600,
+      "switch_current_limit_ma": {
+        "min": 900,
+        "typ": 1000,
+        "max": 1300
+      },
+      "sw_ron_mohm": 200,
+      "iq_typ_ua": 25,
+      "has_enable_b": true,
+      "has_pgood_b": false,
+      "has_thermal_shutdown_b": true,
+      "has_current_limit_b": true,
+      "has_softstart_b": true,
+      "uvlo_falling_mv": 1500,
+      "iout_max_ma": 800,
+      "iout_source-o": {
+        "datasheet-s": "tps63030.pdf",
+        "page_n": 1,
+        "table-s": "Features: 800 mA output current at 3.3 V in step-down mode (VIN 3.6 - 5.5 V); up to 500 mA at 3.3 V in boost mode (VIN > 2.4 V); Description: up to 600 mA from a single Li-ion cell"
+      },
+      "iout_boost_max_ma": 500,
+      "fsw_source-o": {
+        "datasheet-s": "tps63030.pdf",
+        "page_n": 5,
+        "table-s": "7.5 Electrical Characteristics: f oscillator 2200 / 2400 / 2600 kHz; ISW average switch current limit 900 / 1000 / 1300 mA (VIN = VINA = 3.6 V, 25 C); high-side and low-side switch on-resistance 200 mOhm typ; Iq into VIN+VINA 25 typ / 35 max uA, into VOUT 4 / 6 uA; shutdown 0.1 / 0.9 uA; UVLO (VINA falling) 1.4 / 1.5 / 1.6 V"
+      },
+      "load_regulation_max_pct": 0.5,
+      "line_regulation_max_pct": 0.5,
+      "cap_notes-s": "p12: input >= 4.7 uF ceramic recommended; VINA bypass 0.1 uF, not above 0.22 uF; output nominal 10 uF recommended, no upper limit",
+      "not_stated-o": {
+        "vref_mv": "not applicable / not stated as a reference: TPS63031 is the fixed 3.3 V version with an internal divider (FB tied to VOUT); the 500 mV VFB (495/505) in the same table belongs to the adjustable TPS63030 -- use vout_fixed_mv",
+        "loop_crossover_khz": "not stated in tps63030.pdf (30 pages; no loop / bode / crossover data)",
+        "output_impedance_mohm": "not stated; only 'maximum load regulation 0.5 %' (typ column, p5) without a current span",
+        "sw_rise_ns": "not stated (no switch-node timing rows)",
+        "sw_fall_ns": "not stated",
+        "sw_coss_pf": "not stated",
+        "footprint": "MISMATCH: the board footprint is Texas_DRC0010J (3 x 3 mm VSON-10, pads at x = +/-1.4 mm); tps63030.pdf documents TPS6303x only in the 2.5 x 2.5 mm DSK package (p1, p3 Table 1, p19 packaging). Same pin numbering as the DRC-package TPS63000/1/2 (see TPS63001DRCR)"
+      },
+      "synchronous_b": true,
+      "sw_pins-as": [
+        "4",
+        "2"
+      ],
+      "vin_pins-as": [
+        "5",
+        "8"
+      ],
+      "pgnd_pins-as": [
+        "3",
+        "11"
+      ],
+      "l_nh_typ": 1500,
+      "cin_nf_typ": 10100,
+      "cout_nf_typ": 20000,
+      "sw_ratings-ao": [
+        {
+          "pins-as": [
+            "4",
+            "2"
+          ],
+          "abs_min_mv": -300,
+          "abs_max_mv": 7000
+        }
+      ],
+      "sw_abs_min_mv": -300,
+      "sw_abs_max_mv": 7000,
+      "sw_not_stated-o": {
+        "sw_rise_ns": "not stated in tps63030.pdf: no switch rise-time row in its tables (27 pages)",
+        "sw_fall_ns": "not stated in tps63030.pdf: no switch fall-time row in its tables (27 pages)",
+        "sw_coss_pf": "not stated in tps63030.pdf: no switch-pin or C_oss capacitance row in its tables (27 pages)"
+      },
+      "sw_source-o": {
+        "datasheet-s": "tps63030.pdf",
+        "page_n": 4,
+        "table-s": "Absolute Maximum Ratings"
+      },
+      "source-o": {
+        "datasheet-s": "tps63030.pdf",
+        "page_n": 10,
+        "figure-s": "Figure 6"
+      }
+    },
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "3K": 1.23476
+      },
+      "distributor-s": "DigiKey",
+      "moq-i": 3000,
+      "stock-i": 1,
+      "stock-checked-s": "2026-10-21",
+      "distributor-pn-s": "296-39461-2-ND",
+      "lcsc-s": "C15516",
+      "lcsc-stock-i": 4703,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "296-39461-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/texas-instruments/TPS63031DSKR/2048021",
+        "datasheet-url-s": "https://www.ti.com/lit/gpn/tps63030",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 1,
+        "moq-i": 1,
+        "unit-price-s": "USD 2.40",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "thermal-o": {
+      "rtheta-ja-c-per-w-f": 60.7,
+      "tj-max-c-i": 125
+    },
+    "supplies-ao": [
+      {
+        "rail-s": "VIN",
+        "role-s": "vin",
+        "pins-as": [
+          "5"
+        ],
+        "vmin_mv": 1800,
+        "vmax_mv": 5500,
+        "source-o": {
+          "datasheet-s": "tps63030.pdf",
+          "page_n": 4,
+          "table-s": "7.3 Recommended Operating Conditions"
+        }
+      },
+      {
+        "rail-s": "VINA",
+        "role-s": "vina",
+        "pins-as": [
+          "8"
+        ],
+        "vmin_mv": 1800,
+        "vmax_mv": 5500,
+        "source-o": {
+          "datasheet-s": "tps63030.pdf",
+          "page_n": 4,
+          "table-s": "7.3 Recommended Operating Conditions"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "component-o": {
+    "specs-o": {
+      "esr_mohm": 220,
+      "esr_esl_dc_bias_source-s": "Rubycon ZLH catalog (rubycon.co.jp/wp-content/uploads/catalog-aluminum/ZLH.pdf, STANDARD SIZE table, 16 V 100 µF 5x11 row): impedance 0.22 ohm MAX at 20 degC 100 kHz (esr_mohm holds this max |Z|, an upper bound on ESR), 0.80 ohm MAX at -10 degC 100 kHz; rated ripple 345 mA rms at 105 degC 100 kHz. ESL and SRF not stated; DC bias not applicable. Read 2026-10-21",
+      "impedance_max_100khz_m10c_mohm": 800,
+      "ripple_ma_100khz_105c": 345
+    },
+    "type-s": "capacitor",
+    "vendor-s": "Rubycon",
+    "part-s": "16ZLH100MEFC5X11",
+    "description-s": "100 µF ±20% 16 V aluminium electrolytic capacitor, ZLH series (low impedance, 105 °C 6000 h), radial can 5 x 11 mm, 2.0 mm lead pitch, 0.5 mm leads",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "distributor-s": "DigiKey",
+      "stock-o": {
+        "digikey-i": 64388,
+        "mouser-i": 951,
+        "newark-i": null,
+        "checked-s": "2026-10-21",
+        "source-s": "DigiKey Product Information API v4 (max QuantityAvailable over packagings); Mouser / Newark public pages via browser; null = not listed, key absent = not checked; mouser-i read from Octopart's Mouser offer (Mouser's own site blocked automated access)"
+      },
+      "cost-o": {
+        "10": 0.167,
+        "100": 0.1063,
+        "1K": 0.07259,
+        "10K": 0.05736,
+        "100K": 0.05736
+      },
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "1189-1148-ND",
+        "package-s": "Bulk",
+        "product-url-s": "https://www.digikey.com/en/products/detail/rubycon/16ZLH100MEFC5X11/3134106",
+        "datasheet-url-s": "https://www.rubycon.co.jp/wp-content/uploads/catalog-aluminum/ZLH.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 64434,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.28",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "radial-electrolytic" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-electrolytic"
+    ],
+    "passive-o": {
+      "lead-style-s": "radial",
+      "value-i": 100000000,
+      "value-unit-s": "uf",
+      "voltage-max-i": 16000,
+      "tolerance-pct-x10": 200,
+      "dielectric-s": "aluminum-electrolytic",
+      "esr-mr-i": 220
+    }
+  }
+}

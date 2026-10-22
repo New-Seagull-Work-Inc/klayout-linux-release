@@ -1,0 +1,28 @@
+{
+  "component-o": {
+    "type-s": "battery",
+    "vendor-s": "Diodes Inc.",
+    "part-s": "AP9101CAK6-ALTRG1",
+    "description-s": "ROHS3Compliant Battery Protection GULL WING Active IC Battery Protection -40C~85C TA 3mm 5.5V",
+    "package-ao": [
+      { "ptype-s": "Battery Management" },
+      { "ppins-i": 2 }
+    ],
+    "battery-o": {},
+    "non-technical-o": {
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "31-AP9101CAK6-ALTRG1TR-ND",
+        "package-s": "Tape & Reel (TR)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/diodes-incorporated/AP9101CAK6-ALTRG1/6187043",
+        "lifecycle-s": "obsolete",
+        "status-s": "Discontinued at DigiKey",
+        "available-i": 0,
+        "moq-i": 3000,
+        "unit-price-s": "USD 0.12",
+        "price-qty-i": 3000,
+        "verified-on-s": "2026-10-21"
+      }
+    }
+  }
+}

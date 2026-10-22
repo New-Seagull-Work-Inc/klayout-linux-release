@@ -1,0 +1,71 @@
+{
+  "component-o": {
+    "specs-o": {
+      "ripple_ma_120hz_85c": 180,
+      "tan_delta_120hz": 0.16,
+      "esr_esl_dc_bias_source-s": "Panasonic M-series (ECA) English datasheet 'ECA-xxM Series,TypeA' (via DigiKey mm.digikey.com .../2452/ECA-xxM Series,TypeA.pdf; same table in designer-parts ECA-1CM101/ECA-1CM101/ECA-1CM101.pdf), row ECA1EM101( ): 100 µF 25 V, D 6.3 mm, L 11.2 mm, rated ripple 180 mA rms (120 Hz, +85 degC), tan delta 0.16 (120 Hz, +20 degC), lead dia 0.5 mm, pitch 2.5 mm. NOT STATED: ESR, impedance, ESL (Panasonic's characteristic viewer has no data for ECA parts). Read 2026-10-21"
+    },
+    "type-s": "capacitor",
+    "vendor-s": "Panasonic",
+    "part-s": "ECA-1EM101",
+    "description-s": "100 µF ±20% 25 V aluminum electrolytic capacitor, M series (general purpose, 85 °C 2000 h), radial can 6.3 x 11.2 mm, 2.5 mm lead pitch, 0.5 mm leads, bulk",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.192,
+        "100": 0.14,
+        "1K": 0.0855,
+        "10K": 0.06983,
+        "100K": 0.06983
+      },
+      "distributor-s": "DigiKey",
+      "cost-source-s": "DigiKey API v4 StandardPricing, USD, 2026-10-21: per quantity the lowest unit price among DigiKey's own non-Digi-Reel packagings whose first break is at or below that quantity (P5152-ND Bulk)",
+      "lifecycle-s": "Active (DigiKey)",
+      "stock-o": {
+        "digikey-i": 0,
+        "mouser-i": 125,
+        "newark-i": 588,
+        "checked-s": "2026-10-21",
+        "source-s": "DigiKey Product Information API v4 (max QuantityAvailable over packagings); Mouser / Newark public pages via browser; null = not listed, key absent = not checked; mouser-i 125 is the architect ltl.db stock-ltl figure of 2026-10-18 (Mouser blocked automated access today); newark-i from Octopart's Newark offer (SKU ECA1EM101) 2026-10-21; DigiKey from the API"
+      },
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "P5152-ND",
+        "package-s": "Bulk",
+        "product-url-s": "https://www.digikey.com/en/products/detail/panasonic-industry/ECA-1EM101/245011",
+        "datasheet-url-s": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2452/ECA-xxM%20Series%2CTypeA.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 0,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.31",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "radial-electrolytic" },
+      { "ppins-i": 2 },
+      { "can-diameter-mm-f": 6.3 },
+      { "can-length-mm-f": 11.2 },
+      { "lead-pitch-mm-f": 2.5 },
+      { "lead-diameter-mm-f": 0.5 }
+    ],
+    "blocks-as": [
+      "capacitor-electrolytic"
+    ],
+    "passive-o": {
+      "lead-style-s": "radial",
+      "value-i": 100000000,
+      "value-unit-s": "uf",
+      "voltage-max-i": 25000,
+      "tolerance-pct-x10": 200,
+      "dielectric-s": "aluminum-electrolytic"
+    },
+    "not_stated-o": {
+      "esr_mohm": "Panasonic publishes no ESR/impedance for the M series",
+      "esl_ph": "not published",
+      "dc_bias-ao": "not applicable"
+    }
+  }
+}

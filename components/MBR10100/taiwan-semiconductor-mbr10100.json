@@ -1,0 +1,35 @@
+{
+  "component-o": {
+    "type-s": "diode",
+    "vendor-s": "Taiwan Semiconductor",
+    "part-s": "MBR10100",
+    "description-s": "Rectifier Diode, Schottky, 1 Phase, 1 Element, 10A, 100V V(RRM), Silicon, TO-220AC",
+    "package-ao": [
+      { "ptype-s": "Rectifier Diodes" },
+      { "ppins-i": 2 }
+    ],
+    "passive-o": {},
+    "non-technical-o": {
+      "cost-o": {
+        "1K": 0.2302,
+        "10K": 0.22668,
+        "100K": 0.2255
+      },
+      "distributor-s": "Avnet",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "1655-1014-ND",
+        "package-s": "Tube",
+        "product-url-s": "https://www.digikey.com/en/products/detail/smc-diode-solutions/MBR10100/6022104",
+        "datasheet-url-s": "https://www.smc-diodes.com/propdf/MBR10100%20MBRB10100%20N0751%20REV.A.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 9080,
+        "moq-i": 1,
+        "unit-price-s": "USD 1.99",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    }
+  }
+}

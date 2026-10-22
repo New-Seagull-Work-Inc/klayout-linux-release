@@ -1,0 +1,39 @@
+{
+  "component-o": {
+    "type-s": "ferrite-bead",
+    "vendor-s": "Murata",
+    "part-s": "BLM18PG221SN1D",
+    "description-s": "Ferrite Beads Multi-Layer 220Ohm 25% 100MHz 1.4A 100mOhm DCR 0603 Paper T/R",
+    "package-ao": [
+      { "ptype-s": "Ferrite Beads and Chips" },
+      { "ppins-i": 2 }
+    ],
+    "passive-o": {
+      "lead-style-s": "smd"
+    },
+    "non-technical-o": {
+      "cost-o": {
+        "10": 0.063,
+        "100": 0.045,
+        "1K": 0.014,
+        "10K": 0.014,
+        "100K": 0.014
+      },
+      "distributor-s": "Newark",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "490-5221-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/murata-electronics/BLM18PG221SN1D/1948326",
+        "datasheet-url-s": "https://pim.murata.com/asset/pim4/ferriteBeadInductortypefilter/ENFA0003_PDF_FERRITEBEADINDUCTORTYPEFILTER?lastModifiedDatetime=20250707190934",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 217202,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.14",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    }
+  }
+}

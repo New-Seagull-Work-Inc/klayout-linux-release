@@ -1,0 +1,48 @@
+{
+  "component-o": {
+    "type-s": "diode",
+    "vendor-s": "onsemi",
+    "part-s": "SS36FA",
+    "description-s": "3 A 60 V Schottky barrier rectifier, SOD-123FL; buyable replacement for DSK35 (50 V)",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.524,
+        "100": 0.338,
+        "1K": 0.25794,
+        "10K": 0.18272,
+        "100K": 0.18272
+      },
+      "distributor-s": "DigiKey",
+      "moq-i": 1,
+      "lead-time-weeks-i": 18,
+      "stock-i": 2400,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "SS36FACT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/onsemi/SS36FA/5892117",
+        "datasheet-url-s": "https://www.onsemi.com/pdf/datasheet/ss36fa-d.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 1069,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.84",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-sod-123fl" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "diode-schottky"
+    ],
+    "passive-o": {
+      "voltage-max-i": 60000,
+      "current-max-i": 3000,
+      "lead-style-s": "smd"
+    }
+  }
+}

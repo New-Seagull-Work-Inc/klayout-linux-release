@@ -1,0 +1,115 @@
+{
+  "component-o": {
+    "type-s": "battery",
+    "vendor-s": "Energizer",
+    "part-s": "CR2032VP",
+    "description-s": "Energizer CR2032 lithium / manganese-dioxide coin cell, 3.0 V nominal, 235 mAh typical (to 2.0 V at 15 kohm), 20.0 x 3.2 mm, bulk",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "distributor-s": "DigiKey",
+      "cost-o": {
+        "200": 0.43585,
+        "1K": 0.38132,
+        "2K": 0.36009
+      },
+      "moq-i": 200,
+      "stock-i": 181997,
+      "stock-note-s": "DigiKey N189-ND (CR2032VP), 181997 in stock, MOQ 200 (pcbparts digikey_get_part 2026-10-21)",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "N189-ND",
+        "package-s": "Bulk",
+        "product-url-s": "https://www.digikey.com/en/products/detail/energizer-battery-company/CR2032VP/704858",
+        "datasheet-url-s": "https://data.energizer.com/pdfs/cr2032.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 180597,
+        "moq-i": 200,
+        "unit-price-s": "USD 0.44",
+        "price-qty-i": 200,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "coin-cr2032" },
+      { "ppins-i": 2 }
+    ],
+    "battery-o": {
+      "chemistry-s": "lithium-primary",
+      "cell-format-s": "coin cr2032",
+      "rechargeable-b": false,
+      "capacity-mah-i": 235,
+      "voltage-nominal-mv-i": 3000,
+      "voltage-cutoff-mv-i": 2000,
+      "protection-b": false,
+      "source-o": {
+        "datasheet-s": "energizer-cr2032.pdf",
+        "page_n": 1,
+        "table-s": "Nominal Voltage 3.0 V; Typical Capacity 235 mAh (to 2.0 volts, rated at 15K ohms at 21 C); Max Rev Charge 1 uA; Operating Temp -30..60 C"
+      }
+    },
+    "cell_nominal_mv": 3000,
+    "internal_resistance_mohm": 9500,
+    "internal_resistance-o": {
+      "curve-ao": [
+        { "mah": 0, "ohm": 9.5 },
+        { "mah": 50, "ohm": 10.5 },
+        { "mah": 100, "ohm": 12.7 },
+        { "mah": 150, "ohm": 17.3 },
+        { "mah": 200, "ohm": 36.3 }
+      ],
+      "source-o": {
+        "datasheet-s": "energizer-cr2032.pdf",
+        "page_n": 1,
+        "figure-s": "Pulse Discharge Characteristics: IR, ohms (right axis) vs capacity, 400 ohm 2 s pulses x12/day at 21 C",
+        "derived-s": "read from the figure's vector curve with procurement pdf-graph --at 0,50,100,150,200 (fresh cell 9.5 ohm); a typical curve, not a guaranteed value"
+      }
+    },
+    "test_drains-o": {
+      "continuous_ma": 0.19,
+      "continuous_load_ohm": 15000,
+      "pulse_ma": 6.8,
+      "pulse_load_ohm": 400,
+      "pulse_s": 2,
+      "source-o": {
+        "datasheet-s": "energizer-cr2032.pdf",
+        "page_n": 1,
+        "table-s": "Typical Drains: Bkgnd Drain continuous 15K ohms 0.19 mA @2.9V; Pulse Drain 400 ohms ~6.8 mA @2.7V, 2 s x 12/day"
+      }
+    },
+    "pins-ao": [
+      { "1": "+" },
+      { "2": "-" }
+    ],
+    "interfaces-as": [
+      "ds-batt-rxtx",
+      "ds-power-tx",
+      "ds-battneg-rxtx"
+    ],
+    "stdpins-ao": [
+      { "1": "ds-power-tx" },
+      { "1": "ds-batt-rxtx" },
+      { "2": "ds-battneg-rxtx" }
+    ],
+    "voltages-ao": [
+      { "out": 3000 }
+    ],
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -30,
+          "max-i": 60
+        }
+      }
+    ],
+    "blocks-as": [
+      "battery-lithium-primary"
+    ],
+    "not_stated-o": {
+      "discharge-max-ma-i": "Energizer states no maximum continuous or pulse current, only the typical test drains (0.19 mA continuous, ~6.8 mA pulse). For comparison Renata CR2032 MFR (Rev 07/2021) states Max. Cont. Discharge Current 3.0 mA (avg current for 70 % capacity to 2.0 V) -- a different maker's cell; Panasonic CR2032 states only 'continuous drain 0.2 mA'",
+      "max_currents-ao": "left out: no rated maximum current",
+      "internal_resistance": "no tabulated value; 9.5 ohm is the fresh-cell point of the datasheet's IR curve",
+      "energy-wh-x10-i": "not stated as Wh"
+    }
+  }
+}

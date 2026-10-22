@@ -1,0 +1,37 @@
+{
+  "component-o": {
+    "type-s": "ferrite-bead",
+    "vendor-s": "Wurth Elektronik",
+    "part-s": "742792093",
+    "description-s": "Ferrite Beads WE-CBF 0805 SMD Bead 100MHz 2200Ohm 200mA",
+    "package-ao": [
+      { "ptype-s": "Ferrite Beads and Chips" },
+      { "ppins-i": 2 }
+    ],
+    "passive-o": {},
+    "non-technical-o": {
+      "cost-o": {
+        "10": 0.042,
+        "100": 0.04,
+        "1K": 0.04,
+        "10K": 0.0392,
+        "100K": 0.0392
+      },
+      "distributor-s": "Worldway Electronics",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "732-1609-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/würth-elektronik/742792093/1639013",
+        "datasheet-url-s": "https://www.we-online.com/components/products/datasheet/742792093.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 272585,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.21",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    }
+  }
+}

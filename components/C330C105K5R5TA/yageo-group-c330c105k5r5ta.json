@@ -1,0 +1,31 @@
+{
+  "component-o": {
+    "type-s": "capacitor",
+    "vendor-s": "Yageo Group",
+    "part-s": "C330C105K5R5TA",
+    "description-s": "C330 C 1UF Ceramic Multilayer Capacitor, 50 VDC, +125DEGC, X7R Dielec, +/-10%",
+    "package-ao": [
+      { "ptype-s": "Ceramic Capacitors" },
+      { "ppins-i": 2 }
+    ],
+    "passive-o": {
+      "lead-style-s": "radial"
+    },
+    "non-technical-o": {
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "399-4389-ND",
+        "package-s": "Bulk",
+        "product-url-s": "https://www.digikey.com/en/products/detail/kemet/C330C105K5R5TA/818165",
+        "datasheet-url-s": "https://yageogroup.com/content/datasheet/asset/file/KEM_C1050_GOLDMAX_X7R",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 47558,
+        "moq-i": 1,
+        "unit-price-s": "USD 2.30",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    }
+  }
+}

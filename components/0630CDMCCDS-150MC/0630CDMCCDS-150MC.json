@@ -1,0 +1,86 @@
+{
+  "component-o": {
+    "type-s": "inductor",
+    "vendor-s": "Sumida",
+    "part-s": "0630CDMCCDS-150MC",
+    "description-s": "15 uH ±20% shielded metal-composite molded power inductor, 7.0 x 6.6 x 2.8 mm (7.3 x 6.8 x 3.0 max), DCR 115 mOhm max / 104 typ, Isat 3.6 A max-rated (4.3 typ, -30 % L), Itemp 3.3 A typ (40 C rise)",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {},
+      "distributor-s": "DigiKey",
+      "moq-i": 1500,
+      "stock-i": 5879,
+      "stock-checked-s": "2026-10-21",
+      "lcsc-s": "C2453042",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "308-2460-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/sumida-america-inc/0630CDMCCDS-150MC/5812462",
+        "datasheet-url-s": "https://products.sumida.com/products/pdf/0630CDMCCDS%20new%20ver.pdf?t=1779169831",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 5879,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.75",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-7.0x6.6" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "inductor-shielded"
+    ],
+    "specs-o": {
+      "isat_ma_i": 3600,
+      "isat_typ_ma_i": 4300,
+      "isat_drop_pct_i": 30,
+      "irms_ma_i": 3300,
+      "irms_rise_c_i": 40,
+      "dcr_mohm": 115,
+      "dcr_typ_mohm": 104,
+      "l_test-s": "100 kHz, 1 V",
+      "height_mm": 3,
+      "land_pattern-s": "Sumida land pattern (p2): two 2.35 x 3.5 mm pads, 3.7 mm gap, 8.4 mm overall; terminals 1.6±0.3 mm at each end of the 7.0 mm body (p1)",
+      "source-o": {
+        "datasheet-s": "0630CDMCCDS.pdf",
+        "page_n": 2,
+        "table-s": "Electrical Characteristics row 0630CDMCCDS-150MC: 15.0 uH ±20 %, DCR 115.0 (104.0) mOhm max (typ), Isat 3.6 (4.3) A max (typ), temperature-rise current 3.3 A typ; notes 1-3: L at 100 kHz 1 V, Isat at -30 % L, Itemp at dT 40 C"
+      },
+      "dims_source-o": {
+        "datasheet-s": "0630CDMCCDS.pdf",
+        "page_n": 1,
+        "figure-s": "Dimension (0.22 uH - 33 uH): 7.0±0.3 x 6.6±0.2 x 2.8±0.2 mm; L x W x H 7.3 x 6.8 x 3.0 mm max"
+      },
+      "not_stated-o": {
+        "srf_mhz": "not stated in 0630CDMCCDS.pdf (5 pages)",
+        "isat_definition_temperature": "stated at 25 C only"
+      }
+    },
+    "passive-o": {
+      "esr-mr-i": 115,
+      "lead-style-s": "smd",
+      "value-i": 15000,
+      "value-unit-s": "nh",
+      "current-max-i": 3300,
+      "tolerance-pct-x10": 200
+    },
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -55,
+          "max-i": 125
+        }
+      },
+      {
+        "storage-o": {
+          "min-i": -55,
+          "max-i": 125
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "component-o": {
+    "type-s": "switch",
+    "vendor-s": "SHOU HAN (Shenzhen Shouhan Technology)",
+    "part-s": "SH-4.5x4.5x4.0H-TP",
+    "description-s": "SMD tactile switch 4.5 x 4.5 mm, 4.0 mm tall, top actuated, 4 gull-wing pins (1-2 and 3-4 internally connected), SPST-NO, 12 VDC 50 mA, 250 gf",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "distributor-s": "LCSC",
+      "cost-o": {
+        "1": 0.0238,
+        "200": 0.0189,
+        "600": 0.016,
+        "2K": 0.0144,
+        "10K": 0.0129
+      },
+      "moq-i": 1,
+      "stock-i": 36252,
+      "stock-note-s": "LCSC C52092029, 36252 in stock (pcbparts jlc_stock_check 2026-10-21); not carried by DigiKey"
+    },
+    "package-ao": [
+      {
+        "ptype-s": "smd-4.5x4.5"
+      },
+      {
+        "ppins-i": 4
+      }
+    ],
+    "blocks-as": [
+      "switch",
+      "tactile"
+    ],
+    "pins-ao": [
+      {
+        "1": "1"
+      },
+      {
+        "2": "2"
+      },
+      {
+        "3": "3"
+      },
+      {
+        "4": "4"
+      }
+    ],
+    "switch-o": {
+      "function-s": "tactile",
+      "circuit-s": "spst-no",
+      "positions-i": 1,
+      "current-max-ma-i": 50,
+      "voltage-max-v-i": 12,
+      "operating-force-n-x100-i": 245,
+      "height-mm-x10-i": 40,
+      "life-cycles-i": 100000,
+      "contact_resistance_mohm": 100,
+      "height_mm": 4.0,
+      "insulation_min_mohm": 100,
+      "withstand_vac": 250,
+      "internal-pairs-as": [
+        "1-2",
+        "3-4"
+      ],
+      "source-o": {
+        "datasheet-s": "SH-4.5x4.5x4.0H-TP_C52092029.pdf",
+        "page_n": 1,
+        "table-s": "电气性能 (electrical): rating DC12V/50mA; contact resistance <= 100 mOhm; insulation >= 100 MOhm; withstand AC250V/min; force 250+/-50 g; life 100,000; height 4.0+/-0.1 mm; circuit diagram 1-2 / 3-4"
+      }
+    },
+    "footprint_check-s": "PCB线路板图 (p1): 4 pads 1 x 0.7 mm on a 7.0 x 3.0 mm grid; board pads 1.4 x 0.8 at (+/-3.5, +/-1.5) -- same grid, pins 1/2 share a row and net (+BATT), 3/4 the other (B1 +)",
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -20,
+          "max-i": 70
+        }
+      }
+    ],
+    "not_stated-o": {
+      "operating-force-n-x100-i": "stated as 250+/-50 gf; 245 is the gf->N conversion",
+      "bounce_ms": "no bounce time stated",
+      "temperature": "operating range is from LCSC's listing (-20..+70 C), not the drawing"
+    }
+  }
+}

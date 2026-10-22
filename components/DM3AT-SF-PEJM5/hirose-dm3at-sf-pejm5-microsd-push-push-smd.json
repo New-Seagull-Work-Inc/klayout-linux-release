@@ -1,0 +1,88 @@
+{
+  "component-o": {
+    "type-s": "connector",
+    "subtype-s": "io-sdcard-jack",
+    "vendor-s": "Hirose Electric",
+    "part-s": "DM3AT-SF-PEJM5",
+    "description-s": "microSD card socket, push-push, top board mount, right angle, 8 contacts plus card-detect switch (closed with a card), 1.68 mm high (Hirose DM3 series, HRS 609-0031-0)",
+    "connector-o": {
+      "orientation_s": "right-angle",
+      "pin_count_i": 11,
+      "family_s": "microsd",
+      "pitch_mm_f": 1.1,
+      "current_per_pin_ma_i": 500,
+      "height_mm_f": 1.68,
+      "fields_source_s": "DM3 catalog p2: current rating 0.5 A, voltage rating 125 V AC, -25 to +85 C, contact resistance change 40 mOhm max; p3: 13.85 x 15.95 mm body, 1.68 mm high, card lock 17.55 mm / eject 21.55 mm from the rear; the card inserts parallel to the board"
+    },
+    "package-ao": [
+      { "ptype-s": "smd" },
+      { "ppins-i": 11 }
+    ],
+    "blocks-as": [
+      "microsd-socket"
+    ],
+    "interfaces-as": [
+      "ds-sd-rxtx",
+      "ds-power-rx",
+      "ds-sd_cd-tx"
+    ],
+    "voltages-ao": [
+      { "vdd": 3300 }
+    ],
+    "pins-ao": [
+      { "1": "DAT2" },
+      { "2": "CD/DAT3" },
+      { "3": "CMD" },
+      { "4": "VDD" },
+      { "5": "CLK" },
+      { "6": "VSS" },
+      { "7": "DAT0" },
+      { "8": "DAT1" },
+      { "9": "CD-B" },
+      { "10": "CD-A" },
+      { "SH": "shield" }
+    ],
+    "stdpins-ao": [
+      { "1": "ds-sd-d2" },
+      { "2": "ds-sd-d3" },
+      { "3": "ds-sd-cmd" },
+      { "4": "ds-power-rx" },
+      { "4": "100nf-avss" },
+      { "5": "ds-sd-clk" },
+      { "6": "avss" },
+      { "7": "ds-sd-d0" },
+      { "8": "ds-sd-d1" },
+      { "9": "avss" },
+      { "10": "ds-sd_cd-tx" },
+      { "SH": "avss" }
+    ],
+    "cfgpins-ao": [],
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -25,
+          "max-i": 85
+        }
+      }
+    ],
+    "replaces_s": "TF PUSH (SHOU HAN, LCSC only): same microSD contact assignment, push-push; different footprint",
+    "notes-s": "Contacts #1-#8 as named on the DM3AT drawing (p3). The card detection switch (A)-(B) is open without a card and closed with one inserted (Note 2, p3); the LCSC C114218 symbol numbers DET_B 9 and DET_A 10, so (B) pin 9 goes to GND and (A) pin 10 to the card-detect input with a pull-up, reading low when a card is in. SH: the four shell tabs, ground.",
+    "non-technical-o": {
+      "source-o": {
+        "supplier-s": "Mouser",
+        "sku-s": "798-DM3AT-SF-PEJM5",
+        "package-s": "MouseReel",
+        "product-url-s": "https://www.mouser.com/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM5?qs=LZSZKJVF%252B2WTDKp%252BR7IYAQ%3D%3D",
+        "datasheet-url-s": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/9054/DM3.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 75114,
+        "moq-i": 1,
+        "unit-price-s": "USD 3.55",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21",
+        "source-note-s": "Mouser API read through the pcbparts lookup (procurement Mouser key invalid). DigiKey stocks 77187 but its lookup shows only the 1500-piece reel HR1964TR-ND"
+      }
+    }
+  }
+}

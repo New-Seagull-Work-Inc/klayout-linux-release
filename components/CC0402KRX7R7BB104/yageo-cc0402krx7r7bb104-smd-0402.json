@@ -1,0 +1,51 @@
+{
+  "component-o": {
+    "type-s": "capacitor",
+    "vendor-s": "Yageo",
+    "part-s": "CC0402KRX7R7BB104",
+    "description-s": "100 nF ±10% 16 V X7R 0402 multilayer ceramic capacitor (MLCC), SMD, 0.55 mm max thickness; drop-in for CL05B104KO5NNNC (DigiKey 0, Mouser 84, 2026-10-14)",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.005,
+        "100": 0.002,
+        "1K": 0.001,
+        "10K": 0.001,
+        "100K": 0.001
+      },
+      "distributor-s": "Newark",
+      "moq-i": 1,
+      "order-mult-i": 1,
+      "stock-i": 2453250,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "311-1338-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/yageo/CC0402KRX7R7BB104/2103076",
+        "datasheet-url-s": "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 1082149,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.10",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0402" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-ceramic"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 100000,
+      "value-unit-s": "nf",
+      "voltage-max-i": 16000,
+      "tolerance-pct-x10": 100,
+      "dielectric-s": "x7r"
+    }
+  }
+}

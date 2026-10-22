@@ -1,0 +1,29 @@
+{
+  "component-o": {
+    "type-s": "battery",
+    "vendor-s": "ABLIC",
+    "part-s": "S-8204AAF-TCT1U",
+    "description-s": "Battery Protector Li-Ion Over Charge/Over Discharge/Over Current 3-Serial/4-Serial Cell Pack 16-Pin TSSOP T/R",
+    "package-ao": [
+      { "ptype-s": "Battery Management" },
+      { "ppins-i": 2 }
+    ],
+    "battery-o": {},
+    "non-technical-o": {
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "S-8204AAF-TCT1U-ND",
+        "package-s": "Tape & Reel (TR)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/ablic-inc/S-8204AAF-TCT1U/6120831",
+        "datasheet-url-s": "https://www.ablic.com/en/doc/datasheet/battery_protection/S8204A_E.pdf",
+        "lifecycle-s": "nrnd",
+        "status-s": "Not For New Designs",
+        "available-i": 0,
+        "moq-i": 4000,
+        "unit-price-s": "USD 2.76",
+        "price-qty-i": 4000,
+        "verified-on-s": "2026-10-21"
+      }
+    }
+  }
+}

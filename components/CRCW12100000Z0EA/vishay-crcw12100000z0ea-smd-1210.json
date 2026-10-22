@@ -1,0 +1,55 @@
+{
+  "component-o": {
+    "specs-o": {
+      "resistance_max_mohm": 20,
+      "resistance_max_source-s": "Vishay D/CRCW e3 datasheet, document 20035 rev 05-Aug-2022, page 2, table 'Temperature coefficient and resistance range', row CRCW1210 e3: 'Jumper, Imax. = 5.0 A <= 20 mOhm'"
+    },
+    "type-s": "resistor",
+    "vendor-s": "Vishay",
+    "description-s": "0 Ω jumper, thick film chip resistor, 1210, CRCW, Imax 5.0 A, <= 20 mΩ",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.06,
+        "100": 0.053,
+        "1K": 0.036,
+        "10K": 0.025,
+        "100K": 0.024
+      },
+      "distributor-s": "Mouser",
+      "moq-i": 1,
+      "lead-time-weeks-i": 18,
+      "stock-i": 24177,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "541-0.0VCT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/vishay-dale/CRCW12100000Z0EA/1177101",
+        "datasheet-url-s": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 506759,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.13",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-1210" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "resistor-jumper"
+    ],
+    "passive-o": {
+      "value-i": 0,
+      "value-unit-s": "ohm",
+      "power-mw-i": 500,
+      "voltage-max-i": 200000,
+      "current-max-i": 5000,
+      "lead-style-s": "smd"
+    },
+    "part-s": "CRCW12100000Z0EA"
+  }
+}

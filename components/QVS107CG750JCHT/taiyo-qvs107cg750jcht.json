@@ -1,0 +1,54 @@
+{
+  "component-o": {
+    "specs-o": {
+      "esr_mohm": 42.76,
+      "esl_ph": 310,
+      "srf_mhz": 1041,
+      "esr_esl_dc_bias_source-s": "Taiyo Yuden TY-COMPAS S-parameter Standard Model (TY model, not a measurement) for MCARQ167SCG750JTRA01, the PN TY-COMPAS says QVS107CG750JCHT was renamed to; 25 degC, 0 V, 10-1500 MHz -> ESR at SRF, ESL at 1.4x SRF (end of data). TY-COMPAS has no DC-bias graph for this C0G part (dc_bias-ao not stated), read 2026-10-21"
+    },
+    "type-s": "capacitor",
+    "vendor-s": "Taiyo Yuden",
+    "part-s": "QVS107CG750JCHT",
+    "description-s": "75 pF ±5% 250 V C0G 0603 (1608M) MLCC, SMD (TY-COMPAS: renamed MCARQ167SCG750JTRA01)",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "distributor-s": "DigiKey",
+      "stock-o": {
+        "digikey-i": 8216,
+        "mouser-i": 3215,
+        "newark-i": 0,
+        "checked-s": "2026-10-21",
+        "source-s": "DigiKey Product Information API v4 (max QuantityAvailable over packagings); Mouser and Newark public product/search pages via browser; null = not listed"
+      },
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "587-4436-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/taiyo-yuden/QVS107CG750JCHT/5805289",
+        "datasheet-url-s": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1191/QVS107CG750JCHT_SS.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 8216,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.65",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0603" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-ceramic"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 75,
+      "value-unit-s": "pf",
+      "voltage-max-i": 250000,
+      "tolerance-pct-x10": 50,
+      "dielectric-s": "c0g"
+    }
+  }
+}

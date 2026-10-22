@@ -1,0 +1,105 @@
+{
+  "component-o": {
+    "type-s": "switch",
+    "vendor-s": "Nidec Components (Copal)",
+    "part-s": "CHS-04TB",
+    "description-s": "4-position SPST half-pitch (1.27 mm) slide DIP switch, SMD gull wing (B terminals), washable with seal tape, taped 500/reel; 100 mA at 6 VDC switching, gold contacts",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "500": 1.50194,
+        "1K": 1.42574,
+        "5K": 1.2793
+      },
+      "distributor-s": "DigiKey",
+      "moq-i": 500,
+      "stock-i": 12208,
+      "stock-checked-s": "2026-10-21",
+      "distributor-pn-s": "563-1008-2-ND",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "563-1008-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/nidec-components/CHS-04TB/948319",
+        "datasheet-url-s": "https://www.nidec-components.com/e/catalog/switch/chs.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 12696,
+        "moq-i": 1,
+        "unit-price-s": "USD 2.46",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-dip-4-1.27mm" },
+      { "ppins-i": 8 }
+    ],
+    "blocks-as": [
+      "switch",
+      "dip"
+    ],
+    "interfaces-as": [],
+    "pins-ao": [
+      { "1": "1A" },
+      { "2": "2A" },
+      { "3": "3A" },
+      { "4": "4A" },
+      { "5": "4B" },
+      { "6": "3B" },
+      { "7": "2B" },
+      { "8": "1B" }
+    ],
+    "stdpins-ao": [],
+    "cfgpins-ao": [
+      { "1": "sw1-a" },
+      { "8": "sw1-b" },
+      { "2": "sw2-a" },
+      { "7": "sw2-b" },
+      { "3": "sw3-a" },
+      { "6": "sw3-b" },
+      { "4": "sw4-a" },
+      { "5": "sw4-b" },
+      { "1c": "KiCad SW_DIP_SPSTx04 numbering: position n joins pin n to pin 9-n" }
+    ],
+    "switch-o": {
+      "function-s": "dip-slide",
+      "circuit-s": "spst",
+      "positions-i": 4,
+      "current-max-ma-i": 100,
+      "voltage-max-v-i": 6,
+      "pitch-mm-x100-i": 127,
+      "contact_resistance_mohm": 50,
+      "height_mm": 2.5,
+      "source-o": {
+        "datasheet-s": "chs.pdf",
+        "page_n": 3,
+        "table-s": "Contact rating: non-switching DC50 V 100 mA; switching DC6 V 100 mA / DC24 V 25 mA; minimum DC20 mV 1 uA; contact resistance 50 mOhm max; insulation 1000 MOhm; -40..85 C"
+      },
+      "dims_source-o": {
+        "datasheet-s": "chs.pdf",
+        "page_n": 8,
+        "figure-s": "CHS-04B / CHS-04TB2 outline (EIAJ ED-7402-1): body 6.6 x 5.4 mm, gull-wing span 8 mm, 1.27 mm pitch, 2.5 mm max height"
+      },
+      "ordering_source-o": {
+        "datasheet-s": "chs.pdf",
+        "page_n": 2,
+        "table-s": "List of part numbers, washable type (with seal tape), taping, B gull wing: CHS-04TB, 500 pcs/reel"
+      }
+    },
+    "temperatures-ao": [
+      {
+        "operating-o": {
+          "min-i": -40,
+          "max-i": 85
+        }
+      },
+      {
+        "storage-o": {
+          "min-i": -40,
+          "max-i": 85
+        }
+      }
+    ]
+  }
+}

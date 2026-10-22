@@ -1,0 +1,25 @@
+{
+  "component-o": {
+    "specs-o": {"esr_mohm": 23.31, "esl_ph": 171, "srf_mhz": 32.7298, "dc_bias-ao": [{"v_mv": 0, "c_pct": 100.0}, {"v_mv": 1000, "c_pct": 100.2}, {"v_mv": 1800, "c_pct": 99.5}, {"v_mv": 2500, "c_pct": 98.2}, {"v_mv": 3300, "c_pct": 96.1}, {"v_mv": 5000, "c_pct": 90.5}, {"v_mv": 6300, "c_pct": 85.8}, {"v_mv": 10000, "c_pct": 71.4}, {"v_mv": 12000, "c_pct": 63.4}, {"v_mv": 16000, "c_pct": 49.3}], "esr_esl_dc_bias_source-s": "Samsung Electro-Mechanics product page chart data (product.samsungsem.com/mlcc/CL05B104KO5NNN.do, datasheetData): |Z| and R 'Precise' model at 0 V, 25 degC -> ESR at SRF (|Z| min), ESL at 10x SRF; DC-bias delta-C curve at 1000 Hz (dsDcSign 1.0, AC level not otherwise stated), read 2026-10-21"},
+    "type-s": "capacitor",
+    "vendor-s": "Samsung Electro-Mechanics",
+    "part-s": "CL05B104KO5NNNC",
+    "description-s": "100 nF ±10% 16 V X7R 0402 multilayer ceramic capacitor (MLCC), SMD, 0.5 mm thick",
+    "non-technical-o": {"lifecycle-o": {}, "cost-o": {"10": 0.021, "100": 0.0115, "1K": 0.00802, "10K": 0.00459, "100K": 0.00391}, "distributor-s": "DigiKey", "moq-i": 1, "lead-time-weeks-i": 14, "stock-i": 171310, "stock-o": {"digikey-i": 0, "mouser-i": 0, "newark-i": 380000, "checked-s": "2026-10-21", "source-s": "DigiKey Product Information API v4 (max QuantityAvailable over packagings); Mouser and Newark public product/search pages via browser; null = not listed"}},
+    "package-ao": [
+      { "ptype-s": "smd-0402" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-ceramic"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 100000,
+      "value-unit-s": "nf",
+      "voltage-max-i": 16000,
+      "tolerance-pct-x10": 100,
+      "dielectric-s": "x7r"
+    }
+  }
+}

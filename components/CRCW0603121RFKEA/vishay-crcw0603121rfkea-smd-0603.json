@@ -1,0 +1,48 @@
+{
+  "component-o": {
+    "type-s": "resistor",
+    "vendor-s": "Vishay",
+    "part-s": "CRCW0603121RFKEA",
+    "description-s": "121 Ω ±1% 0.1 W thick film chip resistor, 0603, CRCW-e3",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.0011,
+        "100": 0.0011,
+        "1K": 0.0011,
+        "10K": 0.0011,
+        "100K": 0.0011
+      },
+      "distributor-s": "Arrow Electronics",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "541-121HCT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/vishay-dale/CRCW0603121RFKEA/1174563",
+        "datasheet-url-s": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 5797,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.11",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0603" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "resistor"
+    ],
+    "passive-o": {
+      "value-i": 121000,
+      "value-unit-s": "ohm",
+      "power-mw-i": 100,
+      "voltage-max-i": 75000,
+      "tolerance-pct-x10": 10,
+      "lead-style-s": "smd"
+    }
+  }
+}

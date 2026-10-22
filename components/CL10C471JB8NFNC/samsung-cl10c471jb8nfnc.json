@@ -1,0 +1,75 @@
+{
+  "component-o": {
+    "specs-o": {
+      "esr_mohm": 85.31,
+      "esl_ph": 330,
+      "srf_mhz": 360.3,
+      "dc_bias-ao": [
+        { "v_mv": 0, "c_pct": 100 },
+        { "v_mv": 1000, "c_pct": 100 },
+        { "v_mv": 1800, "c_pct": 100 },
+        { "v_mv": 3300, "c_pct": 100 },
+        { "v_mv": 5000, "c_pct": 100 },
+        { "v_mv": 10000, "c_pct": 100 },
+        { "v_mv": 12000, "c_pct": 100 },
+        { "v_mv": 16000, "c_pct": 100 },
+        { "v_mv": 20000, "c_pct": 100 },
+        { "v_mv": 25000, "c_pct": 100 },
+        { "v_mv": 35000, "c_pct": 100 },
+        { "v_mv": 50000, "c_pct": 100 }
+      ],
+      "esr_esl_dc_bias_source-s": "Samsung Electro-Mechanics product page chart data (product.samsungsem.com/mlcc/CL10C471JB8NFN.do, datasheetData): |Z| and R 'Precise' model at 0 V, 25 degC -> ESR at SRF (|Z| min), ESL at 10x SRF; DC-bias delta-C curve at 1000000 Hz (dsDcSign 1.0, AC level not otherwise stated), read 2026-10-21"
+    },
+    "type-s": "capacitor",
+    "vendor-s": "Samsung Electro-Mechanics",
+    "part-s": "CL10C471JB8NFNC",
+    "description-s": "470 pF ±5% 50 V C0G 0603 multilayer ceramic capacitor (MLCC), SMD, 0.8 mm thick",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "distributor-s": "DigiKey",
+      "stock-o": {
+        "digikey-i": 237056,
+        "mouser-i": 58879,
+        "newark-i": null,
+        "checked-s": "2026-10-21",
+        "source-s": "DigiKey Product Information API v4 (max QuantityAvailable over packagings); Mouser / Newark public pages via browser; null = not listed, key absent = not checked"
+      },
+      "cost-o": {
+        "10": 0.046,
+        "100": 0.0271,
+        "1K": 0.0196,
+        "10K": 0.0139,
+        "100K": 0.012
+      },
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "1276-2303-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10C471JB8NFNC/3887961",
+        "datasheet-url-s": "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC_2512.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 237056,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.10",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0603" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-ceramic"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 470,
+      "value-unit-s": "pf",
+      "voltage-max-i": 50000,
+      "tolerance-pct-x10": 50,
+      "dielectric-s": "c0g"
+    }
+  }
+}

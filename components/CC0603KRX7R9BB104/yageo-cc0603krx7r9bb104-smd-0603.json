@@ -1,0 +1,50 @@
+{
+  "component-o": {
+    "type-s": "capacitor",
+    "vendor-s": "Yageo",
+    "part-s": "CC0603KRX7R9BB104",
+    "description-s": "100 nF 50 V ±10% X7R 0603 multilayer ceramic capacitor (MLCC), SMD; buyable replacement for CL10B104KB8NNNC",
+    "non-technical-o": {
+      "lifecycle-o": {},
+      "cost-o": {
+        "10": 0.007,
+        "100": 0.007,
+        "1K": 0.007,
+        "10K": 0.005,
+        "100K": 0.004
+      },
+      "distributor-s": "CoreStaff",
+      "moq-i": 1,
+      "stock-i": 30001,
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "311-1344-1-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R9BB104/2103082",
+        "datasheet-url-s": "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 4082137,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.14",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    },
+    "package-ao": [
+      { "ptype-s": "smd-0603" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-ceramic"
+    ],
+    "passive-o": {
+      "lead-style-s": "smd",
+      "value-i": 100000,
+      "value-unit-s": "nf",
+      "voltage-max-i": 50000,
+      "tolerance-pct-x10": 100,
+      "dielectric-s": "x7r"
+    }
+  }
+}

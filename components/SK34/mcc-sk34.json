@@ -1,0 +1,39 @@
+{
+  "component-o": {
+    "type-s": "diode",
+    "vendor-s": "MCC",
+    "part-s": "SK34",
+    "description-s": "Rectifier Diode, Schottky, 1 Phase, 1 Element, 3A, 40V V(RRM), Silicon, DO-214AB",
+    "package-ao": [
+      { "ptype-s": "Schottky Diodes" },
+      { "ppins-i": 2 }
+    ],
+    "passive-o": {
+      "lead-style-s": "smd"
+    },
+    "non-technical-o": {
+      "cost-o": {
+        "10": 0.351,
+        "100": 0.2223,
+        "1K": 0.14882,
+        "10K": 0.10859,
+        "100K": 0.09428
+      },
+      "distributor-s": "DigiKey",
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "1655-SK34CT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/smc-diode-solutions/SK34/6022683",
+        "datasheet-url-s": "https://www.smc-diodes.com/propdf/SK34%20N0102%20REV.B.pdf",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 16613,
+        "moq-i": 1,
+        "unit-price-s": "USD 0.66",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    }
+  }
+}

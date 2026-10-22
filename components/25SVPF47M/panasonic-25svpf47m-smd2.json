@@ -1,0 +1,49 @@
+{
+  "component-o": {
+    "specs-o": {
+      "esr_mohm": 16.63,
+      "esl_ph": 2663,
+      "srf_mhz": 0.4926,
+      "height_mm_f": 5.9,
+      "height_max_mm_f": 6,
+      "height_source-s": "Panasonic OS-CON SVPF datasheet (components/16SVPF100M/16SVPF100M/16SVPF100M.pdf), dimensions table, size code C6: L 5.9 +0.1/-0.4 mm (seated height), diameter 6.3 mm, base 6.6 x 6.6 mm",
+      "esr_esl_dc_bias_source-s": "Panasonic characteristic viewer (util01.industrial.panasonic.com chr-vw 25SVPF47M): |Z|, ESR, ESL vs f (temperature not stated); polymer, no DC-bias curve, read 2026-10-21"
+    },
+    "type-s": "capacitor",
+    "vendor-s": "Panasonic",
+    "part-s": "25SVPF47M",
+    "description-s": "47 µF 25 V ±20% SMD conductive polymer aluminum solid capacitor, 6.3×5.9mm, 30 mΩ ESR, 5000 h @ 105 °C",
+    "package-ao": [
+      { "ptype-s": "smd" },
+      { "ppins-i": 2 }
+    ],
+    "blocks-as": [
+      "capacitor-aluminum-polymer"
+    ],
+    "passive-o": {
+      "value-i": 47000000,
+      "value-unit-s": "uf",
+      "voltage-max-i": 25000,
+      "tolerance-pct-x10": 200,
+      "esr-mr-i": 30,
+      "dielectric-s": "aluminum-polymer",
+      "lead-style-s": "smd"
+    },
+    "non-technical-o": {
+      "source-o": {
+        "supplier-s": "DigiKey",
+        "sku-s": "P16513CT-ND",
+        "package-s": "Cut Tape (CT)",
+        "product-url-s": "https://www.digikey.com/en/products/detail/panasonic-industry/25SVPF47M/4204845",
+        "datasheet-url-s": "https://industrial.panasonic.com/ww/products/pt/os-con/models/25SVPF47M",
+        "lifecycle-s": "active",
+        "status-s": "Active",
+        "available-i": 42728,
+        "moq-i": 1,
+        "unit-price-s": "USD 1.71",
+        "price-qty-i": 1,
+        "verified-on-s": "2026-10-21"
+      }
+    }
+  }
+}
